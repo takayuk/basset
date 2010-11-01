@@ -20,11 +20,14 @@ p @responses.size
 
 open("user.list"){|f|
   while l=f.gets
-    d=DB::History.create({
-      :user_id => l.chomp,
-      :contact => %w!12345@N00 56789@N00!
-    })
-    d.save
+
+    #@d = DB::History.new(:user_id => l.chomp)
+    #@d = DB::History.find(:user_id => l.chomp)
+
+    @d = DB::History.all(:user_id => l.chomp)
+    DB::History.update_attributes(:user_id => l.chomp,
+                                  :contact => %w!contact_a contact_b!)
+    @d.save
   end
 }
 puts "count: #{DB::History.count()}"
