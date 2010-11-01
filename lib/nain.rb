@@ -1,7 +1,7 @@
 $LOAD_PATH.push("./")
 require "db/history"
 
-require "req/req.photo"
+#require "req/req.photo"
 
 =begin
 @responses = photos_queryof("kyoto")
@@ -18,16 +18,21 @@ p @responses.size
 
 #puts "count: #{DB::History.count()}"
 
+=begin
 open("user.list"){|f|
   while l=f.gets
     d=DB::History.create({
       :user_id => l.chomp,
-      :contact => %w!12345@N00 56789@N00!
     })
     d.save
   end
 }
+=end
+
+DB::History.all(:contact => /()/).map{|p| p.destroy}
+
 puts "count: #{DB::History.count()}"
+h = DB::History.all(:user_id => /(.+)/).map{|p| puts "#{p.user_id}, #{p.contact}"}
 
 =begin
 h = DB::History.all(:user_id => "123456@N00")
@@ -35,6 +40,7 @@ h.each{|_h|
   p _h
 }
 =end
+
 =begin
 puts "count: #{DB::History.count()}"
 

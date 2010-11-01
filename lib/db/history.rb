@@ -11,8 +11,8 @@ module DB
     include MongoMapper::Document
 
     key :user_id, String, :required => true
-    #key :date, String, :required => true
-    
+    key :contact_id, Array
+
     ensure_index :user_id
   end
 end
