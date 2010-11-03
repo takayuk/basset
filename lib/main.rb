@@ -21,6 +21,7 @@ Schema::User.find(:user_id).each{|r|
   r.update_attributes!(:contact_id => %w!contact_a contact_b!)
 }
 =end
+
 Schema::User.find(:user_id).each{|u|
   puts "#{u.user_id}, #{u.contact_id}"
 }
