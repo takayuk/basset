@@ -1,5 +1,6 @@
 $LOAD_PATH.push("./")
-require "schema/user"
+require "schema/user.flickr"
+#require "schema/photo.flickr"
 require "req/req.photo"
 
 require "mongoid"
@@ -20,7 +21,7 @@ open("user.list"){|f|
 Schema::User.find(:user_id).each{|r|
 
   #r.update_attributes!(:contact_id => %w!contact_a contact_b!)
-  r.destroy
+  #r.destroy
 }
 
 =begin
@@ -29,4 +30,3 @@ Schema::User.find(:user_id).each{|u|
 }
 =end
 p Schema::User.find(:user_id).count
-

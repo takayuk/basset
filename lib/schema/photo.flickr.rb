@@ -3,16 +3,14 @@ require "mongoid"
 
 module Schema
   
-  class User
+  class Photo
 
     include Mongoid::Document
 
-    field :user_id
-    field :contact_id => Array
-    field :group_name => Array
+    field :photo_id
     field :geo_lat => Float
     field :geo_lng => Float
-    field :tags => Array
+    field :tag => Array
   end
 end
 
