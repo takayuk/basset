@@ -50,14 +50,12 @@ class Graph {
       return 0;
     }
 
-    Graph(): e(0,0) {
+    Graph() {
     }
 
     ~Graph() {}
 
   private:
-
-    //std::map<key_type, std::set< edge<key_type, val_type> > graph_;
-    //Parser parser;
-    edge<key_type, val_type> e;
+    std::map<key_type, std::set< edge<key_type, val_type> > > graph_;
+    Parser parser;
 };
