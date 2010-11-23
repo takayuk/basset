@@ -10,7 +10,7 @@
 
 
 #include <edge.h>
-#include <parser.hpp>
+#include <parser.h>
 
 #include <string>
 #include <map>
@@ -30,15 +30,13 @@ class EdgeFinder {
 };
 */
 
-/*
-template <class T>
-bool from_string(T& t, const std::string& s, std::ios_base& (*f)(std::ios_base&))
-{
-  std::istringstream iss(s);
-  return !(iss >> f >> t).fail();
+namespace {
+  template <class T> bool from_string(T& t, const std::string& s, std::ios_base& (*f)(std::ios_base&))
+  {
+    std::istringstream iss(s);
+    return !(iss >> f >> t).fail();
+  }
 }
-*/
-
 
 template <class key_type, class val_type>
 class Graph {
@@ -46,10 +44,19 @@ class Graph {
   public:
     bool gen(const std::string& path) {
 
-      cout << path << "graph gen\n";
-      if (!parser.doc(path)) { cout << "err\n"; }
-      ty_dataset d = parser.eval_each();
-      cout << d.size() << endl;
+      if (!parser.doc(path)) { std::cout << "not found.\n"; }
+      
+      ty_labellist labellist = parser.eval_each();
+      for (ty_labellist::iterator i = labellist.begin(); i != labellist.end(); ++i) {
+
+        for (std::vector< edge<std::string, std::string> >::iterator j = i->second.begin(); j != i->second.end(); ++j) {
+
+          int link_weight;
+          from_string<int>(link_weight, j->value(), std::dec);
+          edge<std::string, int>(j->key(), link_weight);
+        }
+      }
+
       return true;
     }
 
@@ -63,6 +70,6 @@ class Graph {
     ~Graph() {}
 
   private:
-    std::map<key_type, std::set< edge<key_type, val_type> > > graph_;
+    std::map<key_type, std::set< edge<key_type, val_type> > > graph;
     Parser parser;
 };

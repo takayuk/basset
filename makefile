@@ -7,7 +7,7 @@ TEST=./test/
 TESTBIN=./tbin/
 
 tgraph: $(TEST)graph.cpp
-	g++ $(CFLAGS) $(TEST)graph.cpp -I$(INC) -o $(TESTBIN)tgraph
+	g++ $(CFLAGS) $(TEST)graph.cpp $(SRC)parser.cpp -I$(INC) -o $(TESTBIN)tgraph
 
 #test_parser: $(TEST)parser.cpp
 #	g++ $(CFLAGS) $(TEST)parser.cpp $(SRC)parser.cpp -I$(INC) -o $(TESTBIN)test_parser

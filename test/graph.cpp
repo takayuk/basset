@@ -3,8 +3,7 @@
 int main(int argc, char* argv[]) {
 
   Graph<std::string, int> g;
-  g.gen("sample_e");
-  //g.tester_add(edge<std::string, int>("h",0));
+  g.gen("/home/kamei/workspace/basset/tbin/sample_e");
 
   return 0;
 }
