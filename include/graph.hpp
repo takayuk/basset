@@ -38,23 +38,26 @@ bool from_string(T& t, const std::string& s, std::ios_base& (*f)(std::ios_base&)
 */
 
 
-template <typename key_type, typename val_type>
+template <class key_type, class val_type>
 class Graph {
 
   public:
-    //bool gen(const std::string& path);
-    bool tester_add(const edge<key_type, val_type>& node);
-    
-    //const unsigned int& degree_of(const key_type& key);
+    bool gen(const std::string& path) {
+      return true;
+    }
 
-    Graph(const string& path);
-    ~Graph();
+    const unsigned int& degree_of(const key_type& key) {
+      return 0;
+    }
+
+    Graph(): e(0,0) {
+    }
+
+    ~Graph() {}
 
   private:
-    Graph();
 
     //std::map<key_type, std::set< edge<key_type, val_type> > graph_;
     //Parser parser;
     edge<key_type, val_type> e;
 };
-

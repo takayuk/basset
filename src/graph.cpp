@@ -1,6 +1,7 @@
 #include <graph.h>
 
-bool Graph::gen(const std::string& path) {
+template <class key_type, class val_type>
+bool Graph<key_type, val_type>::gen(const std::string& path) {
 
   //ty_dataset& data = parser.eval_all();
 

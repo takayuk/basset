@@ -3,8 +3,9 @@
 #include <map>
 #include <string>
 
-template <typename key_type, typename val_type>
+template <class key_type, class val_type>
 struct edge {
+  
   edge(const key_type& key, const val_type& value): edgedata(key, value) {}
   ~edge() {}
 

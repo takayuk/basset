@@ -1,10 +1,10 @@
-#include <graph.h>
+#include <graph.hpp>
 
 int main(int argc, char* argv[]) {
 
-  Graph g("sample_e");
+  Graph<int, int> g;
   //g.gen("sample_e");
-  g.tester_add(edge<std::string, int>("h",0));
+  //g.tester_add(edge<std::string, int>("h",0));
 
   return 0;
 }
