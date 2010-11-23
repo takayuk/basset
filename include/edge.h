@@ -14,10 +14,18 @@ struct edge {
   
   const val_type& weight() const { return edgedata.second; }
 
-  bool operator ()(const key_type& lhs, const key_type& rhs) {
-    return lhs.first == rhs.first;
+  /*
+  bool operator ()(const key_type& compared_obj) {
+    //return edgedata.first == compared_obj.first;
+    return true;
+  }
+  */ 
+
+  bool operator<(edge<key_type, val_type>& compared_obj) const {
+    //return edgedata.first < compared_obj.first;
+    return true;
   }
 
-  const std::pair<key_type, val_type> edgedata;
+  std::pair<key_type, val_type> edgedata;
 };
 

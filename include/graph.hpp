@@ -10,12 +10,13 @@
 
 
 #include <edge.h>
-#include <parser.h>
+#include <parser.hpp>
 
 #include <string>
 #include <map>
 #include <set>
 
+/*
 class EdgeFinder {
 
   public:
@@ -27,7 +28,8 @@ class EdgeFinder {
 
     string query;
 };
- 
+*/
+
 /*
 template <class T>
 bool from_string(T& t, const std::string& s, std::ios_base& (*f)(std::ios_base&))
@@ -43,6 +45,11 @@ class Graph {
 
   public:
     bool gen(const std::string& path) {
+
+      cout << path << "graph gen\n";
+      if (!parser.doc(path)) { cout << "err\n"; }
+      ty_dataset d = parser.eval_each();
+      cout << d.size() << endl;
       return true;
     }
 
