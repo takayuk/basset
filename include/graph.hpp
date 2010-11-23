@@ -41,6 +41,7 @@ namespace {
 template <class key_type, class val_type>
 class Graph {
 
+  typedef std::map< key_type, std::set< edge<key_type, val_type> > > ty_graph;
   public:
     bool gen(const std::string& path) {
 
@@ -49,15 +50,32 @@ class Graph {
       ty_labellist labellist = parser.eval_each();
       for (ty_labellist::iterator i = labellist.begin(); i != labellist.end(); ++i) {
 
+        std::set< edge<key_type, val_type> > linked_set;
+
         for (std::vector< edge<std::string, std::string> >::iterator j = i->second.begin(); j != i->second.end(); ++j) {
 
           int link_weight;
           from_string<int>(link_weight, j->value(), std::dec);
-          edge<std::string, int>(j->key(), link_weight);
+          
+          linked_set.insert(edge<std::string, int>(j->key(), link_weight));
         }
+
+        graph[i->first] = linked_set;
       }
 
       return true;
+    }
+
+    void check() {
+      std::cout << graph.size() << std::endl;
+      for (typename ty_graph::iterator i = graph.begin(); i != graph.end(); ++i) { 
+        std::cout << i->first << std::endl;
+        for (typename std::set< edge<key_type, val_type> >::iterator j = i->second.begin(); j != i->second.end(); ++j) {
+
+          std::cout << j->key() << ":" << j->value() << " ";
+        }
+        std::cout << std::endl;
+      }
     }
 
     const unsigned int& degree_of(const key_type& key) {
@@ -70,6 +88,7 @@ class Graph {
     ~Graph() {}
 
   private:
-    std::map<key_type, std::set< edge<key_type, val_type> > > graph;
+    //std::map<key_type, std::set< edge<key_type, val_type> > > graph;
+    ty_graph graph;
     Parser parser;
 };

@@ -14,16 +14,12 @@ struct edge {
   
   const val_type& weight() const { return edgedata.second; }
 
-  /*
   bool operator ()(const key_type& compared_obj) {
-    //return edgedata.first == compared_obj.first;
-    return true;
+    return edgedata.first == compared_obj.edgedata.first;
   }
-  */ 
 
-  bool operator<(edge<key_type, val_type>& compared_obj) const {
-    //return edgedata.first < compared_obj.first;
-    return true;
+  bool operator<(const edge<key_type, val_type>& compared_obj) const {
+    return edgedata.first < compared_obj.edgedata.first;
   }
 
   std::pair<key_type, val_type> edgedata;
