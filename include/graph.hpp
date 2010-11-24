@@ -55,6 +55,8 @@ class Graph {
 
         for (std::vector< edge<std::string, std::string> >::iterator j = i->second.begin(); j != i->second.end(); ++j) {
 
+          if (j->key().empty()) continue;
+
           int link_weight;
           from_string<int>(link_weight, j->value(), std::dec);
           
@@ -68,7 +70,7 @@ class Graph {
     }
 
     const it_v each() {
-      static typename ty_graph::iterator current = graph.end();
+      static it_v current = graph.end();
 
       current++;
       if (current == graph.end()) current = graph.begin();
@@ -76,7 +78,7 @@ class Graph {
       return current;
     }
 
-    void check() {
+    void check() const {
       std::cout << graph.size() << std::endl;
       for (typename ty_graph::iterator i = graph.begin(); i != graph.end(); ++i) { 
         std::cout << i->first << std::endl;
@@ -89,7 +91,15 @@ class Graph {
     }
 
     const unsigned int& degree_of(const key_type& key) {
-      return 0;
+      return graph[key].size();
+    }
+
+    const unsigned int degree_of(it_v target) const {
+      return target->second.size();
+    }
+
+    const unsigned int vtotal() const {
+      return graph.size();
     }
 
     Graph() {}
