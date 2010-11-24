@@ -41,10 +41,11 @@ namespace {
 template <class key_type, class val_type>
 class Graph {
 
-  typedef std::map< key_type, std::set< edge<key_type, val_type> > > ty_graph;
   public:
+    typedef std::map< key_type, std::set< edge<key_type, val_type> > > ty_graph;
+    typedef typename ty_graph::iterator it_v;
+    
     bool gen(const std::string& path) {
-
       if (!parser.doc(path)) { std::cout << "not found.\n"; }
       
       ty_labellist labellist = parser.eval_each();
@@ -66,6 +67,15 @@ class Graph {
       return true;
     }
 
+    const it_v each() {
+      static typename ty_graph::iterator current = graph.end();
+
+      current++;
+      if (current == graph.end()) current = graph.begin();
+      
+      return current;
+    }
+
     void check() {
       std::cout << graph.size() << std::endl;
       for (typename ty_graph::iterator i = graph.begin(); i != graph.end(); ++i) { 
@@ -82,13 +92,11 @@ class Graph {
       return 0;
     }
 
-    Graph() {
-    }
-
+    Graph() {}
     ~Graph() {}
 
   private:
-    //std::map<key_type, std::set< edge<key_type, val_type> > > graph;
     ty_graph graph;
     Parser parser;
 };
+
