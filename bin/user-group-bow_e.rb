@@ -31,7 +31,7 @@ open("/home/kamei/workspace/dataset/group_v"){|f|
     end
 
     open("/home/kamei/workspace/dataset/user-groupbow_v","a"){|f|
-      f.print "#{id} "
+      f.print "#{@id} "
       @gbow.each{|w,c|
         f.print "#{w}:#{c} "
       }
