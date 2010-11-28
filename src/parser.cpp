@@ -74,6 +74,34 @@ bool Parser::doc(const std::string& path) {
   return true;
 }
 
+bool Parser::doc(const std::string& path, const unsigned int& line_limit) {
+
+  std::ifstream ifs;
+  ifs.exceptions(std::ifstream::eofbit | std::ifstream::failbit | std::ifstream::badbit);
+
+  try {
+    ifs.open(path.c_str());
+
+    /// [Bug] NOT catched "File not found".
+    if (!ifs || !ifs.is_open()) return false;
+    
+    while (ifs && !ifs.eof()) {
+      std::string buffer;
+      getline(ifs, buffer);
+      
+      document.push_back(buffer);
+
+      if (document.size() >= line_limit) break;
+    }
+    ifs.close();
+  }
+  catch (std::ifstream::failure e) {
+    std::cout << e.what() << std::endl;
+  }
+
+  return true;
+}
+
 void Parser::stat() {
   std::cout << "Lines >> " << document.size() << std::endl;
 }
