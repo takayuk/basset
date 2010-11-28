@@ -1,20 +1,23 @@
-APPNAME = 'basset'
-VERSION = '0.0.1'
+APPNAME = 'test-project'
+VERSION = '1.0.0'
 
-srcdir = '.'
-blddir = 'build'
+top = 'src'
+out = 'build'
 
-def set_options(opt):
+def options(opt):
   opt.tool_options('compiler_cxx')
+  pass
 
 def configure(conf):
   conf.check_tool('compiler_cxx')
+  pass
 
 def build(bld):
   bld(features = 'cxx cprogram',
-      souce = ['eval/topic_groups.cpp', 'src/parser.cpp'],
-      target = 'bin/topic_groups')
+      source = 'eval/topic_groups.cpp',
+      target = 'test')
+  pass
 
 def shutdown(ctx):
-  print "shutdown"
+  pass
 

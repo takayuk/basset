@@ -1,0 +1,15 @@
+# project test-project (1.0.0) configured on Sun Nov 28 21:41:19 2010 by
+# waf 1.6.1 (abi 98, python 20403f0 on linux2)
+# using ./waf configure
+#
+----------------------------------------
+Setting top to
+/home/kamei/workspace/basset/src
+----------------------------------------
+Setting out to
+/home/kamei/workspace/basset/build
+----------------------------------------
+Checking for 'g++' (c++ compiler)
+find program=['g++', 'c++'] paths=['/usr/kerberos/bin', '/usr/local/bin', '/bin', '/usr/bin', '/home/kamei/local/bin/', '/home/kamei/bin'] var='CXX' -> '/usr/bin/g++'
+find program=['ar'] paths=['/usr/kerberos/bin', '/usr/local/bin', '/bin', '/usr/bin', '/home/kamei/local/bin/', '/home/kamei/bin'] var='AR' -> '/usr/bin/ar'
+ok
