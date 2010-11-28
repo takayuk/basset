@@ -16,23 +16,8 @@
 #include <map>
 #include <set>
 
-/*
-class EdgeFinder {
-
-  public:
-    bool operator () (const ty_edge& edge) {
-      return edge.first == query;
-    }
-
-    EdgeFinder(const string& query): query(query) {}
-
-    string query;
-};
-*/
-
 namespace {
-  template <class T> bool from_string(T& t, const std::string& s, std::ios_base& (*f)(std::ios_base&))
-  {
+  template <class T> bool from_string(T& t, const std::string& s, std::ios_base& (*f)(std::ios_base&)) {
     std::istringstream iss(s);
     return !(iss >> f >> t).fail();
   }
@@ -42,6 +27,7 @@ template <class key_type, class val_type>
 class Graph {
 
   public:
+    typedef std::set< edge<key_type, val_type> > ty_edgeset;
     typedef std::map< key_type, std::set< edge<key_type, val_type> > > ty_graph;
     typedef typename ty_graph::iterator it_v;
     typedef typename std::set< edge<key_type, val_type> >::iterator it_e;
@@ -106,11 +92,14 @@ class Graph {
     const it_v each() {
       static it_v current = graph.end();
 
-      //current++;
       if (current == graph.end()) current = graph.begin();
       else current++;
       
       return current;
+    }
+
+    ty_edgeset edgeset_of(const key_type& key) {
+      return graph[key];
     }
 
     void check() const {
@@ -131,6 +120,16 @@ class Graph {
 
     const unsigned int degree_of(it_v target) const {
       return target->second.size();
+    }
+
+    unsigned int deg_total() {
+      unsigned int degree = 0;
+      
+      for (typename ty_graph::const_iterator i = graph.begin(); i != graph.end(); ++i) {
+        degree += i->second.size();
+      }
+
+      return degree;
     }
 
     const unsigned int vtotal() const {

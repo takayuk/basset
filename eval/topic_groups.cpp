@@ -21,7 +21,17 @@ int main(int argc, char* argv[]) {
   for (; user_ve->valid(v); v = user_ve->each()) {
 
     mygraph::it_e e = v->second.begin();
+    for (; e != v->second.end(); ++e) {
+
+      mygraph::ty_edgeset w = tfreq->edgeset_of(e->key());
+      mygraph::it_e ww = w.begin();
+      for (; ww != w.end(); ++ww) {
+        std::cout << ww->key() << ww->weight() << std::endl;
+      }
+    }
   }
+
+  std::cout << tfreq->deg_total() << std::endl;
  
   //Graph<std::string, int>* gbow = new Graph<std::string, int>;
   //gbow->gen(data_dir+"group-bow_v");
