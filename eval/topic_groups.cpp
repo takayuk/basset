@@ -9,8 +9,12 @@ int main(int argc, char* argv[]) {
 
   Graph<std::string, int>* tfreq = new Graph<std::string, int>;
   tfreq->gen(data_dir+"user-groupbow-freq_e");
+
+  Graph<std::string, int>* gbow = new Graph<std::string, int>;
+  gbow->gen(data_dir+"group-bow_v");
  
   delete ug;
   delete tfreq;
+  delete gbow;
 }
 
