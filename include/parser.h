@@ -3,7 +3,7 @@
  *
  * Last updated
  * by takayu-k
- * at 2010年 11月 16日 火曜日 19:33:56 JST
+ * at 2010年 11月 28日 日曜日 17:43:20 JST
 */
 
 #pragma once
@@ -20,25 +20,16 @@
 #include <vector>
 
 
-/*
-namespace {
-  template <class T> bool from_string(T& t, const std::string& s, std::ios_base& (*f)(std::ios_base&))
-  {
-    std::istringstream iss(s);
-    return !(iss >> f >> t).fail();
-  }
-}
-*/
-
 typedef std::map<std::string, std::vector< edge<std::string, std::string> > > ty_labellist;
-//typedef std::list<std::string, std::list< edge<std::string, std::string> > > ty_labellist;
-//typedef std::vector<std::string, std::list< edge<std::string, std::string> > > ty_labellist;
 
 class Parser {
 
   public:
     ty_labellist eval_each();
+
     bool doc(const std::string& path);
+    bool doc(const std::string& path, const unsigned int& line_limit);
+
     void stat();
     void clear();
     Parser();
