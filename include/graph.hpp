@@ -102,6 +102,10 @@ class Graph {
       return graph[key];
     }
 
+    ty_edgeset edgeset_of(const it_v& key) {
+      return graph[key->first];
+    }
+
     void check() const {
       std::cout << graph.size() << std::endl;
       for (typename ty_graph::iterator i = graph.begin(); i != graph.end(); ++i) { 
