@@ -91,7 +91,7 @@ bool Parser::doc(const std::string& path, const unsigned int& line_limit) {
       
       document.push_back(buffer);
 
-      if (document.size() > line_limit) break;
+      if (document.size() >= line_limit) break;
     }
     ifs.close();
   }

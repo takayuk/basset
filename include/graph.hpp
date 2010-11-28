@@ -106,8 +106,9 @@ class Graph {
     const it_v each() {
       static it_v current = graph.end();
 
-      current++;
+      //current++;
       if (current == graph.end()) current = graph.begin();
+      else current++;
       
       return current;
     }

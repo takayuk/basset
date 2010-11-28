@@ -7,13 +7,22 @@ int main(int argc, char* argv[]) {
   typedef Graph<std::string, int> mygraph;
 
   Graph<std::string, int>* user_ve = new Graph<std::string, int>;
-  user_ve->gen(data_dir+"user_ve", 10);
+  user_ve->gen(data_dir+"user_ve", 1);
   //Graph<std::string, int>* ug = new Graph<std::string, int>;
   //ug->gen(data_dir+"id-user-group_e");
+  std::cout << user_ve->vtotal() << std::endl;
 
   Graph<std::string, int>* tfreq = new Graph<std::string, int>;
-  tfreq->gen(data_dir+"user-groupbow-freq_e");
+  tfreq->gen(data_dir+"group-bow_e");
+  
+  std::cout << tfreq->vtotal() << std::endl;
 
+  mygraph::it_v v = user_ve->each();
+  for (; user_ve->valid(v); v = user_ve->each()) {
+
+    mygraph::it_e e = v->second.begin();
+  }
+ 
   //Graph<std::string, int>* gbow = new Graph<std::string, int>;
   //gbow->gen(data_dir+"group-bow_v");
 
@@ -36,7 +45,7 @@ int main(int argc, char* argv[]) {
 
   delete user_ve;
   //delete ug;
-  //delete tfreq;
+  delete tfreq;
   //delete gbow;
 }
 
