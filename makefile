@@ -7,6 +7,9 @@ TEST=./test/
 EVAL=./eval/
 #TESTBIN=./tbin/
 
+topic-gbow: $(EVAL)topic_groups.cpp
+	g++ $(CFLAGS) $(EVAL)topic_groups.cpp $(SRC)parser.cpp -I$(INC) -o $(BIN)topic-gbow
+
 cooccs: $(EVAL)co-occur-tags.cpp
 	g++ $(CFLAGS) $(EVAL)co-occur-tags.cpp -o $(BIN)cooccs
 tgraph: $(TEST)graph.cpp
