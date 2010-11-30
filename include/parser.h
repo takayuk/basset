@@ -30,6 +30,8 @@ class Parser {
     bool doc(const std::string& path);
     bool doc(const std::string& path, const unsigned int& line_limit);
 
+    bool out(const std::string& path);
+
     void stat();
     void clear();
     Parser();

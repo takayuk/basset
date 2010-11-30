@@ -157,3 +157,16 @@ class Graph {
     Parser parser;
 };
 
+/*
+namespace grapheval {
+  template <class __graph, class __edgeset> __graph::ty_edgeset gather_from(__graph* g, __edgeset queries) {
+
+    __graph::ty_edgeset result;
+    //for (__edgeset::iterator i = queries.begin(); i != queries.end(); ++i) {
+    //}
+
+    return result;
+  }
+}
+*/
+
