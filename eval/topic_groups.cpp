@@ -6,6 +6,7 @@ int main(int argc, char* argv[]) {
 
   typedef Graph<std::string, int> mygraph;
 
+  /// Sample user.
   mygraph::it_v sample; {
     Graph<std::string, int>* user_ve = new Graph<std::string, int>;
     user_ve->gen(data_dir+"user_ve", 1);
@@ -13,6 +14,7 @@ int main(int argc, char* argv[]) {
     delete user_ve;
   }
 
+  /// Group BOW-tfreq of sample user.
   mygraph::ty_edgeset s; {
     Graph<std::string, int>* tfreq = new Graph<std::string, int>;
     tfreq->gen(data_dir+"group-bow_e");
@@ -20,6 +22,7 @@ int main(int argc, char* argv[]) {
     delete tfreq;
   }
 
+  /// tfreq > 1 BOW list of sample user.
   mygraph::ty_edgeset occt;
   for (mygraph::it_e se = s.begin(); se != s.end(); ++se) {
     if (se->weight() > 1) {

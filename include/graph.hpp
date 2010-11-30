@@ -29,6 +29,7 @@ class Graph {
   public:
     typedef std::set< edge<key_type, val_type> > ty_edgeset;
     typedef std::map< key_type, std::set< edge<key_type, val_type> > > ty_graph;
+
     typedef typename ty_graph::iterator it_v;
     typedef typename std::set< edge<key_type, val_type> >::iterator it_e;
    
