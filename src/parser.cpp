@@ -1,4 +1,5 @@
 /**
+ *
  * Text parser for default link format.
  *
  * Last updated
@@ -99,6 +100,35 @@ bool Parser::doc(const std::string& path, const unsigned int& line_limit) {
     std::cout << e.what() << std::endl;
   }
 
+  return true;
+}
+
+bool Parser::out(const std::string& path) {
+
+  FILE* fp = fopen(path.c_str(), "wb");
+  if (fp) {
+    std::string buffer("");
+    for (std::list<std::string>::iterator i = document.begin(); i != document.end(); ++i) {
+      buffer += (*i) + "\t";
+    }
+    fwrite(buffer.c_str(), sizeof(char), buffer.size(), fp);
+    fclose(fp);
+  }
+
+  /*
+  std::ofstream ofs;
+  ofs.open(path.c_str(), std::ios::out | std::ios::binary);
+
+  if (!ofs) return false;
+
+  std::string buffer("");
+  for (std::list<std::string>::iterator i = document.begin(); i != document.end(); ++i) {
+    buffer += (*i);
+  }
+  ofs << buffer;
+
+  ofs.close();
+  */
   return true;
 }
 

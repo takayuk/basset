@@ -29,6 +29,7 @@ class Graph {
   public:
     typedef std::set< edge<key_type, val_type> > ty_edgeset;
     typedef std::map< key_type, std::set< edge<key_type, val_type> > > ty_graph;
+
     typedef typename ty_graph::iterator it_v;
     typedef typename std::set< edge<key_type, val_type> >::iterator it_e;
    
@@ -155,4 +156,17 @@ class Graph {
     ty_graph graph;
     Parser parser;
 };
+
+/*
+namespace grapheval {
+  template <class __graph, class __edgeset> __graph::ty_edgeset gather_from(__graph* g, __edgeset queries) {
+
+    __graph::ty_edgeset result;
+    //for (__edgeset::iterator i = queries.begin(); i != queries.end(); ++i) {
+    //}
+
+    return result;
+  }
+}
+*/
 
