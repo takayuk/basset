@@ -64,9 +64,6 @@ end
   @lmat_.each{|v|@m+=v.values.size/2}
   @m.freeze
 
-  # --- Following variables is mutable. ---
-
-  # Initialize topic cluster.
   @cluster=Hash.new(0)
   @gv.each_with_index{|v,i| @cluster[i]=Array.new(1,i) }
   @csize=@cluster.size.freeze
@@ -76,7 +73,6 @@ end
     vset.each{|vid| @a[i]+=@lmat_[vid].values.inject(0){|t,a|t+a}}
   }
 
-  # new dQ matrix and search Max-dQ
   @dq=Array.new(@csize){Hash.new(0)}
   @maxelem={[0,0]=>0.0}
   for i in 0..@csize-1
@@ -89,31 +85,44 @@ end
 
   # Merge cluster
   @mergeij=@maxelem.keys.first
-  @cluster[@mergeij[1]]+=@cluster[@mergeij[0]]
-  @cluster.delete(@mergeij[0])
- 
-  # Update a[]
-  @a[@mergeij[1]]+=@a[@mergeij[0]]
-  @a[@mergeij[0]]=0
 
-  # for Q-Value
-  @e=Array.new(@vsize,0.0)
-  @cluster.each{|i,vset|
-    @lmat_.each_with_index{|vset,v|
-      vset.keys.each{|w|
-        if @cluster[i].include?(v) && @cluster[i].include?(w)
-          @e[i]+=@lmat_[v][w]
-        end
+  while @cluster.size>2
+
+    @jj=@mergeij[1]
+    @ii=@mergeij[0]
+
+    @cluster.each{|k,vset|
+  
+      
+    }
+    
+    @cluster[@mergeij[1]]+=@cluster[@mergeij[0]]
+    @cluster.delete(@mergeij[0])
+    
+    
+    # Update a[]
+    @a[@mergeij[1]]+=@a[@mergeij[0]]
+    @a[@mergeij[0]]=0
+
+    # for Q-Value
+    @e=Array.new(@vsize,0.0)
+    @cluster.each{|i,vset|
+      @lmat_.each_with_index{|vset,v|
+        vset.keys.each{|w|
+          if @cluster[i].include?(v) && @cluster[i].include?(w)
+            @e[i]+=@lmat_[v][w]
+          end
+        }
       }
     }
-  }
-  @Q=0
-  @cluster.each{|i,vset|
-    @Q+=@e[i]-(@a[i]**2)
-  }
+    @Q=0
+    @cluster.each{|i,vset|
+      @Q+=@e[i]-(@a[i]**2)
+    }
 
 
-  break
+    break
+  end
 =begin
   $maxq = -10000000.0
   $maxcluster = []
