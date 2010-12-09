@@ -62,22 +62,24 @@ end
   @lmat_.each{|v|@m+=v.values.size/2}
   @m.freeze
 
-  @cluster=Hash.new(0)
+  #@cluster=Hash.new(0)
   @acluster=Array.new(@vsize){|v|[v,[v]]}
   
-  @gv.each_with_index{|v,i| @cluster[i]=Array.new(1,i) }
-  @csize=@cluster.size
- 
+  #@gv.each_with_index{|v,i| @cluster[i]=Array.new(1,i) }
+  #@csize=@cluster.size
+
+=begin
   @a=Array.new(@csize,0.0)
   @cluster.each{|i,vset|
     vset.each{|vid| @a[i]+=@lmat_[vid].values.inject(0){|t,a|t+a}}
   }
- 
+=end 
   @aa=Array.new(@csize,0.0)
   @acluster.each_with_index{|vset,i|
     vset[1].each{|vid|@aa[i]+=@lmat_[vid].values.inject(0){|t,a|t+a}}
   }
 
+=begin
   @dq=Array.new(@csize){Hash.new(0)}
   for i in 0..@csize-1
     @lmat_[i].each{|j,w|
@@ -85,6 +87,7 @@ end
       @dq[i].store(j,@q)
     }
   end
+=end
 
   @dq2=Array.new(@csize){Hash.new(0)}
   for i in 0..@csize-1
@@ -137,12 +140,11 @@ end
     @cluster.delete(@mergeij[0])
     @acluster.delete_at(@mergeij[0])
 
-  
+=begin
     for i in 0..@acluster.size-1
       @acluster[i][0]=i
     end
-    p @acluster
-
+=end
     @dq.delete(@ii)
     @dq.each{|vset|
       vset.reject!{|v,w|v==@ii}
@@ -153,12 +155,16 @@ end
     @a[@mergeij[0]]=0
 
     # for Q-Value
-    @e=Array.new(@vsize,0.0)
+    @e=Array.new(@cluster.size,0.0)
     #@cluster.each{|i,vset|
     @acluster.each_with_index{|cluster,i|
-      @lmat_.each_with_index{|vset,v|
-        vset.keys.each{|w|
-          if @cluster[i].include?(v) && @cluster[i].include?(w)
+     
+      #@lmat_.each_with_index{|vset,v|
+      @lmat_.each_with_index{|_,v|
+        #vset.keys.each{|w|
+        _.keys.each{|w|
+          #if @cluster[i].include?(v) && @cluster[i].include?(w)
+          if @acluster[i].include?(v) && @acluster[i].include?(w)
             @e[i]+=@lmat_[v][w]
           end
         }
