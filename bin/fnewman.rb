@@ -92,13 +92,25 @@ end
     @ii=@mergeij[0]
 
     @cluster.each{|k,vset|
-  
-      
+
+      vset.each{|v|
+        if !(@lmat_[v].keys&@cluster[@ii]).empty? && !(@lmat_[v].keys&@cluster[@jj]).empty?
+          @dq[@jj][k]+=@dq[@ii][k]
+        elsif !(@lmat_[v].keys&@cluster[@ii]).empty?
+          @dq[@jj][k]=@dq[@ii][k]-(2*@a[@jj]*@a[k])
+        elsif !(@lmat_[v].keys&@cluster[@jj]).empty?
+          @dq[@jj][k]=@dq[@jj][k]-(2*@a[@ii]*@a[k])
+        end
+      }
     }
     
     @cluster[@mergeij[1]]+=@cluster[@mergeij[0]]
     @cluster.delete(@mergeij[0])
-    
+
+    @dq.delete(@ii)
+    @dq.each{|vset|
+      vset.reject!{|v,w|v==@ii}
+    }
     
     # Update a[]
     @a[@mergeij[1]]+=@a[@mergeij[0]]
@@ -120,90 +132,8 @@ end
       @Q+=@e[i]-(@a[i]**2)
     }
 
-
     break
   end
-=begin
-  $maxq = -10000000.0
-  $maxcluster = []
-
-  #while cluster.size > 1 do
-  while cluster.size > 2 do
-    p cluster.size
-
-    e.each {|v| v.clear}.clear
-    a.clear
-    dq.each {|v| v.clear}.clear
-
-    e = Array.new(cluster.size) {|v| v = Array.new(cluster.size, 0.0)}
-    cluster.each_with_index {|u, ii|
-      cluster.each_with_index {|v, jj|
-
-        edge = 0
-        u[1].each {|i|
-          v[1].each {|j|
-            #edge += @lmat[@gv.index(i)][@gv.index(j)]
-            edge += @lmat[i][j]
-          }
-        }
-
-        e[ii][jj] = edge.to_f / m.to_f
-        e[ii][jj] /= 2.0 if ii == jj
-      }
-    }
-
-    a = Array.new(e.size, 0.0)
-    for i in 0..(a.size - 1)
-      for k in 0..(e[i].size - 1)
-        a[i] += e[i][k]
-      end
-    end
-
-    q = 0.0
-    for i in 0..(e.size - 1)
-      q += e[i][i] - (a[i] ** 2)
-    end
-    if q > $maxq then
-      $maxq = q
-      $maxcluster = cluster.clone
-    end
-
-    dq = Array.new(e.size) {|v| v = Array.new(e.size, 0.0)}
-    for i in 0..(dq.size - 1)
-      for j in 0..(dq[i].size - 1)
-        dq[i][j] = 2.0 * (e[i][j] - (a[i] * a[j]))
-      end
-    end
-
-    dqmax = -100000000.0 
-    for i in 0..(dq.size - 1)
-      for j in 0..(dq[i].size - 1)
-        next if i == j
-        if dq[i][j] > dqmax then
-          maxi = i
-          maxj = j
-          dqmax = dq[i][j]
-        end
-      end
-    end
-
-    cluster[maxj] += cluster[maxi]
-    cluster.delete(maxi)
-
-    x = cluster.clone
-    cluster.clear
-    x.each_with_index {|c, i| cluster[i] = c[1].clone}
-    x.clear
-  end
-
-  # Load graph-v 
-  open("cluster/#{@user}-bowcluster_e","w"){|f|
-    $maxcluster.each{|kk,vv|
-      @line=""
-      vv.each{|w|@line+=@gv[w]+":1 "}
-      f.puts "#{kk} #{@line}"
-    }
-  }
-=end
+  break
 }
 
