@@ -2,8 +2,6 @@
 # -*- encoding: utf-8 -*-
 # -*- coding: utf-8 -*-
 
-#require"narray"
-
 def parse path
   @h=Hash.new(0)
   open(path).readlines.map{|x|
@@ -18,7 +16,7 @@ def deep_copy obj
   Marshal.load(Marshal.dump(obj))
 end
 
-#@ugh=parse("user-group_e")
+
 @ugh=parse("/home/kamei/workspace/dataset/head1/user-group_e")
 @gbh=parse("/home/kamei/workspace/dataset/head1/groupname-bow_e")
 
@@ -65,47 +63,85 @@ end
   @m.freeze
 
   @cluster=Hash.new(0)
+  @acluster=Array.new(@vsize){|v|[v,[v]]}
+  
   @gv.each_with_index{|v,i| @cluster[i]=Array.new(1,i) }
-  @csize=@cluster.size.freeze
+  @csize=@cluster.size
  
   @a=Array.new(@csize,0.0)
   @cluster.each{|i,vset|
     vset.each{|vid| @a[i]+=@lmat_[vid].values.inject(0){|t,a|t+a}}
   }
+ 
+  @aa=Array.new(@csize,0.0)
+  @acluster.each_with_index{|vset,i|
+    vset[1].each{|vid|@aa[i]+=@lmat_[vid].values.inject(0){|t,a|t+a}}
+  }
 
   @dq=Array.new(@csize){Hash.new(0)}
-  @maxelem={[0,0]=>0.0}
   for i in 0..@csize-1
     @lmat_[i].each{|j,w|
       @q=(@m/2.0)-(@a[i]*@a[j]).freeze
       @dq[i].store(j,@q)
-      @maxelem={[i,j]=>@q} if @maxelem.values.first < @q
     }
   end
 
-  # Merge cluster
-  @mergeij=@maxelem.keys.first
+  @dq2=Array.new(@csize){Hash.new(0)}
+  for i in 0..@csize-1
+    @lmat_[i].each{|j,w|
+      @q=(@m/2.0)-(@aa[i]*@a[j]).freeze
+      @dq2[i].store(j,@q)
+    }
+  end
 
-  while @cluster.size>2
+  #while @cluster.size>2
+  while @acluster.size>2
+
+    @maxelem={[0,0]=>0.0}
+    #@dq.each_with_index{|jset,i|
+    @dq2.each_with_index{|jset,i|
+      next if jset.empty?
+      @max=jset.max
+      @maxelem={[i,@max[0]]=>@max[1]} if @maxelem.values.first < @max[1]
+    }
+
+    # Merge cluster
+    @mergeij=@maxelem.keys.first
 
     @jj=@mergeij[1]
     @ii=@mergeij[0]
 
-    @cluster.each{|k,vset|
+    # Update dQ.
+    #@cluster.each{|k,vset|
+    #@cluster.each_with_index{|vset,k|
+    @acluster.each_with_index{|vset,k|
 
-      vset.each{|v|
-        if !(@lmat_[v].keys&@cluster[@ii]).empty? && !(@lmat_[v].keys&@cluster[@jj]).empty?
+      #vset.each{|v|
+      vset[1].each{|v|
+        #if !(@lmat_[v].keys & @cluster[@ii]).empty? && !(@lmat_[v].keys & @cluster[@jj]).empty?
+        if !(@lmat_[v].keys & @acluster[@ii][1]).empty? && !(@lmat_[v].keys & @acluster[@jj][1]).empty?
           @dq[@jj][k]+=@dq[@ii][k]
-        elsif !(@lmat_[v].keys&@cluster[@ii]).empty?
+        #elsif !(@lmat_[v].keys&@cluster[@ii]).empty?
+        elsif !(@lmat_[v].keys&@acluster[@ii][1]).empty?
           @dq[@jj][k]=@dq[@ii][k]-(2*@a[@jj]*@a[k])
-        elsif !(@lmat_[v].keys&@cluster[@jj]).empty?
+        #elsif !(@lmat_[v].keys&@cluster[@jj]).empty?
+        elsif !(@lmat_[v].keys&@acluster[@jj][1]).empty?
           @dq[@jj][k]=@dq[@jj][k]-(2*@a[@ii]*@a[k])
         end
       }
     }
     
     @cluster[@mergeij[1]]+=@cluster[@mergeij[0]]
+    @acluster[@mergeij[1]][1]+=@acluster[@mergeij[0]][1]
+
     @cluster.delete(@mergeij[0])
+    @acluster.delete_at(@mergeij[0])
+
+  
+    for i in 0..@acluster.size-1
+      @acluster[i][0]=i
+    end
+    p @acluster
 
     @dq.delete(@ii)
     @dq.each{|vset|
@@ -118,7 +154,8 @@ end
 
     # for Q-Value
     @e=Array.new(@vsize,0.0)
-    @cluster.each{|i,vset|
+    #@cluster.each{|i,vset|
+    @acluster.each_with_index{|cluster,i|
       @lmat_.each_with_index{|vset,v|
         vset.keys.each{|w|
           if @cluster[i].include?(v) && @cluster[i].include?(w)
@@ -132,7 +169,6 @@ end
       @Q+=@e[i]-(@a[i]**2)
     }
 
-    break
   end
   break
 }
