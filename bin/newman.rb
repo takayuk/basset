@@ -62,10 +62,57 @@ end
   }
 
   @m=0.0
-  @lmat.each{|v|@m+=v.values.size/2}
+  #@lmat.each{|v|@m+=v.values.size/2}
+  @lmat.each{|v|@m+=v.keys.size}
   @m.freeze
 
   @cluster=Array.new(@vsize){|v|[v]}
+
+  while @cluster.size > 1
+    @e_=Array.new(@cluster.size){Hash.new(0)}
+    for i in 0..@cluster.size-1
+      for j in 0..@cluster.size-1
+        @linktotal=0
+        @cluster[i].each{|vi|
+          @cluster[j].each{|vj|
+            @linktotal+=@lmat[vi][vj]
+          }
+        }
+        @e_[i].store(j,@linktotal/@m) if @linktotal > 0
+      end
+    end
+
+    @a_=Array.new(@cluster.size,0)
+    for i in 0..@cluster.size-1
+      @e_[i].each{|j,w| @a_[i]+=w}
+    end
+
+    @dqmax=[nil,nil,0]
+    for i in 0..@cluster.size-1
+      @e_[i].each{|j,w|
+        @dq=2*(w-(@a_[i]*@a_[j]))
+        @dqmax=[i,j,@dq] if @dqmax[2] < @dq
+      }
+    end
+    p @dqmax
+
+    @cluster[@dqmax[0]].each{|vi|
+      @cluster[@dqmax[1]].each{|vj|
+        @lmat[vi][vj]=@lmat[vj][vi]=0
+      }
+    }
+    @cluster[@dqmax[1]]+=@cluster[@dqmax[0]]
+    @cluster.delete_at(@dqmax[0])
+    @q=0
+    for i in 0..@cluster.size-1
+      @e_[i].each{|j,w|
+        @q+=@e_[i][i]-(@a_[i]**2)
+      }
+    end
+    p @q
+  end
+
+  break
 
   @qmax=0
   @last=[]
@@ -73,7 +120,7 @@ end
 
     @e=Array.new(@cluster.size){Hash.new(0)}
 
-    @dqmax=[0,0,0]
+    @dqmax=[nil,nil,0]
     @a=Array.new(@cluster.size,0.0)
     for i in 0..@cluster.size-1
       for j in 0..@cluster.size-1
@@ -86,7 +133,6 @@ end
         }
         @w/=@m
     
-        #@e[i].store(j,@w) if @w > 0.0
         @e[i].store(j,@w) if @w > 0.0
        
         @dqmax=[i,j,@w] if @dqmax[2] < @w
@@ -94,20 +140,32 @@ end
         @a[i]+=@w
       end
     end
+
+    break unless @dqmax[2]>0.0
+    next if @dqmax[0]==@dqmax[1]
+
     @cluster[@dqmax[1]]+=@cluster[@dqmax[0]]
     @cluster.delete_at(@dqmax[0])
-    
-    p @cluster[@dqmax[1]]
-    break
-    @q=0
+    #p @cluster,@dqmax
+
+    @q=0.0
     for i in 0..@cluster.size-1
+      for j in @e[i].keys
+        if i == j
+          @q+=@e[i][j] - (@a[i]**2)
+        end
+      end
+=begin
       if @e[i][i] > 0.0
         @q+=@e[i][i] - (@a[i]**2)
       end
+=end
     end
+    p @q
+    
     if @qmax < @q
       @qmax=@q
-      @last=@cluster.clone
+      @last=@cluster
     end
   end
   p @qmax,@last
