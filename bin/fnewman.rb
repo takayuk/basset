@@ -62,49 +62,25 @@ end
   @lmat_.each{|v|@m+=v.values.size/2}
   @m.freeze
 
-  #@cluster=Hash.new(0)
-  @acluster=Array.new(@vsize){|v|[v,[v]]}
+  @cluster=Array.new(@vsize){|v|[v,[v]]}
   
-  #@gv.each_with_index{|v,i| @cluster[i]=Array.new(1,i) }
-  #@csize=@cluster.size
-
-=begin
-  @a=Array.new(@csize,0.0)
-  @cluster.each{|i,vset|
-    vset.each{|vid| @a[i]+=@lmat_[vid].values.inject(0){|t,a|t+a}}
-  }
-=end 
-  @aa=Array.new(@acluster.size,0.0)
-  @acluster.each_with_index{|vset,i|
-    vset[1].each{|vid|@aa[i]+=@lmat_[vid].values.inject(0){|t,a|t+a}}
+  @a=Array.new(@cluster.size,0.0)
+  @cluster.each_with_index{|vset,i|
+    vset[1].each{|vid|@a[i]+=@lmat_[vid].values.inject(0){|t,a|t+a}}
   }
 
-=begin
-  @dq=Array.new(@csize){Hash.new(0)}
-  for i in 0..@csize-1
+  @dq=Array.new(@cluster.size){Hash.new(0)}
+  for i in 0..@cluster.size-1
     @lmat_[i].each{|j,w|
       @q=(@m/2.0)-(@a[i]*@a[j]).freeze
       @dq[i].store(j,@q)
     }
   end
-=end
 
-  #@dq2=Array.new(@csize){Hash.new(0)}
-  @dq2=Array.new(@acluster.size){Hash.new(0)}
-  #for i in 0..@csize-1
-  for i in 0..@acluster.size-1
-    @lmat_[i].each{|j,w|
-      @q=(@m/2.0)-(@aa[i]*@aa[j]).freeze
-      @dq2[i].store(j,@q)
-    }
-  end
-
-  #while @cluster.size>2
-  while @acluster.size>2
+  while @cluster.size>2
 
     @maxelem={[0,0]=>0.0}
-    #@dq.each_with_index{|jset,i|
-    @dq2.each_with_index{|jset,i|
+    @dq.each_with_index{|jset,i|
       next if jset.empty?
       @max=jset.max
       @maxelem={[i,@max[0]]=>@max[1]} if @maxelem.values.first < @max[1]
@@ -117,71 +93,56 @@ end
     @ii=@mergeij[0]
 
     # Update dQ.
-    #@cluster.each{|k,vset|
-    #@cluster.each_with_index{|vset,k|
-    @acluster.each_with_index{|vset,k|
+    @cluster.each_with_index{|vset,k|
 
-      #vset.each{|v|
       vset[1].each{|v|
-        if !(@lmat_[v].keys & @acluster[@ii][1]).empty? && !(@lmat_[v].keys & @acluster[@jj][1]).empty?
-          @dq2[@jj][k]+=@dq2[@ii][k]
-        elsif !(@lmat_[v].keys&@acluster[@ii][1]).empty?
-          @dq2[@jj][k]=@dq2[@ii][k]-(2*@aa[@jj]*@aa[k])
-        elsif !(@lmat_[v].keys & @acluster[@jj][1]).empty?
-          @dq2[@jj][k]=@dq2[@jj][k]-(2*@aa[@ii]*@aa[k])
+        if !(@lmat_[v].keys & @cluster[@ii][1]).empty? && !(@lmat_[v].keys & @cluster[@jj][1]).empty?
+          @dq[@jj][k]+=@dq[@ii][k]
+
+        elsif !(@lmat_[v].keys&@cluster[@ii][1]).empty?
+          @dq[@jj][k]=@dq[@ii][k]-(2*@a[@jj]*@a[k])
+
+        elsif !(@lmat_[v].keys & @cluster[@jj][1]).empty?
+          @dq[@jj][k]=@dq[@jj][k]-(2*@a[@ii]*@a[k])
         end
       }
     }
-    
-    #@cluster[@mergeij[1]]+=@cluster[@mergeij[0]]
-    @acluster[@mergeij[1]][1]+=@acluster[@mergeij[0]][1]
+    @cluster[@mergeij[1]][1]+=@cluster[@mergeij[0]][1]
 
-    #@cluster.delete(@mergeij[0])
-    #@acluster.delete_at(@mergeij[0])
-    @acluster[@mergeij[0]].clear
+    @cluster[@mergeij[0]].clear
 
-=begin
-    for i in 0..@acluster.size-1
-      @acluster[i][0]=i
+    for i in 0..@cluster.size-1
+      @cluster[i][0]=i
     end
-=end
     
-    #@dq.delete(@ii)
-    @dq2.delete(@ii)
-=begin 
+    @dq.delete(@ii)
     @dq.each{|vset|
       vset.reject!{|v,w|v==@ii}
     }
-=end
-    @dq2.each{|vset|
-      vset.reject!{|v,w|v==@ii}
-    }
+    
     # Update a[]
-    #@a[@mergeij[1]]+=@a[@mergeij[0]]
-    @aa[@mergeij[1]]+=@aa[@mergeij[0]]
-    #@a[@mergeij[0]]=0
-    @aa[@mergeij[0]]=0
+    @a[@mergeij[1]]+=@a[@mergeij[0]]
+    @a[@mergeij[0]]=0
 
     # for Q-Value
-    @e=Array.new(@acluster.size,0.0)
-    #@cluster.each{|i,vset|
-    @acluster.each_with_index{|cluster,i|
+    @e=Array.new(@cluster.size,0.0)
+    @cluster.each_with_index{|cluster,i|
      
-      #@lmat_.each_with_index{|vset,v|
       @lmat_.each_with_index{|_,v|
-        #vset.keys.each{|w|
         _.keys.each{|w|
-          #if @cluster[i].include?(v) && @cluster[i].include?(w)
-          if @acluster[i].include?(v) && @acluster[i].include?(w)
+          if @cluster[i].include?(v) && @cluster[i].include?(w)
             @e[i]+=@lmat_[v][w]
           end
         }
       }
     }
     @Q=0
-    @acluster.each_with_index{|vset,i|
-      @Q+=@e[i]-(@aa[i]**2)
+    @cluster.each_with_index{|vset,i|
+      @Q+=@e[i]-(@a[i]**2)
     }
+    for i in 0..@cluster.size-1
+      @cluster[i][0]=i
+    end
   end
   break
 }
