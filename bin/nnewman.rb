@@ -15,8 +15,10 @@ end
 @ugh=parse("/home/kamei/workspace/dataset/head1/user-group_e")
 @gbh=parse("/home/kamei/workspace/dataset/head1/groupname-bow_e")
 
+require"narray"
+
 $processed=0
-@ugh.each{|user,group|
+@ugh.first(3).each{|user,group|
   p $processed+=1
   next if File.exists?("/home/kamei/workspace/dataset/cluster/#{user}-bowcluster_e")
  
@@ -46,24 +48,29 @@ $processed=0
   @gv=@th.keys.sort.freeze
   next if @gv.empty?
 
-  @lmat=Array.new(@gv.size){Hash.new(0)}
+  @lmat=NArray.object(@gv.size)
   @gv.each_with_index{|vv,i|
+    @lmat[i]=Hash.new(0)
     @th[vv].each_with_index{|lw,j|
       @lmat[i].store(@gv.index(lw[0]),lw[1].to_f)
     }
   }
 
-  @m=@lmat.map{|v|v.values.to_a}.flatten.inject(0){|t,a|t+a}.freeze
+  @m=0
+  for i in 0..@lmat.size-1
+    @m+=@lmat[i].values.inject(0){|t,a|t+a}
+  end
 
   @cluster=Array.new(@gv.size){|v|[v]}
 
   @qmax=-10000000
   @last=[]
   while @cluster.size > 1
-    printf("%d\r", @cluster.size)
+    print "#{@cluster.size} "
 
-    @e_=Array.new(@cluster.size){Hash.new(0)}
+    @e_=NArray.object(@cluster.size)
     for i in 0..@cluster.size-1
+      @e_[i]=Hash.new(0)
       for j in 0..@cluster.size-1
         @linktotal=0
         @cluster[i].each{|vi|
@@ -75,12 +82,12 @@ $processed=0
       end
     end
 
-    @a_=Array.new(@cluster.size,0)
+    @a_=NArray.float(@cluster.size)
     for i in 0..@cluster.size-1
       @e_[i].each{|j,w| @a_[i]+=w}
     end
 
-    @dqmax=[nil,nil,0]
+    @dqmax=NArray.to_na([-1000,-1000,-1000])
     for i in 0..@cluster.size-1
       @e_[i].each{|j,w|
         @dq=2*(w-(@a_[i]*@a_[j]))
@@ -94,21 +101,22 @@ $processed=0
           @lmat[vi][vj]=@lmat[vj][vi]=0
         }
       }
-      @cluster[@dqmax[1]]+=@cluster[@dqmax[0]]
-      @cluster.delete_at(@dqmax[0])
-      @q=0
-      for i in 0..@cluster.size-1
-        @e_[i].each{|j,w|
-          @q+=@e_[i][i]-(@a_[i]**2)
-        }
-      end
-
-      if @qmax < @q
-        @qmax=@q
-        @last=@cluster
-      end
     rescue
       break
+    end
+  
+    @cluster[@dqmax[1]]+=@cluster[@dqmax[0]]
+    @cluster.delete_at(@dqmax[0])
+    @q=0
+    for i in 0..@cluster.size-1
+      @e_[i].each{|j,w|
+        @q+=@e_[i][i]-(@a_[i]**2)
+      }
+    end
+
+    if @qmax < @q
+      @qmax=@q
+      @last=@cluster
     end
   end
 
