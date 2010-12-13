@@ -12,17 +12,15 @@ def parse path
   @h.clone
 end
 
-def deep_copy obj
-  Marshal.load(Marshal.dump(obj))
-end
-
-
 @ugh=parse("/home/kamei/workspace/dataset/head1/user-group_e")
 @gbh=parse("/home/kamei/workspace/dataset/head1/groupname-bow_e")
 
+$processed=0
 @ugh.each{|user,group|
-  @user=user.freeze
-  #next if File.exists?("cluster/#{@user}-bowcluster_e")
+  p $processed+=1
+  p $processed+=1
+ 
+  next if File.exists?("cluster/#{@user}-bowcluster_e")
  
   @th=Hash.new(0)
   group.each{|g|
@@ -50,22 +48,19 @@ end
   @gv=@th.keys.sort.freeze
   next if @gv.empty?
 
-  @vsize=@gv.size.freeze
-  @isize=(@vsize-1).freeze
-
-  @lmat=Array.new(@vsize){Hash.new(0)}
+  @lmat=Array.new(@gv.size){Hash.new(0)}
   @gv.each_with_index{|vv,i|
     @th[vv].each_with_index{|lw,j|
       @lmat[i].store(@gv.index(lw[0]),lw[1].to_f)
-      #@lmat[i].store(@gv.index(lw[0]),1.0)
     }
   }
 
   @m=@lmat.map{|v|v.values.to_a}.flatten.inject(0){|t,a|t+a}.freeze
 
-  @cluster=Array.new(@vsize){|v|[v]}
+  @cluster=Array.new(@gv.size){|v|[v]}
 
   @qmax=-10000000
+  @last=[]
   while @cluster.size > 1
     @e_=Array.new(@cluster.size){Hash.new(0)}
     for i in 0..@cluster.size-1
@@ -108,14 +103,23 @@ end
         }
       end
 
-      @qmax=@q if @qmax < @q
+      if @qmax < @q
+        @qmax=@q
+        @last=@cluster
+      end
     rescue
       break
     end
   end
 
-  p @qmax,@cluster
-
-  break
+  open("/home/kamei/workspace/dataset/cluster/#{user}-bowcluster_e","w"){|f|
+    @last.each{|cluster|
+      @bow=Array.new(cluster.size)
+      cluster.each_with_index{|bowid,i|
+        @bow[i]=@gv[bowid]
+      }
+      f.puts @bow.join(" ")
+    }
+  }
 }
 
