@@ -18,7 +18,7 @@ end
 require"narray"
 
 $processed=0
-@ugh.first(3).each{|user,group|
+@ugh.each{|user,group|
   p $processed+=1
   next if File.exists?("/home/kamei/workspace/dataset/cluster/#{user}-bowcluster_e")
  
