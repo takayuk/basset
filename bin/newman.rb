@@ -19,7 +19,7 @@ $processed=0
 @ugh.each{|user,group|
   p $processed+=1
  
-  next if File.exists?("/home/kamei/workspace/dataset/cluster/#{@user}-bowcluster_e")
+  next if File.exists?("/home/kamei/workspace/dataset/cluster/#{user}-bowcluster_e")
  
   @th=Hash.new(0)
   group.each{|g|
