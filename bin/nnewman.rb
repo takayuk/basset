@@ -21,9 +21,10 @@ $processed=0
 @ugh.each{|user,group|
   p $processed+=1
   next if File.exists?("/home/kamei/workspace/dataset/cluster/#{user}-bowcluster_e")
- 
+
+  puts "\t#{user}"
   @th=Hash.new(0)
-  group.each{|g|
+  group.each_with_index{|g,i|
     # Access to Group-BOW of group"g[0]".
     @gbh[g[0]].each{|f|
       @from=f[0]
@@ -63,10 +64,11 @@ $processed=0
 
   @cluster=Array.new(@gv.size){|v|[v]}
 
+  p "Clustering start."
   @qmax=-10000000
   @last=[]
   while @cluster.size > 1
-    print "#{@cluster.size} "
+    p @cluster.size
 
     @e_=NArray.object(@cluster.size)
     for i in 0..@cluster.size-1
