@@ -18,7 +18,6 @@ end
 $processed=0
 @ugh.each{|user,group|
   p $processed+=1
-  p $processed+=1
  
   next if File.exists?("cluster/#{@user}-bowcluster_e")
  
