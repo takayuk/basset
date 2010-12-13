@@ -61,6 +61,8 @@ $processed=0
   @qmax=-10000000
   @last=[]
   while @cluster.size > 1
+    printf("%d\r", @cluster.size)
+
     @e_=Array.new(@cluster.size){Hash.new(0)}
     for i in 0..@cluster.size-1
       for j in 0..@cluster.size-1
