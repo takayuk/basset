@@ -29,9 +29,8 @@ Dir.glob("/home/kamei/workspace/dataset/cluster/*_e").each{|pt|
 }
 
 @ugh.each{|user,group|
-  # Each user...
-
   next if @uch[user]==0
+  
   # User's gbow-list
   @n=Hash.new(0)
   group.flatten.reject{|v|v=="1"}.each{|gid|
@@ -54,6 +53,12 @@ Dir.glob("/home/kamei/workspace/dataset/cluster/*_e").each{|pt|
   @pr=Hash.new(0)
   @uch[user].each_with_index{|t,i|
     @pr.store(@pr_val[i],t)
+  }
+
+  open("/home/kamei/workspace/dataset/pr/#{user}-pr-cluster_e","w"){|f|
+    @pr.each{|p,ts|
+      f.puts "#{p} #{ts.join(" ")}"
+    }
   }
 }
 
