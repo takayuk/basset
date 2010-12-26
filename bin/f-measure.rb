@@ -21,31 +21,23 @@ open("/home/kamei/workspace/dataset/kldiv").readlines.each_with_index{|v,i|
   }
 }
 
-@sample=nil
 @ulist.each{|i,u|
-  if @user_ve[u]!=0
-    @sample=[i,u]
-    break
-  end
-}
 
-$min=100000000
-@esti=[]
-@pr[@sample[0]].each_with_index{|v,i|
-  if v < 10 && v > 0
-    @esti << i
+  if @user_ve[u]!=0
+    
+    $min=100000000
+    @esti=[]
+    @pr[i].each_with_index{|v,j|
+      if v < 10 && v > 0
+        @esti << j
+      end
+    }
+
+    @precision=0
+    @esti.each{|e|
+      @precision+=1 if @user_ve[u].include?(@ulist[e])
+    }
+    p "#{@precision} / #{@user_ve[u].size}"
   end
-}
-#@kl.map!{|v|v*-1 if v < 0}.sort!
-=begin
-@pr[@sample[0]].each_with_index{|j,id|
-  if j > 0 && j < $min
-    $min=j
-    @esti=id
-  end
-}
-=end
-@esti.each{|e|
-  p @user_ve[@sample[1]].include?(@ulist[e])
 }
 
