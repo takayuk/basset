@@ -29,13 +29,6 @@ open("/home/kamei/workspace/dataset/kldiv").readlines.each_with_index{|v,i|
     
     $min=100000000
     @esti=[]
-=begin
-    @pr[i].each_with_index{|v,j|
-      if v < 5 && v > 0
-        @esti << j
-      end
-    }
-=end
     @pr[i].sort{|a,b|a[1]<=>b[1]}.each_with_index{|jw,_|
       break if @esti.size >= 40
       @esti << jw[0] if jw[1] > 0
