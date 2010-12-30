@@ -2,20 +2,28 @@
 # -*- encoding: utf-8 -*-
 # -*- coding: utf-8 -*-
 
-@us=open("user_v").readlines.map{|v|v.chomp!}
+exit if ARGV[0].nil?
+THREADS=ARGV[0].to_i
 
-$LOAD_PATH.push("..")
+$LOAD_PATH.push(".")
 require"flickr_request"
 
-@us.reject!{|v|File.exists?("dump/#{v}_social")}
+$mutex=Mutex.new
 
-TOTAL=@us.size
-until @us.empty?
-  ths=Array.new(16).map!{
-    Thread.start { contacts_of(@us.pop) unless @us.empty? }
-  }
-  ths.each{|t|t.join}; ths.clear
-  sleep 1
-  p "#{@us.size} / #{TOTAL}"
+def request
+  while true
+    $mutex.lock
+    @uid=@us.empty? ? nil:@us.pop
+    $mutex.unlock
+
+    contacts_of(@uid) unless @uid.nil?
+    break if @uid.nil?
+  end
 end
+
+$us=open("user_v").readlines.map{|v|v.chomp!}.reject{|v|File.exists?("dump/#{v}")}
+
+@ths=Array.new(THREADS).map!{
+  Thread.start { request }
+}.each{|t|t.join}
 
