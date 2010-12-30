@@ -11,14 +11,13 @@ require 'cgi'
 FLICKR_API_KEY = '462f636d0921ef211d8dbc676d1538b2'
 HTTP_PROXY = 'http://cache.st.ryukoku.ac.jp:8080/'
 
+$mutex=Mutex.new
 
 #
 # リクエストURIの生成.
 #
 def new_request(method_name, arg_map = {}.freeze)
-
 	begin
-
 		args = arg_map.collect{|k, v| CGI.escape(k) << '=' << CGI.escape(v)}.join('&')
 
 		request_url = "http://www.flickr.com/services/rest/?api_key=%s&method=%s&%s" %
@@ -148,7 +147,56 @@ def groupinfo_of group_id
 end
 
 
-def contacts_of user_id
+def photos_of user_id, target
+
+  @method="flickr.people.getPublicPhotos".freeze
+  
+  @response=new_request(@method,"user_id"=>user_id,"perpage"=>"500")
+  if @response.nil?
+    p "Response is nil."
+    open("#{target}/dump/forbidden","a"){|f| f.puts user_id}
+    return
+  elsif @response.elements["rsp/"].attributes["stat"]!="ok"
+    p "#{user_id}\t#{@response.elements["rsp/err"].attributes["msg"]}"
+    open("#{target}/dump/forbidden","a"){|f| f.puts user_id}
+    return
+  end
+  
+  @pages=@response.elements['rsp/photos/'].attributes['pages'].to_i
+
+  @resource=Hash.new(0)
+  for page in 1..@pages
+    @response=new_request(@method,"user_id"=>user_id,"extras"=>"tags","page"=>page.to_s,'perpage'=>'500')
+    begin
+      open("#{target}/dump/#{user_id}_#{sprintf("%03d",page)}_phototag.xml","w"){|f|
+        f.write @response
+      }
+=begin
+      $mutex.lock
+      @response.elements.each('rsp/photos/photo') {|rc|
+        @resource.store(rc.attributes['id'],rc.attributes["tags"].split(" "))
+      } unless @response.nil?
+      $mutex.unlock
+=end
+    rescue
+      p "Write error..."
+      sleep 1
+      retry
+    end
+  end
+=begin
+  open("#{target}/dump/#{user_id}_phototag","w"){|f|
+    @resource.each{|id,tags|
+      next if tags.empty?
+      f.puts "#{id} #{tags.join(" ")}" rescue open("#{target}/dump/forbidden","a"){|_f|_f.puts user_id}
+    }
+  }
+  @resource.clear
+=end
+end
+
+
+def contacts_of user_id, target
   @response=new_request("flickr.contacts.getPublicList","user_id"=>user_id,"perpage"=>"1000")
   if @response.nil?
     open("dump/forbidden","a"){|f| f.puts user_id}
@@ -170,8 +218,8 @@ def contacts_of user_id
     } unless @response.nil?
   end
   @contacts.uniq!
-  open("dump/#{user_id}_social","w"){|f|
-    f.puts "#{user_id} #{@contacts.join(" ")}" rescue open("dump/forbidden","a"){|_f|_f.puts user_id}
+  open("#{target}/dump/#{user_id}_social","w"){|f|
+    f.puts "#{user_id} #{@contacts.join(" ")}" rescue open("#{target}/dump/forbidden","a"){|_f|_f.puts user_id}
   }
 end
 
