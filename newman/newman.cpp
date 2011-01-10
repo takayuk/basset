@@ -123,6 +123,40 @@ void reduce(chain** cluster, int i, int j, tuple** adj, int* numv, int n) {
   }
 }
 
+bool check_clusteradj(chain** cluster, int m, tuple** adj, int* numv, int n) {
+
+  int valid_cluster = 0;
+  for (int i = 0; i < n; ++i) {
+    chain_node* c = cluster[i]->root->next;
+    
+    if (c) valid_cluster += 1;
+  }
+
+  return valid_cluster > 1;
+  /*
+  int e = 0;
+  for (int i = 0; i < m; ++i) {
+    chain_node* c = cluster[i]->root->next;
+    if (!c) continue;
+  
+    chain_node* d = cluster[i]->root->next;
+    
+    for (; c != NULL; c = c->next) {
+      int ni = c->id;
+      for (; d != NULL; d = d->next) {
+        int nj = d->id;
+        if (ni == nj) break;
+        
+        for (int jj = 0; jj < numv[ni]; ++jj) {
+          if (adj[ni][jj].j == nj) e += adj[ni][jj].val;
+        }
+      }
+    }
+  }
+  return e > 0;
+  */
+}
+
 void newman(tuple** adj, int* numv, int n) {
 
   int mval = m(adj, numv, n);
@@ -131,10 +165,11 @@ void newman(tuple** adj, int* numv, int n) {
   for (int i = 0; i < n; ++i) {
     cluster[i] = new chain(i);
   }
- 
+
   // Adj of cluster.
   while (true) {
     int maxe = 0, maxi = -1, maxj = -1;
+    
     for (int i = 0; i < n; ++i) {
       for (int j = i; j < n; ++j) {
         if (i == j) continue;
@@ -144,10 +179,13 @@ void newman(tuple** adj, int* numv, int n) {
         }
       }
     }
-    if (maxe == 0) break;
-    else reduce(cluster, maxi, maxj, adj, numv, n);
-
+    reduce(cluster, maxi, maxj, adj, numv, n);
+    disp_adj(adj, numv, n);
+    
     cluster[maxj]->merge(cluster[maxi]);
+    disp_cluster(cluster, n);
+    
+    if (!check_clusteradj(cluster, n, adj, numv, n)) break;
   }
 
   for (int i = 0; i < n; ++i) {
