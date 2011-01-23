@@ -9,6 +9,7 @@ require"googlenews_snapshot.rb"
 
 require"pp"
 @res["responseData"]["results"].each{|v|
-  pp v["title"]
+  pp v["title"] unless (v["content"] =~ /[ぁ-ん]/).nil?
   pp v["content"] unless (v["content"] =~ /[ぁ-ん]/).nil?
+  puts ""
 }
