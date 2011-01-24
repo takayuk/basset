@@ -5,10 +5,11 @@
 require"json"
 require"open-uri"
 
-def snapshot start_index
+def snapshot start_index, topic="テクノロジー"
 
+  @topic_label={"政治"=>"p","テクノロジー"=>"t"}
   @start_propindex=0
-  @url="http://ajax.googleapis.com/ajax/services/search/news?v=1.0&rsz=large&scoring=d&topic=p&hl=ja&ned=jp&geo=japan&start=#{start_index}"
+  @url="http://ajax.googleapis.com/ajax/services/search/news?v=1.0&rsz=large&scoring=d&topic=#{@topic_label[topic]}&hl=ja&ned=jp&geo=japan&start=#{start_index}"
   @ref="http://www.my-ajax-site.com"
 
   @response=JSON.parse(open(@url,"Referer"=>@ref).read)
