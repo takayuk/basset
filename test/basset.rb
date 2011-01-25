@@ -3,29 +3,35 @@
 # -*- coding: utf-8 -*-
 
 $LOAD_PATH.push("/home/kamei/workspace/basset/bin")
+$LOAD_PATH.push("/home/kamei/workspace/basset/lib")
 require"googlenews_snapshot.rb"
 require"bow"
 
-@stop_word=["、", "。", "<", ">", "</", "/>"]
+def update_url url_path, words
+  begin
+    @url=open(url_path).readlines.map{|v|v.chomp}
+  rescue
+    @url=[]
+  end
+  p @urlcount=@url.shift
+
+  words.uniq.each{|w|@url << w unless @url.include?(w)}
+
+  open(url_path,"w"){|f|
+    f.puts @url.size
+    f.write @url.join("\n")
+  }
+end
+
+@topic_url={1=>"テクノロジー", 2=>"政治"}
+@words=[]
+
+@stop_word=["、", "。", "<", ">", "</", "/>", ">...</", "(", ")"]
 @res=snapshot(start_index = 0, topic="テクノロジー")
 @res["responseData"]["results"].each{|v|
-  p bow(v["title"], "名詞")
-  p bow(v["content"], "名詞").reject{|v|
-    @stop_word.include?(v)
-  }
+  @words << bow(v["title"], "名詞").reject{|v|@stop_word.include?(v)}
+  @words << bow(v["content"], "名詞").reject{|v|@stop_word.include?(v)}
 }
-=begin
-puts "\n\n\n"
-@res=snapshot(start_index = 1, topic="テクノロジー")
-@res["responseData"]["results"].each{|v|
-  p bow(v["title"], "名詞")
-  p bow(v["content"], "名詞")
-}
-puts "\n\n\n"
-@res=snapshot(start_index = 3, topic="テクノロジー")
-@res["responseData"]["results"].each{|v|
-  p bow(v["title"], "名詞")
-  p bow(v["content"], "名詞")
-}
-=end
+
+@new_url = update_url("words.url",@words)
 
