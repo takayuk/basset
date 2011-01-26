@@ -1,0 +1,6 @@
+Wed Jan 26 18:15:19 MongoDB starting : pid=6088 port=27017 dbpath=/home/kamei/workspace/basset/db/ 64-bit 
+Wed Jan 26 18:15:19 db version v1.6.3, pdfile version 4.5
+Wed Jan 26 18:15:19 git version: 278bd2ac2f2efbee556f32c13c1b6803224d1c01
+Wed Jan 26 18:15:19 sys info: Linux domU-12-31-39-06-79-A1 2.6.21.7-2.ec2.v1.2.fc8xen #1 SMP Fri Nov 20 17:48:28 EST 2009 x86_64 BOOST_LIB_VERSION=1_41
+Wed Jan 26 18:15:19 [initandlisten] waiting for connections on port 27017
+Wed Jan 26 18:15:19 [websvr] web admin interface listening on port 28017

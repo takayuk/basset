@@ -7,6 +7,7 @@ $LOAD_PATH.push("/home/kamei/workspace/basset/lib")
 require"googlenews_snapshot.rb"
 require"bow"
 
+=begin
 def update_url url_path, words
   begin
     @url=open(url_path).readlines.map{|v|v.chomp}
@@ -22,16 +23,27 @@ def update_url url_path, words
     f.write @url.join("\n")
   }
 end
+=end
+
+DATA_DIR="/home/kamei/workspace/basset/data"
+
+def update_labellist url_path, label
+  open("#{DATA_DIR}/#{url_path}.#{label[0]}","a"){|f|
+    f.puts "#{label[0]} #{label[1].size} #{label[1].join(" ")}"
+  }
+end
 
 @topic_url={1=>"テクノロジー", 2=>"政治"}
-@words=[]
+@label_path="train.lbl"
 
-@stop_word=["、", "。", "<", ">", "</", "/>", ">...</", "(", ")"]
+@stop_word=["、", "。", "<", ">", "</", "/>", ">...</", "(", ")", "b"]
 @res=snapshot(start_index = 0, topic="テクノロジー")
 @res["responseData"]["results"].each{|v|
+
+  @words=[]
   @words << bow(v["title"], "名詞").reject{|v|@stop_word.include?(v)}
   @words << bow(v["content"], "名詞").reject{|v|@stop_word.include?(v)}
-}
 
-@new_url = update_url("words.url",@words)
+  update_labellist @label_path, [@topic_url.key("テクノロジー"),@words.flatten.uniq]
+}
 
