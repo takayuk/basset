@@ -31,6 +31,13 @@ def update_labellist url_path, label
   open("#{DATA_DIR}/#{url_path}.#{label[0]}","a"){|f|
     f.puts "#{label[0]} #{label[1].size} #{label[1].join(" ")}"
   }
+
+end
+
+def dump label, data
+  open("#{DATA_DIR}/dump/#{label}.dump","a"){|f|
+    f.puts "#{label} #{data}"
+  }
 end
 
 @topic_url={1=>"テクノロジー", 2=>"政治"}
@@ -40,10 +47,12 @@ end
 @res=snapshot(start_index = 0, topic="テクノロジー")
 @res["responseData"]["results"].each{|v|
 
+  dump(Time.now.to_i, v["title"] + v["content"])
+
   @words=[]
   @words << bow(v["title"], "名詞").reject{|v|@stop_word.include?(v)}
   @words << bow(v["content"], "名詞").reject{|v|@stop_word.include?(v)}
 
   update_labellist @label_path, [@topic_url.key("テクノロジー"),@words.flatten.uniq]
 }
-
+open("snapshot.log","a"){|f|f.puts Time.now.to_s}

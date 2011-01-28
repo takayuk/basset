@@ -21,14 +21,24 @@ def mecab sentence
   @result
 end
 
-def bow sentence, parts_name
+def bow sentence, parts_name, gram_limit = 2
   @feature=Array.new
   unless (sentence =~ /[ぁ-ん]/).nil?
+
+    @gram=""
+
     @mecab_result=mecab(sentence)
     @mecab_result.each{|k,v|
       next if v.nil? or v.empty?
       @scanned = v.scan(/#{parts_name}/)
-      @feature << k if !@scanned.nil? and !@scanned.empty?
+      #@feature << k if !@scanned.nil? and !@scanned.empty?
+      if (!@scanned.nil? and !@scanned.empty?)
+        #@feature << k
+        @gram+=k
+      else
+        @feature << @gram
+        @gram=""
+      end
     }
   end
   @feature
