@@ -7,6 +7,8 @@ $LOAD_PATH.push("/home/kamei/workspace/basset/lib")
 require"googlenews_snapshot.rb"
 require"bow"
 
+Process.daemon
+
 =begin
 def update_url url_path, words
   begin
@@ -44,15 +46,21 @@ end
 @label_path="train.lbl"
 
 @stop_word=["、", "。", "<", ">", "</", "/>", ">...</", "(", ")", "b"]
-@res=snapshot(start_index = 0, topic="テクノロジー")
-@res["responseData"]["results"].each{|v|
 
-  dump(Time.now.to_i, v["title"] + v["content"])
+10000.times do
+  @res=snapshot(start_index = 0, topic="テクノロジー")
+  @res["responseData"]["results"].each{|v|
 
-  @words=[]
-  @words << bow(v["title"], "名詞").reject{|v|@stop_word.include?(v)}
-  @words << bow(v["content"], "名詞").reject{|v|@stop_word.include?(v)}
+    dump(Time.now.to_i, v["title"] + v["content"])
 
-  update_labellist @label_path, [@topic_url.key("テクノロジー"),@words.flatten.uniq]
-}
-open("snapshot.log","a"){|f|f.puts Time.now.to_s}
+    @words=[]
+    @words << bow(v["title"], "名詞").reject{|v|@stop_word.include?(v)}
+    @words << bow(v["content"], "名詞").reject{|v|@stop_word.include?(v)}
+
+    update_labellist @label_path, [@topic_url.key("テクノロジー"),@words.flatten.uniq]
+  }
+  open("/home/kamei/workspace/basset/snapshot.log","a"){|f|f.puts Time.now.to_s}
+
+  sleep 1800
+end
+
