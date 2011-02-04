@@ -2,15 +2,20 @@
 # -*- encoding: utf-8 -*-
 # -*- coding: utf-8 -*-
 
-class CNBClassifier  
+class CNBClassifier
+  attr_reader :frequency_of_word_by_class, :number_of_train_data_of_class
+
   def initialize(smoothing_parameter = 1)
     @frequency_of_word_by_class = { }
+
     @number_of_train_data_of_class = Hash.new(0)
+
     @smoothing_parameter = smoothing_parameter
   end
 
   def train(label, sosei)
     @frequency_of_word_by_class[label] = Hash.new(0) unless @frequency_of_word_by_class.has_key?(label)
+
     sosei.each { |k, v|
       @frequency_of_word_by_class[label][k] += v
     }
@@ -32,7 +37,7 @@ class CNBClassifier
     other_classes.map { |c| @frequency_of_word_by_class[c][i] }.inject(0) { |s, v| s + v }
   end
 
-  def classify(sosei)
+  def predict(sosei)
     all_class = @frequency_of_word_by_class.keys
     all_train_data = @number_of_train_data_of_class.values.inject(0) { |s, v| s + v }
     all_class.map { |c|

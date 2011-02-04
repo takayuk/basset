@@ -9,31 +9,12 @@ require"bow"
 
 Process.daemon
 
-=begin
-def update_url url_path, words
-  begin
-    @url=open(url_path).readlines.map{|v|v.chomp}
-  rescue
-    @url=[]
-  end
-  p @urlcount=@url.shift
-
-  words.uniq.each{|w|@url << w unless @url.include?(w)}
-
-  open(url_path,"w"){|f|
-    f.puts @url.size
-    f.write @url.join("\n")
-  }
-end
-=end
-
 DATA_DIR="/home/kamei/workspace/basset/data"
 
 def update_labellist url_path, label
   open("#{DATA_DIR}/#{url_path}.#{label[0]}","a"){|f|
-    f.puts "#{label[0]} #{label[1].size} #{label[1].join(" ")}"
+    f.puts "#{label[0]} #{label[1].size} #{label.join(":1 ")}:1"
   }
-
 end
 
 def dump label, data
@@ -45,22 +26,35 @@ end
 @topic_url={1=>"テクノロジー", 2=>"政治"}
 @label_path="train.lbl"
 
-@stop_word=["、", "。", "<", ">", "</", "/>", ">...</", "(", ")", "b"]
+@stop_word=["、", "。", "<", ">", "</", "/>", ">...</", "(", ")", "b",
+"こと"]
 
 10000.times do
-  @res=snapshot(start_index = 0, topic="テクノロジー")
-  @res["responseData"]["results"].each{|v|
+  @topic_url.values.each{|t|
 
-    dump(Time.now.to_i, v["title"] + v["content"])
+    @res=snapshot(start_index = 0, topic=t)
+    @res["responseData"]["results"].each{|v|
 
-    @words=[]
-    @words << bow(v["title"], "名詞").reject{|v|@stop_word.include?(v)}
-    @words << bow(v["content"], "名詞").reject{|v|@stop_word.include?(v)}
+      next if v["title"].nil? or v["content"].nil?
 
-    update_labellist @label_path, [@topic_url.key("テクノロジー"),@words.flatten.uniq]
+      dump(Time.now.to_i, v["title"] + v["content"])
+
+      @title_bow = bow(v["title"],"名詞")
+      @content_bow = bow(v["content"],"名詞")
+      next if @title_bow.empty? or @content_bow.empty?
+
+      @words=[]
+      @words << @title_bow.reject{|v|
+        v.empty? or @stop_word.include?(v)
+      }
+      @words << @content_bow.reject{|v|
+        v.empty? or @stop_word.include?(v)
+      }
+
+      update_labellist @label_path, [@topic_url.key(t),@words.flatten.uniq]
+    }
+    open("/home/kamei/workspace/basset/snapshot.log","a"){|f|f.puts Time.now.to_s}
   }
-  open("/home/kamei/workspace/basset/snapshot.log","a"){|f|f.puts Time.now.to_s}
-
   sleep 1800
 end
 
