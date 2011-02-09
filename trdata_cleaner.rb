@@ -15,7 +15,9 @@ require"fileutils"
 Dir.glob("#{DATA_DIR}/*.rfn").each{|pt| FileUtils.rm(pt) }
 Dir.glob("#{DATA_DIR}/train.lbl.*").each{|pt|
   @buf=open(pt).readlines
+  @buf.uniq!
   @buf.map!{|v|v.split(" ",3)}
   @buf.reject!{|v|v[1]=="0"}
+
   open("#{pt}.rfn","w"){|f| f.write @buf.map{|v|v.join(" ")}.join }
 }

@@ -10,10 +10,15 @@ require"bow"
 Process.daemon
 
 DATA_DIR="/home/kamei/workspace/basset/data"
+ITERATION=ARGV[0].to_i
 
 def update_labellist url_path, label
+  @vocfreq=Hash.new(0)
+  label[1].each{|v| @vocfreq[v]+=1 }
   open("#{DATA_DIR}/#{url_path}.#{label[0]}","a"){|f|
-    f.puts "#{label[0]} #{label[1].size} #{label.join(":1 ")}:1"
+    f.print "#{label[0]} #{@vocfreq.size}"
+    @vocfreq.each {|voc,freq| f.print " #{voc}:#{freq}" }
+    f.print "\n"
   }
 end
 
@@ -27,9 +32,11 @@ end
 @label_path="train.lbl"
 
 @stop_word=["、", "。", "<", ">", "</", "/>", ">...</", "(", ")", "b",
-"こと"]
+"こと",
+"0","1","2","3","4","5","6","7","8","9",
+]
 
-10000.times do
+ITERATION.times do
   @topic_url.values.each{|t|
 
     @res=snapshot(start_index = 0, topic=t)
@@ -51,7 +58,8 @@ end
         v.empty? or @stop_word.include?(v)
       }
 
-      update_labellist @label_path, [@topic_url.key(t),@words.flatten.uniq]
+      #update_labellist @label_path, [@topic_url.key(t),@words.flatten.uniq]
+      update_labellist @label_path, [@topic_url.key(t),@words.flatten]
     }
     open("/home/kamei/workspace/basset/snapshot.log","a"){|f|f.puts Time.now.to_s}
   }
