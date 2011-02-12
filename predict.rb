@@ -38,3 +38,28 @@ open(ARGV[1]).readlines.each{|t|
   p label == pred(data)
 }
 
+require "tfidf"
+@data=open("#{DATA_DIR}/train.lbl.1.rfn").readlines.map{|v| v.chomp}
+@label=[]
+@data.each do |data|
+  @h=Hash.new([].freeze)
+  @buf=data.split(" ",3)
+  @buf[2].split(" ").map{|v| v.split(":") }.each do |e|
+    @h.store(e[0],e[1].to_i)
+  end
+
+  @label.push(@h)
+end
+
+@impword=Hash.new([].freeze)
+@label.each do |label|
+  label.keys.each do |word|
+    @tfidf=tfreq(word, @label).to_f / dfreq(word,@label).to_f
+    #puts "#{@tfidf}\t#{word}" if @tfidf > 1.00
+    @impword[word]=@tfidf if @tfidf > 1.00
+  end
+end
+
+@impword.sort{|a,b| a[1]<=>b[1]}.each{|k,v|
+  puts "#{k}\t#{v}"
+}
