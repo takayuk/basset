@@ -7,7 +7,8 @@ def mecab sentence
   
   @result=Hash.new(0)
   begin
-    @tagger=MeCab::Tagger.new("-Ochasen -d /home/kamei/local/lib/mecab/dic/ipadic-utf8")
+    #@tagger=MeCab::Tagger.new("-Ochasen -d /home/takayuk/local/lib/mecab/dic/ipadic-utf8")
+    @tagger=MeCab::Tagger.new("-Ochasen -d /home/takayuk/local/lib/mecab/dic/ipadic")
     @node = @tagger.parseToNode(sentence)
     while @node do
       @result.store(@node.surface.force_encoding("UTF-8"),
@@ -21,27 +22,16 @@ def mecab sentence
   @result
 end
 
-def bow sentence, parts_name, gram_limit = 2
+def bow sentence, parts_name
+
   @feature=Array.new
   unless (sentence =~ /[ぁ-ん]/).nil?
-
-    @gram=""
-
-    @mecab_result=mecab(sentence)
-    @mecab_result.each{|k,v|
-      next if v.nil? or v.empty?
-      @scanned = v.scan(/#{parts_name}/)
-      #@feature << k if !@scanned.nil? and !@scanned.empty?
-      if (!@scanned.nil? and !@scanned.empty?)
-        #@feature << k
-        @gram+=k
-      else
-        @feature << @gram
-        @gram=""
-      end
-    }
+    mecab(sentence).each do |k, v|
+      if v =~ /#{parts_name}/ then @feature << k end
+    end
   end
-  @feature
+
+  @feature.freeze
 end
 
 
