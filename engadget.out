@@ -1,0 +1,462 @@
+Engadget Japanese
+Engadget Japanese
+
+<![CDATA[<div style="text-align: center;"><a href="http://www.engadget.com/2011/04/23/playstation-network-outage-blamed-on-external-intrusion-conti/"><img vspace="4" hspace="4" border="0" src="http://www.blogcdn.com/www.engadget.com/media/2011/04/11x0423n81psnaax.jpg" alt="" /></a></div>
+21日からPlayStation Network やオンラインサービス Qriocity が利用できなくなっている状況は4日目の今日も継続中です。22日の見通しでは「一日あるいは二日かかる可能性」でしたが、調査で前提が変わったのか一両日を過ぎてもサービスは利用できないまま。24日付けのアップデートは： <blockquote> "PlayStation Network"の障害が長時間続いており、誠に申し訳ございません。 当社では24時間体制でサービスの早期復旧に向けた努力を続けておりますが、 当社のネットワークインフラを強化するためにシステムの再構築を行っており時間を要しております。 <br />
+<br />
+この作業は時間がかかるため多くの皆様にご迷惑をおかけすることになりますが、 当社のシステムセキュリティを更に強化するために必要不可欠であると判断いたしました。 </blockquote>今回の文面は日本のPSN障害情報ページ、米・欧の公式 PlayStation Blog で同一。プレイステーションだけでなくテレビの  BRAVIA などでサービスを展開しているソニーの機器横断コンテンツサービス Qriocity はPSNと共有の基盤を使っており、アカウントもウォレットも共用できるため、Qriocity側の「障害・メンテナンス情報」も " PlayStation Network " と " Qriocity "を差し替えただけでまったく同一の文面です。<br />
+<br />
+前回の更新にあった「外部からの侵入 (external intrusion)」(米・欧) あるいは「外的要因とみられる影響」(日) の性質などについては言及なし。ただし「セキュリティを更に強化するために」再構築中とあることから、実際に侵入が原因だったのであれば、それを許した脆弱性は特定し修正したものと思われます。再構築が完了するまでの見通しについては具体的な期間を示さず、「復旧までにいましばらく時間がかかりますことをご了承くださいますようお願い申し上げます」。なおPS3からの接続を試みた場合、当初は数字のエラーコードと「エラーが発生したため～」だけの表示だったところが、現在は「メンテナンス中です」の表示に切り替わりユーザーにやや優しくなりました。ただしPSPからはまだエラーコード表示のまま。<br />
+<h6 style="clear: both; padding: 8px 0 0 0; height: 2px; font-size: 1px; border: 0; margin: 0; padding: 0;"></h6><a href=http://www.jp.playstation.com/psn/state.html>Read</a>&nbsp;|&nbsp;<a href="http://japanese.engadget.com/2011/04/24/psn-qriocity-4/" rel="bookmark" title="Permanent link to this entry">Permalink</a>&nbsp;|&nbsp;<a href="http://japanese.engadget.com/forward/19922063/" title="Send this entry to a friend via email">Email this</a>&nbsp;|&nbsp;<a href="http://japanese.engadget.com/2011/04/24/psn-qriocity-4/#comments" title="View reader comments on this entry">Comments</a>]]>
+Engadget Japanese
+
+<![CDATA[<p>Filed under: <a href="http://japanese.engadget.com/category/notebooks/" rel="tag">ノートPC</a></p><div style="text-align: center;"><img vspace="4" hspace="4" border="0" alt="" src="http://www.blogcdn.com/www.engadget.com/media/2011/04/11x04231607eyna33d.jpg" /></div>
+<br />
+レノボ ThinkPad のモバイルモデルといえば <a href="http://japanese.engadget.com/2011/03/29/thinkpad-x220/">X220</a> が発表されたばかりの Xシリーズが該当します。しかしもっと薄く軽いノートが各社から登場している昨今、ThinkPadもウルトラモバイル（&ne;ウルトラマンPC）があればいいのにと思う方は多いのではないでしょうか。そんななか、スイスの Tell IT systems というオンラインストアをはじめ、いくつかネット上で情報が流出しているのが、この ThinkPad X1 を名乗る未発表モデル。大きさは231x 337 x 16.5 - 21.5 mm、重さは1.36kgからと、薄型軽量を待ち望むThinkPad派にぴったりの作りになっています。ディスプレイは13.3型（1366x768解像度）で、ゴリラガラスを採用。中身も"SandyBridge"世代のCore i5-2520M、160GB HDD、8GBメモリ、SDXCリーダーと気合のこもった仕様です。<br />
+<br />
+ただし仕様から推察できるとおり、お値段もしっかりThinkPad価格。2585スイスフラン（24万円くらい）という価格設定では、安易に「ThinkPad版 MacBook Air」と呼ぶことも躊躇われます。発売日は5月20日とのこと。続きには薄さが伝わる写真などを掲載しています。<br />
+<br />
+[Thanks, Ivan]<br />
+<div style="text-align: center;"><br />
+<img vspace="4" hspace="4" border="0" alt="" id="vimage_4083021" src="http://www.blogcdn.com/www.engadget.com/media/2011/04/x1-flatviewfromside.png" /><br />
+<br />
+<img vspace="4" hspace="4" border="1" alt="" id="vimage_4083022" src="http://www.blogcdn.com/www.engadget.com/media/2011/04/11x04231653.jpg" /></div>
+<br />
+<br />
+<img alt="" src="http://www.engadget.com/media/post_label_VIA.gif" class="img_label" /> <a href="http://forum.thinkpads.com/viewtopic.php?f=43&amp;t=94566">Thinkpads forum</a>, <a href="http://forum.notebookreview.com/lenovo-ibm/569934-thinkpad-x1.html">Notebook Review forum</a><br />
+<img alt="source" src="http://www.engadget.com/media/post_label_source.gif" class="img_label" /> <a href="http://shop.tell-it.ch/index.php?page=product&amp;info=34798">Tell IT systems</a>, <a href="http://www.thinkpadcenter.ch/index.php?option=com_content&amp;view=article&amp;id=70&amp;Itemid=70">ThinkPad Center</a>, <a href="http://www.51nb.com/viewnews-64972.html">51nb</a><h6 style="clear: both; padding: 8px 0 0 0; height: 2px; font-size: 1px; border: 0; margin: 0; padding: 0;"></h6><a href="http://japanese.engadget.com/2011/04/23/thinkpad-x1/" rel="bookmark" title="Permanent link to this entry">Permalink</a>&nbsp;|&nbsp;<a href="http://japanese.engadget.com/forward/19922029/" title="Send this entry to a friend via email">Email this</a>&nbsp;|&nbsp;<a href="http://japanese.engadget.com/2011/04/23/thinkpad-x1/#comments" title="View reader comments on this entry">Comments</a>]]>
+<![CDATA[PSN / Qriocity の障害は4日目も継続、「システムの再構築中」]]>
+
+<![CDATA[<div style="text-align: center;"><img vspace="4" hspace="4" src="http://www.blogcdn.com/japanese.engadget.com/media/2011/04/iphone-5newmock.jpg"  alt="" /></div>
+<br />
+iPhone 5 (仮) のデザインは現行の iPhone 4 と大きく変わらず、3G から 3GS のような内部進化になるらしい、という最近の説に異を唱える情報がありました。画像はリンク先の <em>This is my next</em> が「信頼できる情報源」からのスケッチを元に作成した次世代 iPhone デザインのモックアップ。次世代の iPhone として 4とは異なるデザインの端末がテストされているという説は、 Engadget でも<a href="http://japanese.engadget.com/2011/01/14/iphone-ipad-a5-ipad-2-sd/">1月に独自のソースから得た情報</a>としてお伝えしています。<br />
+<br />
+モックアップ画像の元になった情報に話を戻すと、まず筐体は上から下にゆくほど細くなる、MacBook Air を立てたようなくさび形。背面もフラットでステンレスの帯が側面を覆う iPhone 4より薄くなり、むしろ iPod touchに傾斜をつけたものに近いとされています。背面の素材が金属なのか樹脂なのかは不明。<br />
+<br />
+次に、本体のサイズは現在と大きく変わらないまま、額縁の部分が狭くなることで画面はやや大型化。モックアップのもとになったスケッチでは3.7インチで、ピクセル数は アプリの互換性もあり現行の960 x 640のままとされています。画面が3.7インチや4インチになるらしい説は、そういわれれば以前のうわさにもたまに登場していました。仮に3.7型とすると、ピクセルの細かさは iPhone 4 の約330 ppi から 約312ppi 。わずかに粗くなるものの、まだアップルの「網膜を超えた」Retina Displayの定義には収まっています。<br />
+<br />
+またホームボタンが大きくなり、ジェスチャエリアとしての役割も果たすようになります。以前「流出」していた<a href="http://japanese.engadget.com/2011/04/05/ipod-touch/">次世代 iPod touchのプロトタイプ</a>らしき画像ではホームボタンが内側の□ アイコンだけになり、タッチ式になるのではとの推測もありました。今回はボタンそのものは廃止されていないように見えます。<br />
+<br />
+このほか元情報に含まれていたもののモックアップに反映されていないのはなんらかの無接点充電機構、さらに「swipe area」なる部分の存在など。アップル独自のワイヤレス充電ドックや<a href="http://japanese.engadget.com/tag/NFC/"> NFC</a>対応を想像させますが、こちらは提供したソースに確認ができていません。全体として、iPhone 5 (仮) は iPhone 4 の内部を強化したバージョンという説とは真っ向から矛盾するものの、将来の iPhone デザインとして検討されたうちのひとつがこのくさび形で、5 に採用されるのか 6 に採用されるのか (あるいはされないのか) が対立点と考えることもできます。<br />
+<h6 style="clear: both; padding: 8px 0 0 0; height: 2px; font-size: 1px; border: 0; margin: 0; padding: 0;"></h6><a href=http://thisismynext.com/2011/04/22/iphone-5-design/>Read</a>&nbsp;|&nbsp;<a href="http://japanese.engadget.com/2011/04/23/iphone-5-4/" rel="bookmark" title="Permanent link to this entry">Permalink</a>&nbsp;|&nbsp;<a href="http://japanese.engadget.com/forward/19921826/" title="Send this entry to a friend via email">Email this</a>&nbsp;|&nbsp;<a href="http://japanese.engadget.com/2011/04/23/iphone-5-4/#comments" title="View reader comments on this entry">Comments</a>]]>
+<![CDATA[13.3型ウルトラモバイル ThinkPad X1、オンラインストアで情報流出]]>
+
+<![CDATA[<p>Filed under: <a href="http://japanese.engadget.com/category/peripherals/" rel="tag">周辺機器</a>, <a href="http://japanese.engadget.com/category/cellphones/" rel="tag">携帯電話</a></p><div style="text-align: center;"><img vspace="4" hspace="4" border="0" src="http://www.blogcdn.com/japanese.engadget.com/media/2011/04/maxellqi.jpg"  alt="" /></div>
+<br />
+日立マクセルが <a href="http://japanese.engadget.com/tag/iPhone4/">iPhone 4</a> 用のワイヤレス充電パッドを発売します。先日パナソニックも<a href="http://japanese.engadget.com/2011/04/20/charge-pad/">対応製品を発表した</a>無接点充電規格「Qi」（チー）を採用しており、特に Qi には対応していないはずの iPhone 4 には専用のスリーブを着用する仕組み。パッドとスリーブをあわせれば、iPhone 4でワイヤレス充電を実現できます。<a href="http://japanese.engadget.com/2009/06/24/iphone-3g-3gs/">似たような製品</a>は過去にもありましたが、Qi は72社が加盟する業界団体 Wireless Power Consortium が定めた標準規格なので、これから拡充の期待される Qi 対応製品も同じパッドで充電できるのが強み。マクセルのプレスリリースには「店舗や公共施設への普及も期待されます」とあって、確かにレストランのテーブルの一角が充電パッドになっていると便利そうです。<br />
+<br />
+パッド内は複数のコイルをレイアウトしたコイルアレイ方式を採用。一台だけ充電できるシングルタイプと、二台同時に充電できるダブルタイプがあります。発売日はダブルタイプとジャケットが4月25日、シングルタイプは来月の予定です。<h6 style="clear: both; padding: 8px 0 0 0; height: 2px; font-size: 1px; border: 0; margin: 0; padding: 0;"></h6><a href=http://www.maxell.co.jp/jpn/news/2011/news110207.html>Read</a>&nbsp;|&nbsp;<a href="http://japanese.engadget.com/2011/04/23/iphone-4-qi/" rel="bookmark" title="Permanent link to this entry">Permalink</a>&nbsp;|&nbsp;<a href="http://japanese.engadget.com/forward/19921808/" title="Send this entry to a friend via email">Email this</a>&nbsp;|&nbsp;<a href="http://japanese.engadget.com/2011/04/23/iphone-4-qi/#comments" title="View reader comments on this entry">Comments</a>]]>
+<![CDATA[iPhone 5は 4より薄い新デザイン、画面も大型化？]]>
+
+<![CDATA[<div style="text-align: center;"><a href="http://www.engadget.com/2011/04/22/exclusive-white-iphone-4-lands-at-vodafone-uk/"><img vspace="4" hspace="4" src="http://www.blogcdn.com/www.engadget.com/media/2011/04/white-iphone-4-vodafone-main.jpg" alt="" /></a></div>
+<br />
+各国で店舗の商品管理システムに現れたり、販売ページのフライング掲載があった iPhone 4 ホワイトモデルが今度こそ出荷されそうです。写真は英国で16GBモデルをフライング入手したというソースから提供されたもの。箱に記された型番はMC604B/A (英国版の黒は MC603B/A)。英Vodafoneで誤ってブラックモデルとして処理されたため購入できたもので、出荷は来週からになるとの説明付きです。またオランダのサイト <em>iPhoneClub</em> では小売店の従業員向けメモから得たと情報として、4月27日からの販売予定と伝えています (少なくともオランダの1店舗では)。<br />
+<br />
+アップルの公式な発売予定では、昨年秋の再々延期とともに発表された「2011年春」。またプロダクトマーケティング担当シニアVPのフィル・シラー氏は、今年3月に個人の Twitter で改めて「この春手に入るようになる (and it is a beauty!)」と<a href="http://japanese.engadget.com/2011/03/13/svp-iphone/">回答しています</a>。次の iPhone は<a href="http://japanese.engadget.com/2011/04/18/iphone-5-a5-8mp-iphone-6-2012/">例年の夏より遅れて秋以降になるとのうわさ</a>やアナリストの予測も増えており、4黒を買わずに様子を見ていた向きには悩ましい判断になりそうです。<br />
+<br />
+<div class="postgallery"><p><strong>Gallery: <a href="http://japanese.engadget.com/photos/white-iphone-4-vodafone-uk/">White iPhone 4 (Vodafone UK)</a></strong></p><a href="http://japanese.engadget.com/photos/white-iphone-4-vodafone-uk/#4082471"><img src="http://www.blogcdn.com/japanese.engadget.com/media/2011/04/apple-white-iphone-4-vodafone1_thumbnail.jpg" alt="" title="" /></a><a href="http://japanese.engadget.com/photos/white-iphone-4-vodafone-uk/#4082472"><img src="http://www.blogcdn.com/japanese.engadget.com/media/2011/04/apple-white-iphone-4-vodafone2_thumbnail.jpg" alt="" title="" /></a><a href="http://japanese.engadget.com/photos/white-iphone-4-vodafone-uk/#4082473"><img src="http://www.blogcdn.com/japanese.engadget.com/media/2011/04/apple-white-iphone-4-vodafone3_thumbnail.jpg" alt="" title="" /></a></div><h6 style="clear: both; padding: 8px 0 0 0; height: 2px; font-size: 1px; border: 0; margin: 0; padding: 0;"></h6><a href="http://japanese.engadget.com/2011/04/23/iphone-4/" rel="bookmark" title="Permanent link to this entry">Permalink</a>&nbsp;|&nbsp;<a href="http://japanese.engadget.com/forward/19921510/" title="Send this entry to a friend via email">Email this</a>&nbsp;|&nbsp;<a href="http://japanese.engadget.com/2011/04/23/iphone-4/#comments" title="View reader comments on this entry">Comments</a>]]>
+<![CDATA[iPhone 4 をワイヤレス充電する Qi パッド &amp; スリーブ、マクセルから]]>
+
+<![CDATA[<div style="text-align: center;"><img vspace="4" hspace="4" border="1" alt="" src="http://www.blogcdn.com/www.engadget.com/media/2010/11/sony-qriocity-europe.jpg" /></div>
+<br />
+48時間以上に渡って継続しているPlayStation Network の大規模な接続障害について更新がありました。<a href="http://blog.us.playstation.com/2011/04/22/update-on-playstation-network-qriocity-services/">米・欧の公式 PlayStation.Blog に掲載</a>されたのは、「システムへの外部からの侵入がPlayStation Network と Qriocity に影響を与えています。徹底した調査と、今後のネットワークサービスを円滑でセキュアに運営するために、われわれはPlayStation Network と Qriocity のサービスを20日水曜夜 (注：日本時間21日午後) に停止しました」。この状況を解決するためあらゆる手を打つ、ご理解とご協力へ感謝する、新たな情報があればすぐにお伝えするという内容です。<br />
+<br />
+障害発生の初期には各地域のSCE やサポートの経路によってやや踏み込んだ情報を伝えていたこともありましたが、現在は日本の障害情報でもほぼおなじ文面が掲載されています。(唯一の違いは「外的要因と<strong>みられる</strong>影響」と表現していることくらい)。Qriocity はテレビの BRAVIA などから利用できる動画サービス Video on Demand や、音楽サービス Music Unlimited を含むオンラインサービスの総称。ソニー製品ならデバイスをまたいで使えるユナイテッドなサービスですが、PSNとおなじ基盤を利用しているためこちらも同時に影響を受けて利用不可能になっています。<br />
+<br />
+<h6 style="clear: both; padding: 8px 0 0 0; height: 2px; font-size: 1px; border: 0; margin: 0; padding: 0;"></h6><a href=http://www.jp.playstation.com/psn/state.html>Read</a>&nbsp;|&nbsp;<a href="http://japanese.engadget.com/2011/04/23/psn-qriocity/" rel="bookmark" title="Permanent link to this entry">Permalink</a>&nbsp;|&nbsp;<a href="http://japanese.engadget.com/forward/19921722/" title="Send this entry to a friend via email">Email this</a>&nbsp;|&nbsp;<a href="http://japanese.engadget.com/2011/04/23/psn-qriocity/#comments" title="View reader comments on this entry">Comments</a>]]>
+<![CDATA[英国で iPhone 4 ホワイトがフライング、発売は来週？]]>
+
+<![CDATA[<p>Filed under: <a href="http://japanese.engadget.com/category/wearable/" rel="tag">ウェアラブル</a></p><img hspace="4" border="0" align="right" vspace="16" src="http://www.blogcdn.com/www.engadget.com/media/2011/04/voicebox-university-of-hull.jpg" alt="" /> 「のどぼとけ」にある喉頭は、声を出すためには欠かせない器官ですが、癌などの病気によって取り除かなければいけないことがあります。バルブなどの人工物を喉頭がわりとする方法もあるのですが、取り替えなければいけないのが問題です。そこでハル大学のJim Gilbert博士や、シェフィールド大学の Phil Green 教授ら英国の研究者たちが挑戦しているのが、口内に磁石を取り付けるという、なかなかサイバーな方法。磁石で口内に磁場を作り出し、ヘッドセットに備えつけたセンサで舌や唇の動きを検出、それらの動きから「発声」を認識します。どのような動きがどのような「声」に繋がるのか見極めるには学習が必要ですが、開発したプロトタイプではこれまでのところ50種類の語を認識できるとのこと。写真のとおりヘッドセットはまだ実用とは言えないサイズではあるものの、Bluetoothヘッドセット並までの小型化を目指しています。実際の試験は今後一年内に行っていく予定。 <h6 style="clear: both; padding: 8px 0 0 0; height: 2px; font-size: 1px; border: 0; margin: 0; padding: 0;"></h6><a href=http://www.newscientist.com/article/mg21028084.600-headset-gives-a-voice-to-the-voice-boxless.html?DCMP=OTC-rss&amp;nsref=online-news>Read</a>&nbsp;|&nbsp;<a href="http://japanese.engadget.com/2011/04/22/voice-box/" rel="bookmark" title="Permanent link to this entry">Permalink</a>&nbsp;|&nbsp;<a href="http://japanese.engadget.com/forward/19920912/" title="Send this entry to a friend via email">Email this</a>&nbsp;|&nbsp;<a href="http://japanese.engadget.com/2011/04/22/voice-box/#comments" title="View reader comments on this entry">Comments</a>]]>
+<![CDATA[PSNの障害は「外部からの侵入」、ブラビアのQriocity も利用不能]]>
+
+<![CDATA[<p>Filed under: <a href="http://japanese.engadget.com/category/cellphones/" rel="tag">携帯電話</a></p><div style="text-align: center;"><img style="border-width: 0px; border-style: solid;" src="http://www.blogcdn.com/www.engadget.com/media/2011/04/11x0419nsgs.jpg" alt="" /></div>
+<br />
+<a href="http://japanese.engadget.com/2011/04/20/apple-vs-samsung-2/">予告されていたため</a>なんの驚きもありませんが、サムスンがアップルを提訴しました。韓国ソウルでは5件の特許侵害について、東京では2件の特許侵害について、ドイツ・マンハイムでは3件の特許侵害についてと、計3か国で10件の特許侵害を訴えています。リンク先のプレスリリースでは「サムスンは、私たちの知的財産を守り、モバイルコミュニケーションビジネスにおけるイノベーションの継続と成長を確保するため、私たちへの訴訟に対して積極的に対応していきます」とフォントサイズを巨大化させてアピール。まあここまでは当然のご挨拶みたいなものでしょうか。すこし間が空きそうですが、また続報が入りましたらお伝えします。<br />
+<br />
+[Thanks, <a href="http://kudokun.krac.kr/">Jake L.</a>]<h6 style="clear: both; padding: 8px 0 0 0; height: 2px; font-size: 1px; border: 0; margin: 0; padding: 0;"></h6><a href=http://samsungtomorrow.com/1126>Read</a>&nbsp;|&nbsp;<a href="http://japanese.engadget.com/2011/04/22/samsung-vs-apple/" rel="bookmark" title="Permanent link to this entry">Permalink</a>&nbsp;|&nbsp;<a href="http://japanese.engadget.com/forward/19920901/" title="Send this entry to a friend via email">Email this</a>&nbsp;|&nbsp;<a href="http://japanese.engadget.com/2011/04/22/samsung-vs-apple/#comments" title="View reader comments on this entry">Comments</a>]]>
+<![CDATA[口内の磁石で代用音声を生成する技術、英国で研究中]]>
+
+<![CDATA[<div style="text-align: center;"><img hspace="4" border="0" vspace="4" src="http://www.blogcdn.com/www.engadget.com/media/2011/04/apple-q2earnings-04-20-2011.jpg" alt="" /></div>
+<br />
+アップルが1-3月期の決算を発表しました。売上は246.7億ドル。純利益は59.9億ドル。これはそれぞれ前年同期比で83%、95%アップとなり、引き続き絶好調です。好調を支えているのはもちろん<a href="http://japanese.engadget.com/tag/iPhone/">iPhone</a>の存在。同時期に販売されたiPhoneは1860万台となり、前年同期より113%アップ。ざっくり2倍売れている計算になります。一方、<a href="http://japanese.engadget.com/tag/iPad/">iPad</a>は469万台。3月に発売された<a href="http://japanese.engadget.com/tag/iPad2/">iPad 2</a>もここに含まれているはずですが、iPad 2のみの数字は明かされませんでした。<a href="http://japanese.engadget.com/tag/iPod/">iPod</a>は902万台で、17%ダウン。面白いことにiOSファミリーの好調に合わせて、<a href="http://japanese.engadget.com/tag/Mac/">Mac</a>も376万台と前年同期比で28%アップしています。ジョブズCEOのお言葉は「我々はエンジン全開である」「今年の残りを通じて、あらゆる局面でイノベーションを続けていく」。次（と<a href="http://japanese.engadget.com/2011/04/18/iphone-5-a5-8mp-iphone-6-2012/">さらにその次</a>）のiPhoneのことを指しているのか、<a href="http://japanese.engadget.com/2011/02/15/wsj-iphone/">クラウド iTunes </a>を指しているのか、また別の製品が進行しているのかは分かりませんが、とにかくジョブズ本人が<a href="http://japanese.engadget.com/2010/06/01/d8-jobs-interview/">「シュール」</a>と言う絶好調ぶりはまだ続きそうです。<h6 style="clear: both; padding: 8px 0 0 0; height: 2px; font-size: 1px; border: 0; margin: 0; padding: 0;"></h6><a href=http://www.apple.com/pr/library/2011/04/20results.html>Read</a>&nbsp;|&nbsp;<a href="http://japanese.engadget.com/2011/04/22/apple/" rel="bookmark" title="Permanent link to this entry">Permalink</a>&nbsp;|&nbsp;<a href="http://japanese.engadget.com/forward/19920750/" title="Send this entry to a friend via email">Email this</a>&nbsp;|&nbsp;<a href="http://japanese.engadget.com/2011/04/22/apple/#comments" title="View reader comments on this entry">Comments</a>]]>
+<![CDATA[サムスンが日韓独でアップルを提訴、計10件の特許侵害]]>
+
+<![CDATA[<p>Filed under: <a href="http://japanese.engadget.com/category/storage/" rel="tag">ストレージ</a></p><div style="text-align: center;"><img vspace="4" src="http://www.blogcdn.com/japanese.engadget.com/media/2011/04/panasonicsdxcsdhccomptop.jpg"  alt="" /></div>
+<br />
+パナソニックが SDカードの新製品 5シリーズ17モデルを一挙に発表しました。上位のSDA シリーズ / SDU シリーズは新規格 UHS-I に対応し、最大で読み込み95MB / 秒・書き込み80MB / 秒の高速転送を実現します。<br />
+<br />
+まず最上位のSDAシリーズは、容量が32GB / 16GB / 8GBの3モデル。いずれもUHS-I に対応し、最大転送速度は読み95MB / 秒・書き80MB / 秒。一定条件下での最低保証転送速度を示すスピードクラスは UHSスピードクラス1、SDスピードクラス class 10。<br />
+<br />
+次に上位のSDUシリーズは、容量が64GB (SDXC) および 32GB / 16GB / 8GB (SDHC) の4モデル。UHS-I に対応し、最大転送速度は64GBのRPSDU64GJ1K のみ 90MB / 秒・45MB / 秒、残りの3モデルは読み90MB / 秒・書き25MB / 秒。こちらもUHSスピードクラス1、SDスピードクラス class 10。<br />
+<br />
+その下の普及品 SDLシリーズは32GB のSDHCから2GBのSDまで5モデル。いずれも class 4 で最大転送速度20MB / 秒と、ハイエンドより分かりやすく下の性能です。<br />
+<br />
+microSDは高速なSME シリーズが16GB / 8GB / 4GBで最大22MB / 秒、class 10。高速ではないSMFシリーズは32GB と16GB、最大10MB / 秒、class 4。<br />
+<br />
+このうちSDの上位2シリーズ (SDA, SDU) およびmicroSDの高速シリーズ (SME) は、内蔵コントローラによるウェアレベリングやリフレッシュ機能、突然の電源断への対応など、信頼性を向上させたパナソニック独自のデータ保護技術「データプロテクタ」を搭載します。発売は全シリーズとも6月中旬、価格はオープン。<br />
+<h6 style="clear: both; padding: 8px 0 0 0; height: 2px; font-size: 1px; border: 0; margin: 0; padding: 0;"></h6><a href=http://panasonic.co.jp/corp/news/official.data/data.dir/jn110422-2/jn110422-2.html>Read</a>&nbsp;|&nbsp;<a href="http://japanese.engadget.com/2011/04/22/uhs-i-sdxc-sdhc-95mb/" rel="bookmark" title="Permanent link to this entry">Permalink</a>&nbsp;|&nbsp;<a href="http://japanese.engadget.com/forward/19920829/" title="Send this entry to a friend via email">Email this</a>&nbsp;|&nbsp;<a href="http://japanese.engadget.com/2011/04/22/uhs-i-sdxc-sdhc-95mb/#comments" title="View reader comments on this entry">Comments</a>]]>
+<![CDATA[アップル、1-3月期決算も絶好調。iPhone売上台数は前年同期より倍増]]>
+
+<![CDATA[<p>Filed under: <a href="http://japanese.engadget.com/category/notebooks/" rel="tag">ノートPC</a></p><div style="text-align: center;"><img hspace="4" border="0" vspace="4" alt=""  src="http://www.blogcdn.com/japanese.engadget.com/media/2011/04/letsnote201104.jpg" /></div>
+<br />
+パナソニックが <a href="http://japanese.engadget.com/tag/Letsnote/">Let'snote</a> 夏モデルを発表しました。このごろ徐々にシリーズ数が増えているLet'snoteファミリーですが、今回は新シリーズなし。光学ドライブ付きで15.6型のB10、12.1型のS10、光学ドライブなしで12.1型のN10、10.1型のJ10、そして12.1型コンバーチブルタブレットの C1と、5シリーズ体制です。主な変更点は以下のとおり。<br />
+<ul>
+    <li>J10やC1も"Sandy Bridge"世代のCore iプロセッサを搭載。</li>
+    <li>S10 / N10 / J10 / C1が新リチウム電池と省電力設計により、バッテリ駆動時間が0.5 - 1時間アップ。</li>
+    <li>S10 / N10 / J10がUSB 3.0ポートを搭載。</li>
+    <li>HDDがS10 / N10 / B10 は640GB、C1は320GB、J10のスタンダードモデルが250GBに、それぞれ拡大。</li>
+</ul>
+発売日は5月27日。受注生産のC1のみ6月24日。今回もハイパフォーマンスモデルとスタンダードモデルの2種類が用意されるJ10を例に挙げれば、ハイパフォーマンスはCore i5-2410M、2GBメモリ、128GB SSDという構成。スタンダードモデルはCore i3-2310M、2GBメモリ、250GB HDDです。<br />
+<br />
+またオンライン直販のマイレッツ倶楽部では、B10のSSD 256GBモデルやJ10のCore i7モデル、各シリーズで8GBメモリや750GB HDDを搭載したモデルなどが限定で提供されます。こちらは本日22日から予約受付。発売日は原則5月22日で、B10のプレミアムエディションとC1が6月24日です。<br />
+<br />
+プレスリリース <a href="http://panasonic.co.jp/corp/news/official.data/data.dir/jn110422-3/jn110422-3.html">店頭モデル</a>, <a href="http://panasonic.co.jp/corp/news/official.data/data.dir/jn110422-1/jn110422-1.html">マイレッツ倶楽部限定モデル</a><br />
+<br />
+<h6 style="clear: both; padding: 8px 0 0 0; height: 2px; font-size: 1px; border: 0; margin: 0; padding: 0;"></h6><a href="http://japanese.engadget.com/2011/04/22/letsnote-sandy-bridge/" rel="bookmark" title="Permanent link to this entry">Permalink</a>&nbsp;|&nbsp;<a href="http://japanese.engadget.com/forward/19920828/" title="Send this entry to a friend via email">Email this</a>&nbsp;|&nbsp;<a href="http://japanese.engadget.com/2011/04/22/letsnote-sandy-bridge/#comments" title="View reader comments on this entry">Comments</a>]]>
+<![CDATA[パナソニックからUHS-I 対応SDXC / SDHC カード、最大95MB/秒]]>
+
+<![CDATA[<div style="text-align: center;"><img vspace="4" hspace="4" border="1" alt="" src="http://www.blogcdn.com/www.engadget.com/media/2011/04/11x042015283230.jpg" /></div>
+<br />
+可視化ツールの公開で話題となった <a href="http://japanese.engadget.com/2011/04/20/ios-4-pc/">iOS 4 の位置情報ログ</a>について。端末に蓄積されるだけでも嫌だというユーザーのために、ログファイルへの保存を阻止するソフトウェア Untrackerd が公開されました。おさらいすると、問題の位置情報ログは iOS 4 搭載の iPhone や iPad 3G が、携帯基地局との通信などをもとに端末内のデータベース consolidated.db に蓄積するもの。iOS 4の導入以来すべての移動履歴が含まれること、ユーザーの意志で無効にする方法が用意されていないこと、iTunes との同期でPC上にも残るといった点が議論を呼んだ理由です。<br />
+<br />
+今回リリースされた Untrackerd は、デーモンとして常駐し端末上の consolidated.db を5分ごとにクリアし続けるソフトウェア。端末内の DBを空にするため iTunes のバックアップにも履歴が残らず、iPhone / iPad を紛失したり盗まれた場合でも、第三者に昨年以来の移動履歴を覗かれる心配がなくなります。ただしアップルが認めるわけもない非公認ソフトウェアなので、導入には <a href="http://japanese.engadget.com/tag/Jailbreak/">Jailbreak</a> した iOS 機器が必須です。ついでにいえば App Store の審査も経ていないため、説明どおりに動作しなくても誰も保証してくれません。<br />
+<br />
+データベースの消去そのものは、たとえば買ったばかりや iOS 4 を導入したての機器にはもともと履歴が入っていないため端末の動作に大きな影響を与えることはないと推測できますが、そもそも iOS がなんのために全期間の履歴を蓄積しているのか、どう使っているのかいないのか分からないためこれも不明確。とりあえずPC上のバックアップを読まれることだけが不安なら、iTunes の標準機能で暗号化にチェックを入れるだけでも防げます。<br />
+<br />
+[via  <a href="http://thebigboss.org/2011/04/21/neuter-consolidated-db-iphone-location-tracking">BigBoss</a>]<br />
+<h6 style="clear: both; padding: 8px 0 0 0; height: 2px; font-size: 1px; border: 0; margin: 0; padding: 0;"></h6><a href=http://apt.thebigboss.org/onepackage.php?bundleid=com.rpetrich.untrackerd&amp;db=>Read</a>&nbsp;|&nbsp;<a href="http://japanese.engadget.com/2011/04/21/ios-4-untrackerd/" rel="bookmark" title="Permanent link to this entry">Permalink</a>&nbsp;|&nbsp;<a href="http://japanese.engadget.com/forward/19920727/" title="Send this entry to a friend via email">Email this</a>&nbsp;|&nbsp;<a href="http://japanese.engadget.com/2011/04/21/ios-4-untrackerd/#comments" title="View reader comments on this entry">Comments</a>]]>
+<![CDATA[Let'snote夏モデル発表。全機種"Sandy Bridge"世代へ、バッテリ駆動時間も向上]]>
+
+<![CDATA[<div style="text-align: center;"><img vspace="4" hspace="4" border="0" alt="" src="http://www.blogcdn.com/www.engadget.com/media/2011/04/amazon-tablet-android-samsung.jpg" /></div>
+<br />
+猫も触手もAndroidタブレットを投入する今日このごろ、アマゾンが自社ブランドのタブレットを準備しているとのうわさがあります。「電子ペーパーではなくカラー液晶を採用した <a href="http://japanese.engadget.com/tag/Kindle/">Kindle</a> が出るらしい」も含めればかなり前からささやかれてきたこの説について、<a href="http://japanese.engadget.com/tag/gdgt/">gdgt</a> の Peter Rojas が「サムスン製でおそらく7インチ、夏には発表」といった詳細を含むニュースレターを公表しました。ピーターといえばEngadgetの創業者かつ初代編集長であり、同じく元編集長 ライアン (Ryan Block)とともにガジェットコミュニティ gdgt を立ち上げた人物。あくまで予想の体裁ではありますが、それなりのソースから情報を得ていても不思議ではありません。<br />
+<br />
+リンク先から概要をまとめると、「Amazon が独自のタブレットを準備していることはもはや公然の秘密。OSはAndroidだが、自社のデジタルコンテンツサービスに最適化するため、タブレット用の3.0 Honeycomb ではなく2.x の可能性もある。製造は「99%の確かさで」サムスンが担当する。価格は Kindle や B&amp;Nの <a href="http://japanese.engadget.com/tag/Nook/">Nook</a> と同様に、自社サービスの端末として戦略的な設定をしてくる可能性が高い。タブレットとして競合する iPad が500ドル～であるのに対して、Amazonタブレットは7インチなら250ドル、あるいは199ドルすら考えられる。発売時期は近い将来、おそらくは夏より遅くならないだろう」。(続きます)<br />
+<br />
+<br />
+<br />
+Kindle もローカル展開していない日本ではあまりピンと来ませんが、Amazon.com は Android をはじめ多数のプラットフォームで読めるKindle 電子書籍はもちろん、DRMフリーで安価な<a href="http://japanese.engadget.com/tag/AmazonMP3/"> Amazon MP3</a> (自前ライブラリもアップできる <a href="http://japanese.engadget.com/tag/AmazonCloudPlayer/">Amazon Cloud Player</a>)、映画やテレビ番組のビデオオンデマンド (<a href="http://japanese.engadget.com/2011/02/23/amazon-prime-instant-video/">プライムメンバー向け見放題ストリーミング</a>) などデジタルコンテンツ販売の巨人でもあり、趣味嗜好を把握されて1クリックで買ってしまうことに慣れた既存顧客を大量に抱えています。<br />
+<br />
+価格予想の根拠に挙がっている <a href="http://japanese.engadget.com/tag/NookColor/">Nook Color</a>  は、アマゾンの書店としてのライバル Barnes &amp; Noble が販売する 7型IPS液晶タブレット。Android  2.xをベースとしてアプリも使えるもののあくまで自社の電子本端末として扱われており、249ドルという積極的な設定です。またAmazon自身の  Kindle も、5月にはスクリーンセーバーとして " Special Offer "広告が表示されるかわりに25ドル安い114ドルの<a href="http://japanese.engadget.com/2011/04/11/kindle-5-3/">「スポンサー付き」モデル</a>が販売されます。<br />
+<br />
+そしてAndroid「ベース」の製品で問題になりがちなアプリの互換性については、仮にGoogleのAndroidマーケットがなかったとしても、もちろんアマゾン独自の<a href="http://japanese.engadget.com/tag/AmazonAppstore/">Appstore</a> がすでに開店し着々と開発者を集めているという具合です。<br />
+<br />
+このように並べると、アマゾン「までが」Androidタブレットの流行に乗るというよりは、エコシステムを回せるという意味でアマゾンこそが アップルの iPad にまともに対抗できるタブレットを投入できるのではと思えてきます。アマゾンは小売が本業であって家電のハードもソフトも専門ではないとの見方については、ピーターいわく「アマゾンは Kindleで、優れた製品を開発しコンテンツプラットフォームと巧みに結びつける能力があると証明してきた」「本格的なコンシューマーエレクトロニクス製品のメーカーでありながら、どうすればそれができるのか分かっていない企業はいくつもある」。<br />
+<br />
+たしかに大手のメーカーから、聞いたことのない独自ストアとサービスを載せたタブレット製品が販売されるパターンはよく見かける気もします。以上のいずれも推測や予想にすぎないとはいえ、発表されてもいないAmazon タブレットをあれこれ想像して楽しむいい材料です。<h6 style="clear: both; padding: 8px 0 0 0; height: 2px; font-size: 1px; border: 0; margin: 0; padding: 0;"></h6><a href=http://gdgt.com/discuss/amazons-tablet-coming-but-what-will-it-d07/>Read</a>&nbsp;|&nbsp;<a href="http://japanese.engadget.com/2011/04/21/7-android/" rel="bookmark" title="Permanent link to this entry">Permalink</a>&nbsp;|&nbsp;<a href="http://japanese.engadget.com/forward/19919904/" title="Send this entry to a friend via email">Email this</a>&nbsp;|&nbsp;<a href="http://japanese.engadget.com/2011/04/21/7-android/#comments" title="View reader comments on this entry">Comments</a>]]>
+<![CDATA[iOS 4の位置情報ログを無効にする Untrackerd 公開、要脱獄]]>
+
+<![CDATA[<div style="text-align: center;"><img src="http://www.blogcdn.com/www.engadget.com/media/2010/06/e3-2010-day-2-0728-rm-engjs.jpg" alt="" /></div>
+<br />
+日本時間で昨日21日の昼過ぎから続く PlayStation Networkの大規模障害について続報がありました。まず公式の米PlayStation.Blog によると、障害については現在も調査中であるものの、復旧までにはさらに丸一日から二日を要する可能性があるとのこと。欧州の公式PlayStation.Blog では、「外部の集団による、標的を絞った行動による可能性」も含めて調査中であり、もし障害がその結果であったなら、「攻撃の被害に耐えるユーザーには重ねて感謝したい」と述べています。一方、前回のPSN障害を引き起こしたとみられる集団 Anonymousはすでにソニーへの抗議手段としてDDoSを用いることは中止したと宣言しており、今回の事象についても声明を出していません。<br />
+<br />
+<a href="http://blog.us.playstation.com/2011/04/21/latest-update-on-psn-outage/"><strong>PlayStation.Blog (米)</strong></a><br />
+<a href="http://blog.eu.playstation.com/2011/04/21/update-on-psn-service-outages/"><strong>PlayStation.Blog (欧)</strong></a><br />
+<br />
+<strong>追記：</strong>欧州PS Blogの文面が書き換えられ、外部から云々の部分が削除されています。<br />
+<br />
+<strong>追記2：</strong>一夜明けて、日本の「PlayStation Network 障害のお知らせ」も更新されました。<blockquote>"PlayStation Network"の障害につきまして、現在、調査を行っておりますが、復旧までに一両日かかる可能性がございます。お客様にはご迷惑をおかけしておりますことを深くお詫び申しあげます。</blockquote><strong>追記3：</strong>23日になっても障害は継続中。日・米・欧で情報が更新され、<a href="http://japanese.engadget.com/2011/04/23/psn-qriocity/">「外部からの侵入の影響」で意図的にサービスを停止して調査中</a>としています。復旧への見込みは言及なし。<h6 style="clear: both; padding: 8px 0 0 0; height: 2px; font-size: 1px; border: 0; margin: 0; padding: 0;"></h6><a href="http://japanese.engadget.com/2011/04/21/psn-1-2/" rel="bookmark" title="Permanent link to this entry">Permalink</a>&nbsp;|&nbsp;<a href="http://japanese.engadget.com/forward/19920539/" title="Send this entry to a friend via email">Email this</a>&nbsp;|&nbsp;<a href="http://japanese.engadget.com/2011/04/21/psn-1-2/#comments" title="View reader comments on this entry">Comments</a>]]>
+<![CDATA[「アマゾンが独自の7型Androidタブレットを準備中」説]]>
+
+<![CDATA[<div style="text-align: center;"><img alt="" src="http://www.blogcdn.com/japanese.engadget.com/media/2011/04/ue100comp.jpg" /></div>
+<br />
+ロジクールの Ultimate Ears ブランドから、エントリー向けの安価なイヤフォン UE100, UE200 シリーズ 8製品が発表されました。2008年に Logitech 傘下になった Ultimate Ears (UE) といえば、耳型から作るプロ向けのカスタムインイヤーモニタで知られるブランド (たとえば計12ドライバで1350ドルの<a href="http://japanese.engadget.com/2010/01/15/ue-6-18-pro-1350/">UE 18 Pro</a>)。一般向けのユニバーサルフィット製品でも上は4万円前後のハイエンド <a href="http://japanese.engadget.com/2009/03/02/ultimate-ears-triple-fi-logicool-5/">UE Triple.Fi</a> から揃っています。ダイナミック型ドライバを採用する今回の2シリーズはぐっと下って、UE100はオンライン直販 1980円、UE200は2980円と気軽に買える製品です。<br />
+<br />
+UE100は24dBの遮音性とXS, S, M 三種類のイヤーチップ、「好みのジャンルやスタイルにあった」モデルを選べる5種類のデザインが特徴。 デザインはグラフィックデザイナー Chuck Anderson と " ロックスター写真家 " Greg Watermann によるもの。ロジクールによる日本語解説はたとえばピンクヘイズ (左から4番目)が、<br />
+<blockquote>
+<div>ヒップホップやアブストラクトなビートを好む層を意識したデザイン。反骨的なビートやヒップホップの荒削りで堂々としたアティテュードを印象的なアートワークとピンクのハウジングで表しました。</div>
+</blockquote>となんだかすばらしいので続きに貼りつけます。UE200 シリーズは100シリーズほどアティテュードを主張しない3色のカラーバリエーション。こちらはXXSからLまで5サイズのイヤーチップとキャリングケースが付属するほか、UEの上位製品とおなじ26dBの遮音性を備えます。ケーブル長はどちらも115cm。UE100, UE200 ともに4月28日発売です。<br />
+<br />
+<br />
+<div class="postgallery"><p><strong>Gallery: <a href="http://japanese.engadget.com/photos/ultimate-ears-100-noise-isolating-earphones/">Ultimate Ears 100 Noise-Isolating Earphones</a></strong></p><a href="http://japanese.engadget.com/photos/ultimate-ears-100-noise-isolating-earphones/#4079299"><img src="http://www.blogcdn.com/japanese.engadget.com/media/2011/04/ue10003_thumbnail.jpg" alt="" title="" /></a><a href="http://japanese.engadget.com/photos/ultimate-ears-100-noise-isolating-earphones/#4079298"><img src="http://www.blogcdn.com/japanese.engadget.com/media/2011/04/ue10002_thumbnail.jpg" alt="" title="" /></a><a href="http://japanese.engadget.com/photos/ultimate-ears-100-noise-isolating-earphones/#4079301"><img src="http://www.blogcdn.com/japanese.engadget.com/media/2011/04/ue10005_thumbnail.jpg" alt="" title="" /></a><a href="http://japanese.engadget.com/photos/ultimate-ears-100-noise-isolating-earphones/#4079302"><img src="http://www.blogcdn.com/japanese.engadget.com/media/2011/04/ue10006_thumbnail.jpg" alt="" title="" /></a><a href="http://japanese.engadget.com/photos/ultimate-ears-100-noise-isolating-earphones/#4079300"><img src="http://www.blogcdn.com/japanese.engadget.com/media/2011/04/ue10004_thumbnail.jpg" alt="" title="" /></a></div><br />
+<div class="postgallery"><p><strong>Gallery: <a href="http://japanese.engadget.com/photos/ultimate-ears-200-noise-isolating-earphones/">Ultimate Ears 200 Noise-Isolating Earphones</a></strong></p><a href="http://japanese.engadget.com/photos/ultimate-ears-200-noise-isolating-earphones/#4079313"><img src="http://www.blogcdn.com/japanese.engadget.com/media/2011/04/ue20006_thumbnail.jpg" alt="" title="" /></a><a href="http://japanese.engadget.com/photos/ultimate-ears-200-noise-isolating-earphones/#4079311"><img src="http://www.blogcdn.com/japanese.engadget.com/media/2011/04/ue20004_thumbnail.jpg" alt="" title="" /></a><a href="http://japanese.engadget.com/photos/ultimate-ears-200-noise-isolating-earphones/#4079312"><img src="http://www.blogcdn.com/japanese.engadget.com/media/2011/04/ue20005_thumbnail.jpg" alt="" title="" /></a><a href="http://japanese.engadget.com/photos/ultimate-ears-200-noise-isolating-earphones/#4079309"><img src="http://www.blogcdn.com/japanese.engadget.com/media/2011/04/ue20002_thumbnail.jpg" alt="" title="" /></a><a href="http://japanese.engadget.com/photos/ultimate-ears-200-noise-isolating-earphones/#4079310"><img src="http://www.blogcdn.com/japanese.engadget.com/media/2011/04/ue20003_thumbnail.jpg" alt="" title="" /></a></div><br />
+<br />
+<a href="http://www.logicool.co.jp/ja-jp/speakers-audio/earphones/devices/7324"><strong>UE100 製品ページ</strong></a><br />
+<a href="http://www.logicool.co.jp/ja-jp/speakers-audio/earphones/devices/6676"><strong>UE200 製品ページ</strong></a><p>型番: UE100CR (カラー名: クリムゾンロック)<br />
+ハードコア系ロックファンを意識したデザイン。レッドのイヤーチップと鮮やかな飛沫のアートワークをアクセントにしたブラックのボディは、ロックテイストの奥深さを表現しています。</p>
+<p>型番: UE100BS (カラー名：ブルーステージ)<br />
+ヒットチャートなどのポップ・ロックファンを意識したデザイン。落ち着いたダークブルーのボディと鮮やかなブルーのイヤーチップの組み合わせは、ジャンルを超えたポップ・ロックファンの音楽コレクションとマッチします。</p>
+<p>型番: UE100NL (カラー名: ネオンライト)<br />
+ダブステップやデジタル・ダンスビート系を意識したデザイン。大胆なパープルのケーシングと黄色のイヤーチップに、アクセントとしてシンセサイザーや電子音楽を想起させるアートワークを施しました。</p>
+<p>型番UE100PH (カラー名：ピンクヘイズ)<br />
+ヒップホップやアブストラクトなビートを好む層を意識したデザイン。反骨的なビートやヒップホップの荒削りで堂々としたアティテュードを印象的なアートワークとピンクのハウジングで表しました。</p>
+<p>型番: UE100JG (カラー名：ジェイドギター)<br />
+アンビエントやチルアウト系が好きな層を意識したデザイン。グリーンの惑星のアートワークと、ティール色のケーブル、ライムグリーンのイヤーチップのコンビネーション。オリジナリティとシンプルさの絶妙なハーモニーを体現しています。</p><h6 style="clear: both; padding: 8px 0 0 0; height: 2px; font-size: 1px; border: 0; margin: 0; padding: 0;"></h6><a href="http://japanese.engadget.com/2011/04/21/ultimate-ears-ue100-ue200/" rel="bookmark" title="Permanent link to this entry">Permalink</a>&nbsp;|&nbsp;<a href="http://japanese.engadget.com/forward/19920393/" title="Send this entry to a friend via email">Email this</a>&nbsp;|&nbsp;<a href="http://japanese.engadget.com/2011/04/21/ultimate-ears-ue100-ue200/#comments" title="View reader comments on this entry">Comments</a>]]>
+<![CDATA[更新：PSNの障害はさらに1〜2日続く可能性]]>
+
+<![CDATA[<div style="text-align: center;"><img vspace="4" hspace="4" border="1" alt="" src="http://www.blogcdn.com/www.engadget.com/media/2011/04/11x0421134899.jpg" /></div>
+<br />
+ソニーのPlayStation Network に大規模な障害が発生しています。内容はPSNにサインインできない、つまりPSNを介したオンラインゲームのほかフレンドリストやメッセージ、プレイステーションストアからの購入などが全てオフラインの状態。規模は日・欧・米で報告されているためおそらく全世界。<br />
+<br />
+日本の公式 PlayStation.com 障害・メンテナンス情報では、 障害が21日13時頃から発生したこと、および「調査及び復旧作業を行っておりますので、いましばらくお待ちいただけますようお願いいたします。」とお詫びの言葉が述べられています。北米SCEAの公式 PlayStation.Blog では「PSNの一部の機能がダウンしている現状は認識しています。新たな情報が得られしだいお伝えします」のまま更新なし。以前の障害の際には独立したアップデート情報を掲載していたSCEA の公式カスタマーサポート Twitter アカウント Ask PlayStation は障害発生の前から更新されていません。<br />
+<br />
+唯一 欧州地域の <a href="http://twitter.com/PlayStationEU/statuses/60979049593454592?_escaped_fragment_=/PlayStationEU/status/60979049593454592#!/PlayStationEU/status/60979049593454592">PlayStation Blog EU</a> のみ、「PSNは現在メンテナンスのためにダウン中です。期間については可能なかぎり早くお伝えします」とどちらとも取れるような表現ですが、予期せぬ問題が発生したので復旧に向けてメンテナンスという意味と思われます。PSNといえば、前回の不定期ダウンの際には、ハッカー <a href="http://japanese.engadget.com/tag/geohot/">geohot</a> とソニーの訴訟に抗議する集団 <em>Anonymous</em> が大規模なDDoS 攻撃を実施したと声明を出していました。今回は特に関与を示す発表もなく、ソニー側のなんらかのミスなのか外的要因なのかも現時点では不明。と、ここまで書いてもう一度試してもやっぱりつながりません。今回はPSPからも接続できないため、昨年のような<a href="http://japanese.engadget.com/2010/03/01/psn/">PS3本体機能バグ</a>の可能性は低いと思われます。『<a href="http://www.jp.playstation.com/scej/title/trico/">人喰いの大鷲トリコ</a>』と ICO / ワンダと巨像 HD延期の衝撃で暗黒面に堕ちたファンがDDoSに参加してるのかもしれません。<br />
+<br />
+<strong>続報：</strong><a href="http://japanese.engadget.com/2011/04/21/psn-1-2/">PSNの障害はさらに1～2日続く可能性</a><h6 style="clear: both; padding: 8px 0 0 0; height: 2px; font-size: 1px; border: 0; margin: 0; padding: 0;"></h6><a href=http://www.jp.playstation.com/psn/state.html>Read</a>&nbsp;|&nbsp;<a href=https://twitter.com/#!/AskPlayStation>Read</a>&nbsp;|&nbsp;<a href="http://japanese.engadget.com/2011/04/21/psn/" rel="bookmark" title="Permanent link to this entry">Permalink</a>&nbsp;|&nbsp;<a href="http://japanese.engadget.com/forward/19920033/" title="Send this entry to a friend via email">Email this</a>&nbsp;|&nbsp;<a href="http://japanese.engadget.com/2011/04/21/psn/#comments" title="View reader comments on this entry">Comments</a>]]>
+<![CDATA[Ultimate Ears からエントリー向け高遮音イヤフォンUE100, UE200]]>
+
+<![CDATA[<div style="text-align: center;"><img src="http://www.blogcdn.com/japanese.engadget.com/media/2010/11/toshibabladexgalessd.jpg" alt="" /></div>
+<br />
+<br />
+東芝が、19nm プロセスで製造された64Gb (8GB) NANDフラッシュメモリの開発を発表しました。世界で初めて10ナノメートル台の製造プロセスを採用したことでチップサイズは縮小し、スマートフォンやタブレットに採用される小型パッケージ内に16段までの積層が可能になったとしています。今回開発された64Gb 品は2ビット / セル、インターフェースは Toggle DDR2.0規格準拠。今月末からサンプル出荷を開始し、今年第3四半期には量産出荷する予定。またさらに容量を増やせる 3ビット / セル品もラインナップに加えてゆくとしています。また東芝と提携する SanDisk からもプレスリリースが出ており、こちちは今四半期にサンプル出荷、今年後半に量産出荷。なお写真は今回発表された19nm品ではなく、現行の薄型ノート向けSSD製品 <a href="http://japanese.engadget.com/2010/11/07/ssd-blade-x-gale/">Blade X-gale</a>のもの。<h6 style="clear: both; padding: 8px 0 0 0; height: 2px; font-size: 1px; border: 0; margin: 0; padding: 0;"></h6><a href=http://www.toshiba.co.jp/about/press/2011_04/pr_j2101.htm?from=RSS_PRESS&amp;uid=20110421-1425>Read</a>&nbsp;|&nbsp;<a href="http://japanese.engadget.com/2011/04/21/19nm-nand-q3/" rel="bookmark" title="Permanent link to this entry">Permalink</a>&nbsp;|&nbsp;<a href="http://japanese.engadget.com/forward/19919749/" title="Send this entry to a friend via email">Email this</a>&nbsp;|&nbsp;<a href="http://japanese.engadget.com/2011/04/21/19nm-nand-q3/#comments" title="View reader comments on this entry">Comments</a>]]>
+<![CDATA[PSNに世界規模の接続障害発生、継続中]]>
+
+<![CDATA[<p>Filed under: <a href="http://japanese.engadget.com/category/cellphones/" rel="tag">携帯電話</a></p><div style="text-align: center;"><img hspace="4" border="0" vspace="4" src="http://www.blogcdn.com/www.engadget.com/media/2011/04/11x0409mnbvhg.jpg" alt="" /></div>
+<br />
+<a href="http://japanese.engadget.com/tag/GalaxyS/">Galaxy S</a> の <a href="http://japanese.engadget.com/tag/Android/">Android</a> 2.3 アップデートが<a href="http://japanese.engadget.com/2011/04/18/galaxy-s-gingerbread/">海外ではじまりました</a>。日本では今のところ特に発表はありませんが、待っているユーザの方々は多いはずです。Android 2.3といえば、ソニーエリクソンの英断により、<a href="http://japanese.engadget.com/tag/XperiaX10/">Xperia X10</a>にもAndroid 2.3アップデートが<a href="http://japanese.engadget.com/2011/03/25/xperia-x10-android-2-3-gingerbread/">提供されます</a>。ただし日本の <a href="http://japanese.engadget.com/tag/Xperia/">Xperia</a> SO-01B にも提供されるかどうかは不透明な状況。原則として半年に一度のアップデートを繰り返すAndroidプラットフォームを巡っては、どのプラットフォーム向けに開発をすればいいのか分からない、いわゆる「分断」批判もありますが、これはどちらかというと開発者視点の問題。ユーザ視点では、ほぼすべての端末においていつまでサポートされるのか不透明な点が、大きな心配事のひとつではないでしょうか。<br />
+<br />
+ライバル<a href="http://japanese.engadget.com/tag/iPhone/">iPhone</a>の場合、日本では初代にあたるiPhone 3Gでも最新のiOS4を利用することができます。<a href="http://japanese.engadget.com/tag/iPhone4/">iPhone 4</a>をお持ちの皆様は、もちろん来たるべきiOS5も利用できると信じているでしょう。なぜAndroidユーザだけがいつもやきもきしなければいけないのでしょうか。そもそもiPhoneは毎年泳げるようになるころには新作が定期的に発表されていますし（今年はどうなるか<a href="http://japanese.engadget.com/2011/04/20/iphone-9/">分かりませんが</a>）、アップルは毎年、少なくとも二年に一度は買い換えるべきという野望を隠していません。しかし例えば、昨年末に発売されたばかりの<a href="http://japanese.engadget.com/tag/IS03/">IS03</a>は、先週ようやくAndroid 2.2アップデートが配信されたところで、Android 2.3への道筋はやっぱり不透明。かといって、au + シャープの新モデルが発表されたわけでもありません。単に、Androidの趨勢から遅れているのです。<br />
+<br />
+（続きます）<br />
+<br />
+<br />
+<div style="text-align: center;"><img hspace="4" border="0" vspace="4" src="http://www.blogcdn.com/japanese.engadget.com/media/2011/04/is03update.png" alt="" /></div>
+<br />
+ただアップデートが配信されればそれでいいというわけでもありません。IS03のAndroid 2.2 アップデートを実際に試した方なら分かると思いますが、専用のアップデートソフトはおおよそ洗練からは程遠い作りでした（IS03ユーザでない方はスクリーンショットからなんとなく感じとって下さい）。OTAアップデートでないばかりに、USBドライバをインストールして、アップデートソフトをダウンロードして立ち上げて、端末からも設定メニューを選んで......。これはつまり、メールもウェブもケータイで済ませるような層へ売り込むつもりはないということでしょうか（「この、プロキシ設定ってボタンはなに？」）。そもそもこれでは、アップデートが提供されていることさえ気付かない人がいそうです。（<strong>追記：</strong>IS03はメジャーアップデート配信の数日後に、通知があったとのこと）<br />
+<br />
+国内Android史に名を残す「<a href="http://japanese.engadget.com/2010/11/16/au-is01-android-1-6/">IS01切り捨て事件</a>」から比較すれば、アップデートが提供されるだけ喜ぶべきかもしれません。それにアップデートの見通しが不透明なのは海外でも起きていることで す。しかし日本のケータイメーカーやキャリアがスマートフォン、つまりAndroidを幅広い層へ普及させていくつもりなら、いつまでアップデートを提供するのか、どのように提供するのか、ユーザに知らせて信頼を確立する必要があります。10代に売り込むつもりなら、もっと簡単にアップデート可能な方法も提供すべきでしょう。そのためには端末をもっさりさせるような作り込みはやめ、Android自身のアップデートに対応できるような体制を組まなければいけません。最初に導入すべきソフトが「LauncherPro」では、開発者にもユーザにも不幸です。<br />
+<br />
+これはユーザのためというだけではなく、メーカー各社のためでもあります。Androidがなければ、iPhone人気を前に、日本のケータイメーカー各社（およびドコモとKDDI）はもっと辛い状況を味わっていたでしょう。それなのに、Androidで人気と信頼を獲得できなければ、待っているのはグローバルメーカーの攻勢です。「おサイフはないけど、サポートを考えてHTCにした」などと言われてしまっては、もう遅いのです。<br />
+<br />
+<strong>追記（4/22）：<br />
+</strong>たくさんコメントありがとうございます。二点だけ補足。ひとつめ：Androidスマートフォンはすべていつまでもアップデートすべき......というつもりはありません。アップデートを一切しない端末を売りたいなら、それもありでしょう。問題はあくまでアップデート計画が不透明なことです。そしてライト層にアップデートなんて不要という見方が正しいかどうかは、今後アップデートできる端末とできない端末の明暗が別れる中で、どのメーカーが支持されていくかという形をとって明らかになるでしょう。<br />
+<br />
+ふたつめ：記事ではIS03を例に取り上げましたが、もちろんIS03固有の問題ではありません。国内他社や海外のAndroid、あるいはiPhoneでも、アップデートがどこまでサポートされるかはほとんど不透明ですし、多くの端末でアップデート時にPC / Macがいるという現状があります。カスタマイズが過剰というのは海外でもよく聞かれる声です。ただ、基本性能で遅れがちな、価格競争に巻き込まれたくない国内メーカー端末が、使いやすさやサポート面で海外メーカー端末と横並び（あるいはそれ以下）になってしまっては、これからどうやって生き残っていくのさ、というだけです。<br />
+<h6 style="clear: both; padding: 8px 0 0 0; height: 2px; font-size: 1px; border: 0; margin: 0; padding: 0;"></h6><a href="http://japanese.engadget.com/2011/04/21/is03-android/" rel="bookmark" title="Permanent link to this entry">Permalink</a>&nbsp;|&nbsp;<a href="http://japanese.engadget.com/forward/19915995/" title="Send this entry to a friend via email">Email this</a>&nbsp;|&nbsp;<a href="http://japanese.engadget.com/2011/04/21/is03-android/#comments" title="View reader comments on this entry">Comments</a>]]>
+<![CDATA[東芝、世界最小 19nmプロセス NANDフラッシュメモリを開発。Q3から量産]]>
+
+<![CDATA[<p>Filed under: <a href="http://japanese.engadget.com/category/networking/" rel="tag">ネットワーク</a></p><div style="text-align: center;"><img hspace="4" border="0" vspace="4" src="http://www.blogcdn.com/japanese.engadget.com/media/2011/03/icsa.png" alt="" /></div>
+<br />
+<a href="http://japanese.engadget.com/2011/03/04/icsa/">先月発足し</a>た一般社団法人インターネットコンテンツセーフティ協会（ICSA）が、児童ポルノ画像へのアクセスブロッキングを開始したことを発表しました。さっそく本日21日から、同協会の会員であるNECビッグローブ、NTTコミュニケーションズ、NTTぷらら、KDDI、ソネット、ソフトバンクテレコム、ソフトバンクBB、ニフティ、インターネットイニシアティブの計9社が、ICSAからアドレスリストの提供を受け、各社のインターネット接続サービスにおいてブロッキングを実施しています（IIJのみ本日から順次実施）。同時にgoo、Google、Naver、Yahoo!の各検索エンジンでも検索結果が非表示になるほか、デジタルアーツ、ネットスター、ヤフーが提供するフィルタリングサービスでも同様のアクセス制限が行われるとのこと。肝心のアドレスリストについては詳細不明ですが、朝日新聞の記事では「最初なので慎重に選び少なめ」の百数十サイトがブロック対象に選ばれていると報じられています。<br />
+<br />
+児童ポルノ流通の阻止という大義名分には誰もが納得するところです。しかしブロック対象の選定方法などについては簡素なICSAのウェブサイトに多少の情報があるだけで、相変わらず運用面での不透明な部分が多く、通信の秘密や表現規制の問題をどれだけ真剣に捉えているのか、例によって具体性のないプレスリリースからはどうにも読みとれません。とりあえず問題のコンテンツを表示しようとすると、ブロックされた旨のメッセージが現れるということ（このことさえICSAのサイトにはなく、NTTコム / OCNがプレスリリースで説明している程度）。まずはオーバーブロッキングなどの問題が出ないことを願うのみです。<br />
+<br />
+<a href="http://www.netsafety.or.jp/news/press/press-003.html">ICSAのプレスリリース</a>, <a href="http://www.ocn.ne.jp/info/announce/2011/04/21_1.html">OCNのプレスリリース</a>, <a href="http://www.asahi.com/national/update/0421/TKY201104210122.html">asahi.comの報道</a><h6 style="clear: both; padding: 8px 0 0 0; height: 2px; font-size: 1px; border: 0; margin: 0; padding: 0;"></h6><a href="http://japanese.engadget.com/2011/04/21/icsa/" rel="bookmark" title="Permanent link to this entry">Permalink</a>&nbsp;|&nbsp;<a href="http://japanese.engadget.com/forward/19919713/" title="Send this entry to a friend via email">Email this</a>&nbsp;|&nbsp;<a href="http://japanese.engadget.com/2011/04/21/icsa/#comments" title="View reader comments on this entry">Comments</a>]]>
+<![CDATA[IS03に見る、Androidアップデートの不透明と不健全]]>
+
+<![CDATA[<p>Filed under: <a href="http://japanese.engadget.com/category/wearable/" rel="tag">ウェアラブル</a>, <a href="http://japanese.engadget.com/category/displays/" rel="tag">ディスプレイ</a></p><div style="text-align: center;"><img hspace="4" border="1" vspace="4" src="http://www.blogcdn.com/www.engadget.com/media/2011/04/4-20-2001oled-mikrodisplay-mit-eyetracking-funktionpresse.jpg" alt="Fraunhofer IPMS Eye-Tracking Display" /></div>
+<br />
+ドイツ・フラウンホファーIPMS（フォトニック・マイクロシステム研究所）が、ヘッドマウントディスプレイ（<a href="http://japanese.engadget.com/tag/HMD/">HMD</a>）に利用できる双方向マイクロディスプレイを、来月ラスベガスで開催されるディスプレイ見本市 SID 2011 で展示します。これは一枚の小型チップ上に有機ELマトリクスとCMOSセンサを統合させたもの。写真のようにスカウター風のHMDに利用すれば、現実世界上にデジタルデータを投影するARアプリが実現できるようになります。研究所のプレスリリースによれば、用途は例えば「ジョギング中に動画を見る」など。あんまりお薦めしてほしくない例です。<br />
+<br />
+またCMOSセンサを利用した視線の検出も可能なため、HMDに利用した場合はフリーハンドで操作を行うことが可能。ジョギング + 動画の例に戻れば、視点を動かすだけで次の動画を呼び出すというような機能も考えられます。展示されるデモは明るさ1500cd/m2以上で、モノクロ仕様とのこと。サイヤ人に憧れた方もボーグに憧れた方も商用化を楽しみにしたいものです。<br />
+<br />
+<img class="img_label" src="http://www.engadget.com/media/post_label_VIA.gif" alt="" /> <a href="http://www.oled-display.net/fraunhofer-ipms-show-world-first-oled-microdisplay-based-eyetracking-hmd-at-sid-2011">OLED-Display.net</a><h6 style="clear: both; padding: 8px 0 0 0; height: 2px; font-size: 1px; border: 0; margin: 0; padding: 0;"></h6><a href=http://www.ipms.fraunhofer.de/en/news/press/2011-03-30.html>Read</a>&nbsp;|&nbsp;<a href="http://japanese.engadget.com/2011/04/21/hmd/" rel="bookmark" title="Permanent link to this entry">Permalink</a>&nbsp;|&nbsp;<a href="http://japanese.engadget.com/forward/19919674/" title="Send this entry to a friend via email">Email this</a>&nbsp;|&nbsp;<a href="http://japanese.engadget.com/2011/04/21/hmd/#comments" title="View reader comments on this entry">Comments</a>]]>
+<![CDATA[ICSAと国内大手プロパイダ、児童ポルノへのアクセスブロックを開始]]>
+
+<![CDATA[<p>Filed under: <a href="http://japanese.engadget.com/category/home-entertainment/" rel="tag">AV</a></p><div style="text-align: center;"><img hspace="4" border="0" vspace="4" src="http://www.blogcdn.com/japanese.engadget.com/media/2011/04/55zg2.jpg" alt="" /></div>
+<br />
+東芝がREGZAシリーズの新製品、ZG2とZP2を発表しました。いずれもフラッグシップの <a href="http://japanese.engadget.com/tag/CELLREGZA/">CELL REGZA</a> を引き継ぐような、プレミアムモデルと位置付けられています。特に上位モデル ZG2では、画像処理エンジン「レグザエンジンCEVO」をふたつ備えた「レグザエンジンCEVO Duo」に加え、CELL REGZAの代名詞だったタイムシフトマシン機能を搭載。2TBのハードディスクを内蔵しており、うち1.5TBぶんを利用して最大6チャンネル・過去30時間分を録画し続ける「タイムシフトマシンCEVO」機能となっています。<br />
+<br />
+そのほかにも、8分割バックライトスキャン対応の新IPSパネルや、前後複数のフレームから映像を再構成し、色情報を4倍に復元するという3次元フレーム超解像技術採用「レゾリューションプラス6」、地デジを視聴しながら2番組を録画する「地デジ見ながらW録」など。3D分野では色情報による奥行復元機能「高画質2D3D変換」、「3Dクロストークキャンセラー」機能、「3Dフレーム補間」機能など。東芝らしい気合の入った名前の機能が盛り沢山です。レグザAppsコネクトにも対応。サイズは55V / 47V / 42Vの3種類。別売のアクティブシャッター方式「レグザ3Dグラス」も軽量35gの新モデルとなっています。発売は5月下旬です。<br />
+<br />
+一方のZP2は32V / 26V型とお手頃サイズながら、レグザエンジンCEVOに新開発のフルHD IPSパネルを内蔵したモデル。偏光フィルター方式で電源不要の3Dグラス「シアターグラス3D」が同梱され、3D映像を楽しむこともできます。そのほか、前述の「レゾリューションプラス6」、USBハードディスク接続で2番組を同時に録画できる「おでかけW録」、レグザAppsコネクト対応など。発売は6月上旬です。<br />
+<br />
+プレスリリース - <a href="http://www.toshiba.co.jp/about/press/2011_04/pr_j2006.htm">ZG2</a> / <a href="http://www.toshiba.co.jp/about/press/2011_04/pr_j2007.htm">ZP2</a><h6 style="clear: both; padding: 8px 0 0 0; height: 2px; font-size: 1px; border: 0; margin: 0; padding: 0;"></h6><a href="http://japanese.engadget.com/2011/04/21/regza-zg2/" rel="bookmark" title="Permanent link to this entry">Permalink</a>&nbsp;|&nbsp;<a href="http://japanese.engadget.com/forward/19919656/" title="Send this entry to a friend via email">Email this</a>&nbsp;|&nbsp;<a href="http://japanese.engadget.com/2011/04/21/regza-zg2/#comments" title="View reader comments on this entry">Comments</a>]]>
+<![CDATA[視線で操作できるHMD用マイクロディスプレイ]]>
+
+<![CDATA[<div style="text-align: center;"><a href="http://japanese.engadget.com/2011/04/20/rfid/"><img vspace="4" hspace="4" border="0" src="http://www.blogcdn.com/www.engadget.com/media/2011/04/towelie.jpg" alt="" /></a><a href="http://www.engadget.com/2011/04/20/that-hotel-towel-youre-stealing-might-have-an-rfid-chip-in-it/"><br />
+</a></div>
+「みんなやってるから」「もともとそれを織り込んだ宿泊料金だから」と旅行に行くたびにホテルの備品を無断持ち出ししている人はこれからちょっとした緊張感を味わえそうです。米フロリダの企業 Linen Technology Tracking がホテル向けに提供するのは、300回の洗濯に耐えるという洗えるRFID。タオルやバスローブ、シーツなどに直接縫い込むことができ、利用者が「うっかり」持ち出そうとすると従業員にアラームで知らせる仕組みです。<br />
+<br />
+リンク先の <em>Time</em> によると、導入したホノルルのホテルでは昨年夏以来 1万5000ドル近く出費を抑えることができ、タオルの盗難率は導入前の 1 / 4 以下に減少したとのこと。またこのシステムは盗難防止のほか、ホテル側のタオルやリネン類管理にも活用が可能。記事では ホノルル、マンハッタン、マイアミの3ホテルがすでに導入済みとされていますが、当然ながら名称は非公開。このシステムが実際には存在しなかったとしても、記事になるだけで盗難率は下がりそうです。<br />
+<h6 style="clear: both; padding: 8px 0 0 0; height: 2px; font-size: 1px; border: 0; margin: 0; padding: 0;"></h6><a href=http://newsfeed.time.com/2011/04/18/want-to-steal-a-hotel-towel-check-for-a-new-tracking-chip-first/>Read</a>&nbsp;|&nbsp;<a href="http://japanese.engadget.com/2011/04/20/rfid/" rel="bookmark" title="Permanent link to this entry">Permalink</a>&nbsp;|&nbsp;<a href="http://japanese.engadget.com/forward/19919581/" title="Send this entry to a friend via email">Email this</a>&nbsp;|&nbsp;<a href="http://japanese.engadget.com/2011/04/20/rfid/#comments" title="View reader comments on this entry">Comments</a>]]>
+<![CDATA[東芝 REGZA ZG2 発表、6ch・30時間録画のタイムシフトマシン機能搭載]]>
+
+<![CDATA[<p>Filed under: <a href="http://japanese.engadget.com/category/cellphones/" rel="tag">携帯電話</a>, <a href="http://japanese.engadget.com/category/tablet-pcs/" rel="tag">タブレットPC</a></p><div style="text-align: center;"><img vspace="4" hspace="4" border="0" src="http://www.blogcdn.com/www.engadget.com/media/2011/04/android-honeycomb-logo-intel-buzz-small.jpg" alt="" /></div>
+<br />
+スマートフォンやタブレットへの出遅れもなんのその、インテルが四半期決算で好調ぶりを示しました。売上は前年同期比25%アップとなる128億ドルで、これはずっと半導体業界に君臨してきた同社にとっても過去最高の数字。純利益も31億6000万ドルと、前年同期比29%アップです。しかしやはり気になるのは、これまでの成果ではなく、これからの計画について。四半期決算のカンファレンスコールでは同社のPaul Otellini CEOがタブレットやスマートフォンといった分野での戦略を語っています。<br />
+<br />
+まずはタブレットについて。同社は以前、<a href="http://japanese.engadget.com/tag/Windows/">Windows</a>、<a href="http://japanese.engadget.com/tag/MeeGo/">MeeGo</a>、<a href="http://japanese.engadget.com/tag/Android/">Android</a>の<a href="http://japanese.engadget.com/2010/12/09/atom-35-tablets/">三正面作戦</a>を展開する計画を示していましたが、Otellini CEOは「Googleから"<a href="http://japanese.engadget.com/tag/Honeycomb/">Honeycomb</a>"のソースコードを提供された」と語り、Android 3.0 "Honeycomb"をx86で利用できるよう移植を進めていることを明らかにしました。製品として実現するのは「年内」とのこと。ご存知のとおり"Honeycomb"は<a href="http://japanese.engadget.com/2011/03/24/google-android-3-0-honeycomb/">ソースコードが未公開</a>で、製品化されているのはNVIDIA <a href="http://japanese.engadget.com/tag/Tegra/">Tegra</a>採用のものばかりという状態ですので、早いうちにインテルチップ内蔵の製品を投入できれば、なかなかのインパクトがありそうです。タブレット自体をどのメーカーが製造するかについては言及されていませんが、Acerが"<a href="http://japanese.engadget.com/tag/SandyBridge/">Sandy Bridge</a>"採用のAndroidタブレットを<a href="http://www.engadget.com/2011/01/18/acer-building-sandy-bridge-tablets-for-android-will-use-them-to/">計画しているという報道</a>もあります。<br />
+<br />
+続いてスマートフォンについて。まずOtellini CEOはMeeGo連合を形成していた「<a href="http://japanese.engadget.com/2011/02/11/q-a-android-meego/">ノキアを失った</a>」ことを認め、<a href="http://japanese.engadget.com/2011/02/17/atom-medfield-android/">当初の計画であった年内の製品投入</a>が難しくなったという見通しを示しました。なかなかうまくいかない状況が続いていますが、もちろん諦めたわけではなく、同氏は「スマートフォン分野では成功に向けて引き続き取り組む」とはっきり宣言し、「"Medfield"ベースの端末について、世界中のさまざまな端末メーカーやキャリアと共に積極的に開発を行っている」と説明しました。時期については「これから12か月以内にインテルベースのスマートフォンを見ることができなければ、私はかなりがっかりするだろう」とのこと。発言を総合すれば、次の目標は年始ごろということになります。<br />
+<br />
+ARM勢に比べ、かなり出遅れていることに関しては「近頃のスマートフォンOSでは、すべて高級言語で開発が行われており、クロスプラットフォームで、移植性も高くなっている。よってARMからインテルへ、インテルからARMへと移ることは、これまでのWindowsの世界に比べ容易になっている」と説明。準備が整えばARM勢から市場を奪えるということなのでしょうが、一方でマイクロソフトが<a href="http://japanese.engadget.com/2011/01/05/windows-arm/">ARM版Windows</a>を開発しているのはちょっと皮肉です。<br />
+<br />
+<img class="img_label" src="http://www.engadget.com/media/post_label_VIA.gif" alt="" /> <a href="http://www.theregister.co.uk/2011/04/20/otellini_on_tablets_andsmartphones/">The Register</a><h6 style="clear: both; padding: 8px 0 0 0; height: 2px; font-size: 1px; border: 0; margin: 0; padding: 0;"></h6><a href=http://www.intc.com/releasedetail.cfm?ReleaseID=570227&amp;ReleasesType=Home>Read</a>&nbsp;|&nbsp;<a href="http://japanese.engadget.com/2011/04/20/intel-honeycomb/" rel="bookmark" title="Permanent link to this entry">Permalink</a>&nbsp;|&nbsp;<a href="http://japanese.engadget.com/forward/19919500/" title="Send this entry to a friend via email">Email this</a>&nbsp;|&nbsp;<a href="http://japanese.engadget.com/2011/04/20/intel-honeycomb/#comments" title="View reader comments on this entry">Comments</a>]]>
+<![CDATA[盗難防止にRFIDいりタオル、米国のホテルで採用]]>
+
+<![CDATA[<p>Filed under: <a href="http://japanese.engadget.com/category/cellphones/" rel="tag">携帯電話</a></p><div style="text-align: center;"><img vspace="4" hspace="4" border="0" alt="" src="http://www.blogcdn.com/www.engadget.com/media/2011/04/2011.4.20.skype.jpg" /></div>
+<br />
+プライバシー情報が他のアプリなどから読めるという<a href="http://japanese.engadget.com/2011/04/15/skype-android/">脆弱性で問題</a>になっていた Skype for Android が「セキュリティアップデート」を行いました。新バージョンはv1.0.0.983で、件の問題を修正しているとのこと。日本からも入手できます。同時に新バージョンでは、米国でVerizon限定だった3Gでの通話が他キャリアからでも利用できるようになっています。日本ではau限定にはじまり、他キャリアでも解禁済。ともあれインストール済の方は、忘れずにアップデートをどうぞ。<br />
+<br />
+<img class="img_label" src="http://www.engadget.com/media/post_label_VIA.gif" alt="" /> <a href="http://www.slashgear.com/skype-for-android-adds-us-3g-voice-calls-20147225">SlashGear</a><h6 style="clear: both; padding: 8px 0 0 0; height: 2px; font-size: 1px; border: 0; margin: 0; padding: 0;"></h6><a href=https://market.android.com/details?id=com.skype.raider>Read</a>&nbsp;|&nbsp;<a href="http://japanese.engadget.com/2011/04/20/skype-for-android/" rel="bookmark" title="Permanent link to this entry">Permalink</a>&nbsp;|&nbsp;<a href="http://japanese.engadget.com/forward/19919501/" title="Send this entry to a friend via email">Email this</a>&nbsp;|&nbsp;<a href="http://japanese.engadget.com/2011/04/20/skype-for-android/#comments" title="View reader comments on this entry">Comments</a>]]>
+<![CDATA[インテル、Honeycomb をx86に移植中。Atomスマートフォンは年始？]]>
+
+<![CDATA[<img vspace="4" hspace="4" border="0" alt="" src="http://www.blogcdn.com/www.engadget.com/media/2011/04/kindle-stack-books.jpg" /><br />
+アマゾンが、図書館から Kindle に本を借りられるサービス Kindle Library Lending を発表しました。年内に全米1万1000か所以上の公共図書館や教育機関の図書館から、Kindle デバイスや  Kindle アプリで読める Kindle 本を借りることができるサービスです。借りた Kindle 本は全世代の Kindle デバイスのほか、iOS / Android / BlackBerry / Windows Phone および Windows  / Mac OS X 用に無償配布されている Kindle アプリでも読むことが可能。 <br />
+<br />
+図書館から借りた電子本も Kindle の機能であるWhispersync に対応するため、携帯と Kindle とPCなどデバイスをまたいで「最後に読んだページ」の同期が可能。電子本なので気兼ねなくハイライトや書き込みができ、同じ本をまた借りたとき、あるいは購入したときには、以前に書き込んだ内容やしおりがちゃんと現れます。<br />
+<br />
+貸し出しサービスでアマゾンと協力するのは、全米の図書館にデジタルコンテンツソリューションを提供している企業 OverDrive。同社は<a href="http://japanese.engadget.com/2009/08/26/3g-reader/">ソニーの Reader 向け図書館貸し出し</a>サービスも提供しています。また Kindle はユーザー同士の本の貸し借りにも対応しており、出版社側が同意している書籍のみ、一度に一冊で一定期間のみの制限付きながら電子本を借りることが以前から可能でした。Kindle Library Lending のサービス開始は年内の予定。<h6 style="clear: both; padding: 8px 0 0 0; height: 2px; font-size: 1px; border: 0; margin: 0; padding: 0;"></h6><a href="http://japanese.engadget.com/2011/04/20/kindle-1/" rel="bookmark" title="Permanent link to this entry">Permalink</a>&nbsp;|&nbsp;<a href="http://japanese.engadget.com/forward/19919342/" title="Send this entry to a friend via email">Email this</a>&nbsp;|&nbsp;<a href="http://japanese.engadget.com/2011/04/20/kindle-1/#comments" title="View reader comments on this entry">Comments</a>]]>
+<![CDATA[Skype for Androidがアップデート、プライバシー問題を修正]]>
+
+<![CDATA[<div style="text-align: center;"><img vspace="4" hspace="4" src="http://www.blogcdn.com/www.engadget.com/media/2011/04/11x042015283230.jpg" alt="" /></div>
+<br />
+iPhone や iPad 3G のユーザーがこれまで訪れたことのある場所の履歴を同期PC上のファイルから読み出し、地図上に表示するツール iPhone Tracker が公開されました。発表した研究者 Alasdair Allan, Pete Warden 両氏によると、iPhone や iPad 3G は基地局ベースとみられる位置情報を iOS 4 の導入から常に記録しており、履歴は iTunes と同期するたびに PC 上のバックアップファイルに保存されているとのこと。つまり iPhone や iPad 3Gを同期したPCには、ユーザーが過去一年ほどに移動した経路が秒単位のタイムスタンプ付きで残っており、簡単に抽出して覗くことが可能です。<br />
+<br />
+位置情報は基地局を切り替えるタイミングごとに記録されているらしく、GPSほど正確ではないものの移動経路ははっきりと分かります。研究者たちが問題としているのは、アップルがこの長期間に渡る履歴情報をユーザーへの説明も明示的な許可もなく保存し、しかもPC上の特定しやすい場所にデフォルトで平文保存していること。携帯電話会社はサービスの必要上この種のデータを把握していますが、当然ながら顧客のプライバシーにかかわる記録として簡単には開示しないことになっています。この履歴もPCにアクセスされなければ覗かれることはないとはいえ、ファイルが既知の場所にあるため別の脆弱性で盗んだり、このデータだけ一瞬で抜き取るツール作成などで狙いやすい標的になっています。そもそも知らないうちに保存されていては警戒することもできません。(下に続きます)<br />
+<br />
+iPhone Tracker はこの履歴情報を読み出してマップ上に表示するOS X用アプリ。開発したWarden, Allan 両氏は、この問題は以前から一部では知られていたものの注目されることがなかったため、一般への注意を促すために可視化アプリを公開したと語っています。 注意喚起以外の悪意のある動作がないか確認できるよう、リンク先ではコンパイル可能なソースも提供中。また実際のデータベースには秒単位のタイムスタンプ と経度・緯度が保存されているのに対して、このツールでは敢えて週単位でのみ、おおまかな範囲で示すようになっています。<br />
+<br />
+実行可能なバイナリとソースはリンク先から。続きにはこの問題について Allan, Warden 氏が語った where 2.0カンファレンスの動画と、可視化ツールのデモを掲載しています。両氏によれば、とりあえずの対策は iTunes の同期オプションで「バックアップを暗号化する」のチェックをつけること。かつて一度でも同期したことがあるPCにはバックアップファイルが残っている可 能性があります。 iOSのバックアップにはメールなどのアプリデータも含まれるため、暗号化しておくにこしたことはありません。<br />
+<br />
+補足すれば、iOS はもともと位置情報のプライバシーにはかなり配慮しており、単なるGPSの ON / OFF だけでなくアプリごとに明示的な許可を求めたり、また設定から一覧して簡単に許可・非許可を切り替える、過去24時間以内に位置情報を求めたアプリをアイ コンで知らせる、位置情報アクセス中はステータスエリアにそれを知らせるアイコンが表示されるといった機能があります。ジョブズCEOも、プライバシー保 護には非常に真剣に取り組んでいることを<a href="http://japanese.engadget.com/2010/06/01/d8-jobs-interview/">インタビューでたびたび強調していました</a>。にもかかわらず、ユーザーに知らせず長期間に渡って位置情報を保存しているのは気分のいい話ではありません。通信品質のために利用しているのか将来の新機能のために保存しているのかはさておき、 「位置情報アプリをバックグラウンド常駐させなくても地図に経路を表示できる便利機能！」とでも説明して履歴消去オプションを提示してはどうでしょうか。<br />
+<div style="text-align: center;"><br />
+<iframe width="600" height="368" frameborder="0" title="YouTube video player" src="http://www.youtube.com/embed/GynEFV4hsA0" allowfullscreen=""></iframe><br />
+<br />
+<iframe width="600" height="450" frameborder="0" src="http://player.vimeo.com/video/22610355?title=0&amp;byline=0&amp;portrait=0"></iframe><br />
+<br />
+<iframe width="600" height="450" frameborder="0" src="http://player.vimeo.com/video/22608787?title=0&amp;byline=0&amp;portrait=0"></iframe></div><h6 style="clear: both; padding: 8px 0 0 0; height: 2px; font-size: 1px; border: 0; margin: 0; padding: 0;"></h6><a href=http://radar.oreilly.com/2011/04/apple-location-tracking.html>Read</a>&nbsp;|&nbsp;<a href=http://petewarden.github.com/iPhoneTracker/>Read</a>&nbsp;|&nbsp;<a href="http://japanese.engadget.com/2011/04/20/ios-4-pc/" rel="bookmark" title="Permanent link to this entry">Permalink</a>&nbsp;|&nbsp;<a href="http://japanese.engadget.com/forward/19919017/" title="Send this entry to a friend via email">Email this</a>&nbsp;|&nbsp;<a href="http://japanese.engadget.com/2011/04/20/ios-4-pc/#comments" title="View reader comments on this entry">Comments</a>]]>
+<![CDATA[図書館から Kindle に借りて読めるサービス発表、全米1万以上の図書館が参加]]>
+
+<![CDATA[<p>Filed under: <a href="http://japanese.engadget.com/category/networking/" rel="tag">ネットワーク</a>, <a href="http://japanese.engadget.com/category/cellphones/" rel="tag">携帯電話</a></p><div style="text-align: center;"><img vspace="4" hspace="4" border="0" alt="" src="http://www.blogcdn.com/japanese.engadget.com/media/2011/04/docomo.gif" /></div>
+<br />
+NTTドコモの一部FOMA端末で音声通話のできない不具合が発生しています。4月19日の午後11時ごろ、同社がネットワークの設定を変更したところ、不具合が発生したとのこと。原因は調査中。対象となるのは白色FOMAカードを利用するFOMA端末の「ごく一部」。ネットワーク設定の変更が240万人分であったため、影響する範囲も最大240万人ということになります。不具合が発生した端末では発着信ができなくなりますが、パケット通信は普段どおり利用できるため、音声通話をそれほど利用しない人ほど気付きにくいのは困ったところ。電源のオン / オフで回復するということなので、そういえばこのごろ着信がないという方は念のため再起動してみると良さそうです。<br />
+<br />
+[via <a href="http://sankei.jp.msn.com/economy/news/110420/biz11042022450047-n1.htm">産経新聞</a>]<h6 style="clear: both; padding: 8px 0 0 0; height: 2px; font-size: 1px; border: 0; margin: 0; padding: 0;"></h6><a href=http://www.nttdocomo.co.jp/info/network/kanto/pages/110420_2_d.html>Read</a>&nbsp;|&nbsp;<a href="http://japanese.engadget.com/2011/04/20/docomo/" rel="bookmark" title="Permanent link to this entry">Permalink</a>&nbsp;|&nbsp;<a href="http://japanese.engadget.com/forward/19918978/" title="Send this entry to a friend via email">Email this</a>&nbsp;|&nbsp;<a href="http://japanese.engadget.com/2011/04/20/docomo/#comments" title="View reader comments on this entry">Comments</a>]]>
+<![CDATA[動画：iOS 4は位置情報の全履歴をひそかに保存、同期PCから参照可能 (可視化アプリ公開)]]>
+
+<![CDATA[<div style="text-align: center;"><img vspace="4" hspace="4" border="0" src="http://www.blogcdn.com/japanese.engadget.com/media/2011/04/chargepad.jpg" alt="" /></div>
+<br />
+パナソニックが載せるだけで充電できる無接点充電パッド Charge Pad を発表しました。Wireless Power Consortium が定めた標準規格 Qi（チー）に対応しており、充電したいモノをパッドに置いたとき、パッド内の送電コイルがモノのある位置まで移動するムービングコイル方式を利用しています。二台の機器を載せたときは、自動的に順次充電していくしくみ。大きさは146 x 170 x 22mm、重さは250gです。<br />
+<br />
+もちろん、Charge Padで充電できるQi対応製品も同時に発表されています。ひとつはいわゆるモバイル用バッテリで、出力が1.5Aのリチウムイオン5400と、1Aのリチウムイオン2700の2種類。USB端子を備えており、USB充電できる製品に繋げて外部バッテリとして利用できます。バッテリ自身はCharge Padからだけでなく、同梱のUSBケーブルやACアダプタを利用して充電することも可能。Charge Padを利用した場合、充電に必要な時間はそれぞれ7時間（リチウムイオン5400）、5時間（リチウムイオン2700）です。<br />
+<br />
+もうひとつの対応製品は、同社のニッケル水素充電式電池 EVOLTA を充電できるキャリングケース。単3形のEVOLTA HHR-3MVSが2本同梱されており、同時に2本充電することができます。HHR-3MVS x2の充電時間は3時間。容量の大きなHHR-3LWSや、単4形も充電可能です。<br />
+<br />
+せっかくの無接点充電なのに、モバイル用バッテリや電池しか充電できないのではあまりありがたみがないかもしれませんが、同社いわくQi規格に対応した製品は「さまざまなモバイル機器が登場・普及することが予想」されるとのこと。とりあえずケータイやデジカメあたりには次の新製品から対応して欲しいものです。発売はいずれも6月24日。<h6 style="clear: both; padding: 8px 0 0 0; height: 2px; font-size: 1px; border: 0; margin: 0; padding: 0;"></h6><a href=http://panasonic.co.jp/corp/news/official.data/data.dir/jn110420-2/jn110420-2.html>Read</a>&nbsp;|&nbsp;<a href="http://japanese.engadget.com/2011/04/20/charge-pad/" rel="bookmark" title="Permanent link to this entry">Permalink</a>&nbsp;|&nbsp;<a href="http://japanese.engadget.com/forward/19918560/" title="Send this entry to a friend via email">Email this</a>&nbsp;|&nbsp;<a href="http://japanese.engadget.com/2011/04/20/charge-pad/#comments" title="View reader comments on this entry">Comments</a>]]>
+<![CDATA[ドコモの一部ケータイで音声通話のできない不具合発生、再起動で回復]]>
+
+<![CDATA[<div style="text-align: center;"><img vspace="4" hspace="4" border="1" alt="" src="http://www.blogcdn.com/www.engadget.com/media/2011/04/wacom.jpg" /></div>
+<br />
+ワコムの iPad 対応スタイラス <a href="http://japanese.engadget.com/2011/04/19/bamboo-stylus/">Bomboo Stylus</a> が国内でも発表されました。発売は5月下旬、価格はオープン、直販2980円。ワコムストアのほか、iPad を扱う全国の家電量販店や一部ソフトバンクショップでも販売されます。<br />
+<br />
+iPad のマルチタッチディスプレイは指での操作を前提とした静電式ですが、ワコムのBamboo Stylusは他社製品とおなじく導電性のペン先で「指のフリをする」ことでペン入力を可能にします。つまり筆圧感知など、絵を描くためのペンタブレット製品が備える機能は搭載しません。<br />
+<br />
+Bamboo Stylus の特徴は「主な他社製品」より約25%小さくスムーズな書き味のゴム製ペン先、持ちやすく書きやすい重量と重心、ポケットや iPadカバーに留められるクリップ、サテン調ブラックとシルバーの質感など。オプションとして交換用のペン先も用意されます。iPad 以外の対応タブレット・スマートフォンは今後 ワコムのサイトで公開される予定。<h6 style="clear: both; padding: 8px 0 0 0; height: 2px; font-size: 1px; border: 0; margin: 0; padding: 0;"></h6><a href=http://wacom.jp/jp/company/news_detail.php?id=355>Read</a>&nbsp;|&nbsp;<a href="http://japanese.engadget.com/2011/04/20/ipad-bamboo-2980/" rel="bookmark" title="Permanent link to this entry">Permalink</a>&nbsp;|&nbsp;<a href="http://japanese.engadget.com/forward/19918475/" title="Send this entry to a friend via email">Email this</a>&nbsp;|&nbsp;<a href="http://japanese.engadget.com/2011/04/20/ipad-bamboo-2980/#comments" title="View reader comments on this entry">Comments</a>]]>
+<![CDATA[パナソニックから無接点充電パッド Charge Pad、専用モバイルバッテリや充電池に対応]]>
+
+<![CDATA[<div style="text-align: center;"><img vspace="4" hspace="4" alt="" src="http://www.blogcdn.com/www.engadget.com/media/2009/07/apple-claims-600x300.article_large.jpg" /></div>
+<br />
+iPhone 5 (仮) は夏ではなく秋になるらしい説にまた新たなソースが加わりました。リンク先 <em>Reuters</em> の香港発記事が匿名の情報筋 3人の証言として伝えているのは、アップルと契約する供給メーカーは 次世代 iPhone の生産を今年の7月から開始し、おそらく9月に出荷するという内容。またそのうち一人によれば、次世代 iPhone は iPhone 4 と似通った外見で、高速なプロセッサを採用します。<br />
+<br />
+iPhone 5 が 4 とほぼ同一のデザインを採用すること、秋に出荷される点はこれまでの他の証言とも一致しています。先日お伝えした アナリスト Ming-Chi Kuo 氏が<a href="http://japanese.engadget.com/2011/04/18/iphone-5-a5-8mp-iphone-6-2012/">サプライヤ筋から得たとする情報</a>では、試験生産が8月、本格量産が9月、発売はそれ以降 (おそらく10月) とされていました。生産スケジュールの表現に多少の違いはあるものの、実際に購入できるのは秋以降になる点では今回のリポートでも変わりません。なお、写真は<a href="http://japanese.engadget.com/2009/07/29/iphone-3gi-onn/"> 2009年の iPhone 3GI 発売時の様子</a>。iPhone 5 (仮) でも 3GI のように多彩なカラーバリエーションが用意されるかはまだ分かりません。<h6 style="clear: both; padding: 8px 0 0 0; height: 2px; font-size: 1px; border: 0; margin: 0; padding: 0;"></h6><a href=http://jp.reuters.com/article/technologyNews/idJPJAPAN-20723120110420>Read</a>&nbsp;|&nbsp;<a href="http://japanese.engadget.com/2011/04/20/iphone-9/" rel="bookmark" title="Permanent link to this entry">Permalink</a>&nbsp;|&nbsp;<a href="http://japanese.engadget.com/forward/19918428/" title="Send this entry to a friend via email">Email this</a>&nbsp;|&nbsp;<a href="http://japanese.engadget.com/2011/04/20/iphone-9/#comments" title="View reader comments on this entry">Comments</a>]]>
+<![CDATA[ワコムの iPad 用 Bambooスタイラスは2980円、五月下旬発売]]>
+
+<![CDATA[<p>Filed under: <a href="http://japanese.engadget.com/category/notebooks/" rel="tag">ノートPC</a></p><div style="text-align: center;"><img vspace="4" src="http://www.blogcdn.com/japanese.engadget.com/media/2011/04/qosmio3d.jpg" alt="" /></div>
+東芝がAVノート dynabook Qosmio の新モデル T851 を発表しました。特徴は専用のメガネを必要としない裸眼立体視機能 グラスレス3Dに対応すること、さらに3D と 2D表示のウィンドウを混在させて同時表示できること。グラスレス3D表示ではWebカメラで視聴者の顔の位置を認識するフェイストラッキングと、偏光を動的に制御できるアクティブレンズにより、ノートの前で動いても正しく3D表示を維持することが可能です。さらに 2DソースのSpursEngine を使った3D変換にも対応。<br />
+<br />
+ノートとしての基本仕様は15.6型Clear SuperView LED液晶 (2D時1920 x 1080、3D時1366 x 768相当)、Core i5-2410Mプロセッサ、8GB DDR3-1333メモリ (4GB x 2)、GeForce GT 540M、750GB HDD、BDXLへの書き込みに対応した BDドライブなど。インターフェースはUSB 2.0 x 3 に加えて USB 3.0 も1ポート、HDMIやVGA出力、アナログ音声にLANなど。地上 / BS / 110度CSデジタル対応ダブルチューナーも搭載します。OSはWindows 7 Home Premium 64bit。発売は7月下旬、価格はオープン、店頭予想23万円前後。<br />
+<br />
+<div class="postgallery"><p><strong>Gallery: <a href="http://japanese.engadget.com/photos/toshiba-dynabook-qosmio-t851/">Toshiba dynabook Qosmio T851</a></strong></p><a href="http://japanese.engadget.com/photos/toshiba-dynabook-qosmio-t851/#4071205"><img src="http://www.blogcdn.com/japanese.engadget.com/media/2011/04/dynabookqosmiot851t01_thumbnail.jpg" alt="" title="" /></a><a href="http://japanese.engadget.com/photos/toshiba-dynabook-qosmio-t851/#4071206"><img src="http://www.blogcdn.com/japanese.engadget.com/media/2011/04/dynabookqosmiot851t02_thumbnail.jpg" alt="" title="" /></a><a href="http://japanese.engadget.com/photos/toshiba-dynabook-qosmio-t851/#4071207"><img src="http://www.blogcdn.com/japanese.engadget.com/media/2011/04/dynabookqosmiot851t03_thumbnail.jpg" alt="" title="" /></a><a href="http://japanese.engadget.com/photos/toshiba-dynabook-qosmio-t851/#4071208"><img src="http://www.blogcdn.com/japanese.engadget.com/media/2011/04/dynabookqosmiot851t04_thumbnail.jpg" alt="" title="" /></a></div><h6 style="clear: both; padding: 8px 0 0 0; height: 2px; font-size: 1px; border: 0; margin: 0; padding: 0;"></h6><a href=http://dynabook.com/pc/catalog/d_qosmio/110420t851/index_j.htm>Read</a>&nbsp;|&nbsp;<a href="http://japanese.engadget.com/2011/04/20/3d-qosmio-t851-2d-3d/" rel="bookmark" title="Permanent link to this entry">Permalink</a>&nbsp;|&nbsp;<a href="http://japanese.engadget.com/forward/19918373/" title="Send this entry to a friend via email">Email this</a>&nbsp;|&nbsp;<a href="http://japanese.engadget.com/2011/04/20/3d-qosmio-t851-2d-3d/#comments" title="View reader comments on this entry">Comments</a>]]>
+<![CDATA[次期 iPhone は iPhone 4に近いデザインで9月出荷、ロイター報道]]>
+
+<![CDATA[<div style="text-align: center;"><img alt="" src="http://www.blogcdn.com/japanese.engadget.com/media/2011/04/regzatablettop.jpg" /></div>
+<br />
+東芝が Android 3.0 Honeycomb 採用のタブレット製品 REGZA Tablet AT300を発表しました。AT300 / 23Cモデルの基本仕様は 10.1型 1280 x 800 マルチタッチ液晶ディスプレイ、NVIDIA Tegra 2プロセッサ (1GHz)、1GB RAM、16GB 内蔵フラッシュメモリ (eMMC)、500MP背面カメラ、2MP前面カメラ、802.11b/g/n WiFi 、Bluetooth など。インターフェースは HDMI出力、SDスロット (SDHC対応)、USB 2.0 、mini USB、マイク入力 / ヘッドホン出力端子など。重量は約765g、バッテリーは連続動画再生で最大7時間。<br />
+<br />
+東芝の10型Androidタブレットは以前から「東芝タブレット」として公開されており、海外では " ANT-100 " の型番だったり、タブレットの商標として見つかった " Thrive " と呼ばれるのでは、と推測されてきました。国内ではレグザブランドで、扱いとしてはdynabook.comにPCと並んでいます。東芝としてはテレビのレグザやレコーダのレグザブルーレイとの <a href="http://japanese.engadget.com/tag/RegzaAppsConnect/">Regza Apps Connect</a> アプリを介した連携や、電子書籍ストア「ブックプレイス」への対応など、東芝製品を横につなぐ端末のひとつとして位置づけています。<br />
+<br />
+各社横並びの 10型 Tegra2 Honeycomb タブレット以上の売りは、ソフトウェア処理で映像の「鮮鋭感」をアップする高画質化機能レゾリューション＋、環境光センサーで輝度だけでなくコントラストを調整するアダプティブディスプレイ、本体スピーカーの音質補正 Audio Enhancer / Noise Equalizer、VoIP通話時の音質向上技術 SRS Premium Voice Proなど。バッテリーがユーザー交換可能で予備を持ち歩ける点、フルサイズのUSB 2.0ポート、ラバー仕上げで片手でもグリップしやすい背面などは「東芝タブレット」時代にお伝えしたとおり。<br />
+<br />
+ソフトウェアは日本語入力がFSKAREN、オフィスはThinkFree Mobile Office、セキュリティはリモートロックやワイプ、リモートバックアップ、紛失時の位置情報追跡などを備えたMcAfee WaveSecure for Android Tablet 。Androidマーケットには「2011年7月対応予定」。国内での発売は6月下旬、店頭予想価格は6万円前後。<br />
+<br />
+<br />
+<br />
+<div class="postgallery"><p><strong>Gallery: <a href="http://japanese.engadget.com/photos/toshiba-regza-tablet/">Toshiba REGZA tablet</a></strong></p><a href="http://japanese.engadget.com/photos/toshiba-regza-tablet/#4071080"><img src="http://www.blogcdn.com/japanese.engadget.com/media/2011/04/regzatablet01_thumbnail.jpg" alt="" title="" /></a><a href="http://japanese.engadget.com/photos/toshiba-regza-tablet/#4071081"><img src="http://www.blogcdn.com/japanese.engadget.com/media/2011/04/regzatablet02_thumbnail.jpg" alt="" title="" /></a><a href="http://japanese.engadget.com/photos/toshiba-regza-tablet/#4071082"><img src="http://www.blogcdn.com/japanese.engadget.com/media/2011/04/regzatablet03_thumbnail.jpg" alt="" title="" /></a><a href="http://japanese.engadget.com/photos/toshiba-regza-tablet/#4071083"><img src="http://www.blogcdn.com/japanese.engadget.com/media/2011/04/regzatablet04_thumbnail.jpg" alt="" title="" /></a><a href="http://japanese.engadget.com/photos/toshiba-regza-tablet/#4071084"><img src="http://www.blogcdn.com/japanese.engadget.com/media/2011/04/regzatablet05_thumbnail.jpg" alt="" title="" /></a></div><h6 style="clear: both; padding: 8px 0 0 0; height: 2px; font-size: 1px; border: 0; margin: 0; padding: 0;"></h6><a href=http://dynabook.com/pc/catalog/regza_t/110420at300/index_j.htm>Read</a>&nbsp;|&nbsp;<a href="http://japanese.engadget.com/2011/04/20/android-3-0-regza-at300/" rel="bookmark" title="Permanent link to this entry">Permalink</a>&nbsp;|&nbsp;<a href="http://japanese.engadget.com/forward/19918357/" title="Send this entry to a friend via email">Email this</a>&nbsp;|&nbsp;<a href="http://japanese.engadget.com/2011/04/20/android-3-0-regza-at300/#comments" title="View reader comments on this entry">Comments</a>]]>
+<![CDATA[東芝からグラスレス3D対応dynabook Qosmio T851、2D混在や顔追従に対応]]>
+
+<![CDATA[<p>Filed under: <a href="http://japanese.engadget.com/category/cellphones/" rel="tag">携帯電話</a>, <a href="http://japanese.engadget.com/category/tablet-pcs/" rel="tag">タブレットPC</a></p><div style="text-align: center;"><img hspace="4" border="0" vspace="4" alt="" src="http://www.blogcdn.com/www.engadget.com/media/2011/04/11x0419nsgs.jpg" /></div>
+<br />
+とつぜん始まった<a href="http://japanese.engadget.com/2011/04/18/apple-vs-samsung/">アップルとサムスンの司法対決</a>について、AFPが面白い事実を報じています。なんでもサムスンが昨年度に売り上げた1420億ドルのうち、その4%（約57億ドル）がアップルから得たものとのこと。サムスンから見てアップル以上の「お客さま」はソニーだけで、経営上それだけ重要なパートナーであると言えます。もちろん、フラッシュメモリ、RAM、プロセッサ、ディスプレイなどを幅広く製造・調達できるサムスンが、アップルにとって重要な存在であるのも同じ。敵か味方かで割り切れない、いかにもグローバルビジネスの世界です。<br />
+<br />
+それでもサムスンは「自社の知財を守るため」アップルへの対抗措置を検討していると、公式に発表。「アップルは我々にとって半導体やディスプレイパネルの重要な顧客である。しかし今回は強く対抗する以外に選択肢はない」とのこと。おまけにアップルはサムスンが<a href="http://japanese.engadget.com/tag/iPhone/">iPhone</a>や<a href="http://japanese.engadget.com/tag/iPad/">iPad</a>に関する特許や商標を侵害していると訴えましたが、サムスンはサムスンでアップルが同社の無線技術に関する特許を侵害しているという疑いを抱いているようです。<br />
+<br />
+サムスンが端末とUIを作り直すのと、アップルが部品を調達できなくなるのと、どっちが困るだろうか......という話であれば、ある意味では簡単だったのですが、アップルは<a href="http://japanese.engadget.com/tag/Android/">Android</a>そのものにも<a href="http://japanese.engadget.com/2010/03/02/iphone-htc/">疑いの目</a>を向けているため、とにかく一筋縄では行きません。とりあえず <a href="http://japanese.engadget.com/tag/iPhone5/">iPhone 5</a> の分解には、また違った面白さがありそうです。<h6 style="clear: both; padding: 8px 0 0 0; height: 2px; font-size: 1px; border: 0; margin: 0; padding: 0;"></h6><a href=http://news.yahoo.com/s/afp/20110419/bs_afp/usskoreaitcompanypatenttelecominternetapplesamsung>Read</a>&nbsp;|&nbsp;<a href="http://japanese.engadget.com/2011/04/20/apple-vs-samsung-2/" rel="bookmark" title="Permanent link to this entry">Permalink</a>&nbsp;|&nbsp;<a href="http://japanese.engadget.com/forward/19918320/" title="Send this entry to a friend via email">Email this</a>&nbsp;|&nbsp;<a href="http://japanese.engadget.com/2011/04/20/apple-vs-samsung-2/#comments" title="View reader comments on this entry">Comments</a>]]>
+<![CDATA[東芝からAndroid 3.0採用の REGZA タブレットAT300]]>
+
+<![CDATA[<p>Filed under: <a href="http://japanese.engadget.com/category/tablet-pcs/" rel="tag">タブレットPC</a></p><div style="text-align:center"><img vspace="4" hspace="4" border="0" src="http://www.blogcdn.com/www.engadget.com/media/2011/04/toshiba-thrive-04-19-2011.jpg" alt="" /></div>
+<br />
+<br />
+固有のブランド名もないまま製品ページを開いて<a href="http://japanese.engadget.com/2011/01/24/android/">アップルを挑発</a>している東芝製 Android タブレットの話題。正式な製品名は「THRIVE」になるかもしれません。米東芝は タブレットコンピューターを含む分野で THRIVE の商標を登録しており、また " ThriveTablet.com や ToshibaThrive.com といったドメイン名を取得していることが見つかっています。<br />
+<br />
+東芝のHoneycomb タブレットはつい最近オンライン小売 newegg に商品ページが掲載され、そこでは<a href="http://japanese.engadget.com/2011/04/16/10-android-ant-450/">「ANT-10x」の型番</a>が使われていました。またMWCなどに出展された際はコードネームが " Antares " らしいという話もあったものの、アンタレスでは東芝によるドメインもタブレット商標も今のところ見つかっていません。特に根拠のない想像をすれば、もともと Android Tablet の略で" ANT " 、そこから開発名 Antares、製品ブランドとしては Thrive 、の関係とも考えられます。<br />
+<br />
+ただし商標やドメインが取得されても実際の製品に採用されるとは限らず、また Honeycomb タブレットではない別のタブレット製品のために用意された名前なのかもしれません。いずれにせよ、国内向けも含め早く正式に発表してほしいものです。<br />
+<br />
+[Thanks, Babyfacemagee]<br />
+<br />
+<strong>追記：</strong>国内発表が来ました。日本名は「<a href="http://japanese.engadget.com/2011/04/20/android-3-0-regza-at300/">REGZA Tablet AT300</a>」。<h6 style="clear: both; padding: 8px 0 0 0; height: 2px; font-size: 1px; border: 0; margin: 0; padding: 0;"></h6><a href=http://tarr.uspto.gov/servlet/tarr?regser=serial&amp;entry=85294413>Read</a>&nbsp;|&nbsp;<a href="http://japanese.engadget.com/2011/04/19/thrive/" rel="bookmark" title="Permanent link to this entry">Permalink</a>&nbsp;|&nbsp;<a href="http://japanese.engadget.com/forward/19918066/" title="Send this entry to a friend via email">Email this</a>&nbsp;|&nbsp;<a href="http://japanese.engadget.com/2011/04/19/thrive/#comments" title="View reader comments on this entry">Comments</a>]]>
+<![CDATA[サムスンがアップルへの逆提訴を検討、アップルからの売上は年間57億ドル]]>
+
+<![CDATA[<div style="text-align: center;"><img vspace="4" hspace="4" border="1" src="http://www.blogcdn.com/www.engadget.com/media/2011/04/11x0419n873422.jpg" alt="" /></div>
+<br />
+アップルが正式には販売していない iPhone 4 ホワイトモデルで、未公開の「ベータ版 iOS」を動かしたと称する動画が現れました。公開したのはベトナムの <em>Tinhte.vn</em> 。映像の 白い iPhone 4 は<a href="http://japanese.engadget.com/2010/06/28/iphone-4-diy/">交換パーツで勝手に作った</a>ものではなくアップル製とされており、背面の容量表示はこれまでのプロトタイプとおなじく XXGB表示、設定の情報画面では64GBと表示されています。<br />
+<br />
+ソフトウェアで面白いのは、ホームボタン2度押しで画面下に現れる従来のマルチタスクバーではなく、全画面を使った新しい UI になっている点。Mac OS X の Expose 的に起動中アプリの縮小画面が並び、タップしてタスク切り替え、長押しで「X」を表示して終了という操作のようです。またこの画面の上部には検索窓があり、タップすると現行の Spotlight とおなじような画面に遷移します。<br />
+<br />
+手製の白 iPhone と脱獄 iOSでオリジナルのアプリを動かしても同等の動画は撮影できそうですが、ベトナムの <em>Tinhte</em> といえばかつてデザイン公表前の iPhone 4 も、また iPod touch も、MacBook Pro も流出させてきた履歴があるサイト。またホーム画面にはいくつか内部テスト用として知られているアプリのアイコンも確認できます。実際の動画 2本は続きをどうぞ。それにしても背景を普通に人が横切ったり、堂々と電話をかけるなど、無造作な撮影スタイルはあいかわらずです。<div style="text-align: center;"><br />
+<iframe width="600" height="368" frameborder="0" title="YouTube video player" src="http://www.youtube.com/embed/wg-gfF3Pryc" allowfullscreen=""></iframe><br />
+<br />
+<iframe width="600" height="368" frameborder="0" title="YouTube video player" src="http://www.youtube.com/embed/-gSqtubjTis" allowfullscreen=""></iframe></div><h6 style="clear: both; padding: 8px 0 0 0; height: 2px; font-size: 1px; border: 0; margin: 0; padding: 0;"></h6><a href=http://www.tinhte.vn/tin-tuc-gioi-thieu-118/tren-tay-giao-dien-da-nhiem-moi-tren-iphone-5-a-663854/>Read</a>&nbsp;|&nbsp;<a href="http://japanese.engadget.com/2011/04/19/iphone-4-64gb-ios-ui/" rel="bookmark" title="Permanent link to this entry">Permalink</a>&nbsp;|&nbsp;<a href="http://japanese.engadget.com/forward/19917594/" title="Send this entry to a friend via email">Email this</a>&nbsp;|&nbsp;<a href="http://japanese.engadget.com/2011/04/19/iphone-4-64gb-ios-ui/#comments" title="View reader comments on this entry">Comments</a>]]>
+<![CDATA[東芝のHoneycombタブレットは「THRIVE」？商標とドメインで発覚]]>
+
+<![CDATA[<br />
+アップデートに失敗する障害で一時的に「今しばらくお待ちください」だった<a href="http://japanese.engadget.com/tag/Eye-Fi/">Eye-Fi</a> X2カードの新ファームウェア v4.5022 が正式に利用できるようになりました。設定に必要なデスクトップアプリEye-Fi Center の新バージョン3.3.0とモバイルアプリの組み合わせで、カードからスマートフォンやタブレットに直接写真を送れるようになります。<br />
+<br />
+Androidアプリは現在英語版のみ提供中、日本語版は5月中旬予定。iOSはアップルの審査を通りしだい、現在の Eye-Fi アプリへのアップデートとして提供される予定です。なお、ダイレクトモードは Eye-Fi カードが SSID とパスワード認証を備えたアクセスポイントとしてふるまうことで外部の無線LAN対応デバイスと接続しアプリで通信する仕組み。接続の優先順位は
+<ol>
+    <li>アドホック接続 (Pro X2のみ対応)</li>
+    <li>インフラストラクチャモード無線LANネットワーク</li>
+    <li>公衆無線LANホットスポット</li>
+    <li>ダイレクトモード</li>
+</ol>
+なので、周囲に接続できるネットワークがない場合のみ、設定した時間のあいだダイレクトモードの接続待ちになります。つつまり Eye-Fi に登録した無線LAN圏内やもともとポータブルルータを持ち歩いて電源を入れている場合、インターネットへのアップロードが優先される仕組みです。<br />
+<br />
+<a href="http://www.eyefi.jp/support/faq/mobile-applications/"><strong>ダイレクトモード対応アプリに関して</strong></a> (日本語サポート)<br />
+<a href="http://support.eye.fi/support-resources/downloads/release-notes/eye-fi-card-firmware-release-notes/"><strong>ファームウェア v4.5022 リリースノート</strong></a><br />
+<a href="https://market.android.com/details?id=fi.eye.android"><strong>Eye-Fi アプリ</strong></a> (Androidマーケット)<h6 style="clear: both; padding: 8px 0 0 0; height: 2px; font-size: 1px; border: 0; margin: 0; padding: 0;"></h6><a href="http://japanese.engadget.com/2011/04/19/eye-fi-x2/" rel="bookmark" title="Permanent link to this entry">Permalink</a>&nbsp;|&nbsp;<a href="http://japanese.engadget.com/forward/19917575/" title="Send this entry to a friend via email">Email this</a>&nbsp;|&nbsp;<a href="http://japanese.engadget.com/2011/04/19/eye-fi-x2/#comments" title="View reader comments on this entry">Comments</a>]]>
+<![CDATA[動画：iPhone 4 ホワイト64GB で「ベータ版 iOS」デモ、新マルチタスクUI ？]]>
+
+<![CDATA[<div style="text-align: center;">
+<div style="text-align: center;"><img vspace="4" hspace="4" alt="" src="http://www.blogcdn.com/japanese.engadget.com/media/2010/06/pspgogogo.jpg" /></div>
+</div>
+<br />
+数奇な運命を辿ってきた <a href="http://japanese.engadget.com/tag/PSPgo/">PSP go</a> がひとつの節目を迎えたようです。オンライン直販のソニーストアでは製品一覧から消え検索にもヒットしなくなり、外部サイトなどから直接辿ることができる製品ページでは白・黒2色とも「入荷未定」のステータスになっています。また実店舗のソニーショップでも新規入荷の終了を告知した店舗があり、店頭で見かける流通在庫がなくなれば、このまま一般ルートでは購入できなくなることが予測されます。<br />
+<br />
+「PSP go これまでのおはなし」は、たとえば正式発表前にSCEAルートで<a href="http://japanese.engadget.com/2009/05/30/psp-psp-go-e3/">全貌が流出するもなかなか信じて貰えない</a>デビュー、米任天堂社長　Reggie Fils-Aime氏の<a href="http://japanese.engadget.com/2009/10/12/psp-go/">「誰のためなのか、どう得をするのか？」コメント</a>、そして欧ソニーコンピュータCEOによる<a href="http://japanese.engadget.com/2010/06/09/psp-go/">評価と総括</a> (「学ぶために発売した」)、発売から<a href="http://japanese.engadget.com/2010/10/25/psp-go-1-26-1-6800/">一年を待たず1万円値下げ</a>など。またカスタムファームウェアを動かすハックが公表されたときには一部地域で一斉に店頭から消えるという椿事もありました。<br />
+<br />
+もともとメインストリームのPSP 3000と併売されるバリエーションモデルという位置づけもあり「成功か失敗かは売上で判断されるものではない」(SCEE アンドリュー・ハウス CEO) ような製品ではあります。シャツの胸ポケットにも入る唯一のPSPとして、また日本ではレコーダ torne の持ち出し端末として、まさしくニッチの面白端末の地位を築いていただけに、このまま消えてしまうのなら寂しい話です。一方、ソニーは「究極の没入感」を売りとする次世代機 <a href="http://japanese.engadget.com/tag/NGP/">NGP</a> の発売後も PSPを安価な入門機として併売してゆく方針を示しており、NGPも互換性があるダウンロード版のPSPゲームは着々と増えつつあります。NGPの小型バリエーションは気が早い話として、UMDレスPSPの新型はぜひ投入してほしいものです。<br />
+<br />
+<strong>追記：</strong>SCEはPSP go の生産については否定も肯定もせず、<a href="http://www.eurogamer.net/articles/2011-04-19-sony-halts-pspgo-production-report">現行世代 PSP は今後も需要に応えてゆく </a>との回答。<br />
+<br />
+<a href="http://www1.jp.sonystyle.com/Qnavi/Product/PSP-N1000/"><strong>ソニーストア</strong></a><div style="text-align: center;"><img alt="" id="vimage_4067735" src="http://www.blogcdn.com/japanese.engadget.com/media/2011/04/psp-go-access-official-2cr.jpg" /><br />
+コンバーターケーブルアダプター (1980円)があればワンセグも見られます。</div><h6 style="clear: both; padding: 8px 0 0 0; height: 2px; font-size: 1px; border: 0; margin: 0; padding: 0;"></h6><a href=http://ctec3.blog.so-net.ne.jp/2011-04-18-1>Read</a>&nbsp;|&nbsp;<a href="http://japanese.engadget.com/2011/04/19/psp-go/" rel="bookmark" title="Permanent link to this entry">Permalink</a>&nbsp;|&nbsp;<a href="http://japanese.engadget.com/forward/19917446/" title="Send this entry to a friend via email">Email this</a>&nbsp;|&nbsp;<a href="http://japanese.engadget.com/2011/04/19/psp-go/#comments" title="View reader comments on this entry">Comments</a>]]>
+<![CDATA[Eye-Fi X2カードに新ファームウェア、ダイレクトモード対応]]>
+
+<![CDATA[<div style="text-align: center;"><img alt="" src="http://www.blogcdn.com/japanese.engadget.com/media/2011/03/miilifesize.jpg" /></div>
+<a href="http://japanese.engadget.com/2011/03/10/mii-ar/"><br />
+岩田社長の予告</a>どおり、クラブニンテンドーの会員向け特典に巨大 AR カードが加わりました。名称は「等身大 Mii さつえいARカード」。ニンテンドー3DS の 内蔵ソフト ARゲームズで使えば、等身大の Mii と記念撮影をしたり不適切な作品を撮ったりできるようになります。カードのサイズは73 x 46cm。<br />
+<br />
+クラブニンテンドーでは、5月中旬の配送予定で先行予約を受け付けています。交換に必要なポイントは6月末までの限定で100ポイント、それ以降は250ポイント。カードのオモテには？マークが、裏面にはマリオが印刷されており、巨大なマリオを召喚してなにかしら撮影することも可能です。<br />
+<br />
+オモテの？マーカーは「Mii さつえい」以外のARゲームズでも原理的には利用できますが、任天堂は「<strong>他のARゲームズやARカード対応のゲームで使用されると、無理な動きや不注意な動きの原因となり、思わぬ事故につながる恐れがあります。</strong>」と警告しています。ARゲームズではマーカーを中心にプレーヤーが回り込んだりのぞき込んだりすることもあるため、3DSの画面を覗いたまま歩き回って転倒する可能性を考えているようです。<br />
+<br />
+なお、ARカードは <a href="http://www.nintendo.co.jp/3ds/support/index.html">3DSサポートページにあるPDFファイル</a>を自前で大型に印刷しても、ディスプレイに表示しても、あるいはホワイトボードに手書きしてもちゃんと反応します。続きは任天堂が警告している使い方を実践した動画。<br />
+<br />
+<a href="https://club.nintendo.jp/"><strong>クラブニンテンドー</strong></a> (via <a href="http://jp.joystiq.com/2011/04/19/mii-ar/">Joystiq</a>)<div style="text-align: center;"><iframe width="600" height="368" frameborder="0" title="YouTube video player" src="http://www.youtube.com/embed/OxfVuTQoGZU" allowfullscreen=""></iframe></div><h6 style="clear: both; padding: 8px 0 0 0; height: 2px; font-size: 1px; border: 0; margin: 0; padding: 0;"></h6><a href="http://japanese.engadget.com/2011/04/19/mii-ar/" rel="bookmark" title="Permanent link to this entry">Permalink</a>&nbsp;|&nbsp;<a href="http://japanese.engadget.com/forward/19917273/" title="Send this entry to a friend via email">Email this</a>&nbsp;|&nbsp;<a href="http://japanese.engadget.com/2011/04/19/mii-ar/#comments" title="View reader comments on this entry">Comments</a>]]>
+<![CDATA[ソニー PSP go が生産終了、流通在庫のみで終息へ]]>
+
+<![CDATA[<img vspace="4" hspace="16" border="0" align="left" src="http://www.blogcdn.com/www.engadget.com/media/2011/04/ios-jailbreak-04192011-1303177494.jpg" alt="" /><br />
+アップルが iOS を1か月も置かずにアップデートしているおかげで、<a href="http://japanese.engadget.com/tag/Jailbreak/">Jailbreak</a> ツールのほうも慌ただしくリリースを重ねています。最新版の redsn0w 0.9.6rc13 は従来とおなじく、iPad 2 を除く iOS 4.3.2 機器 ( iPhone 3GS, iPod touch 3G / 4G, iPad ) の脱獄に対応します。<br />
+<br />
+アップルは 4.3.1 から 4.3.2 のバグ修正では穴を塞がなかったため、新リリースはおなじ手法で 4.3.2 に対応させた版。ただし iPhone 4 では不具合の報告があり、修正版がまもなくリリースされる予定です。( iPhone 4 では修正版リリースまでヒモあり (tethered) 脱獄にのみ対応)。<br />
+<br />
+毎度お約束の警告ですが、ultrasn0wなどでベースバンドもいじっている (SIMアンロックが必要な) ユーザーは 適用せず PwnageTool の更新を待つこと。そもそも脱獄がなんだかよく分からないユーザーはたぶんする必要もありません。redsn0wのダウンロード (OS X, WIndows) はリンク先から。<h6 style="clear: both; padding: 8px 0 0 0; height: 2px; font-size: 1px; border: 0; margin: 0; padding: 0;"></h6><a href=http://blog.iphone-dev.org/post/4731948971/the-untether-rolls-on>Read</a>&nbsp;|&nbsp;<a href="http://japanese.engadget.com/2011/04/19/redsn0w-ipad-2-ios-4-3-2/" rel="bookmark" title="Permanent link to this entry">Permalink</a>&nbsp;|&nbsp;<a href="http://japanese.engadget.com/forward/19917199/" title="Send this entry to a friend via email">Email this</a>&nbsp;|&nbsp;<a href="http://japanese.engadget.com/2011/04/19/redsn0w-ipad-2-ios-4-3-2/#comments" title="View reader comments on this entry">Comments</a>]]>
+<![CDATA[「等身大 Mii さつえいARカード」クラブニンテンドーで先行予約開始]]>
+
+<![CDATA[<p>Filed under: <a href="http://japanese.engadget.com/category/peripherals/" rel="tag">周辺機器</a></p><div style="text-align: center;"><img vspace="4" hspace="4" border="0" src="http://www.blogcdn.com/japanese.engadget.com/media/2011/04/mp-118rd01l.jpg" alt="" /></div>
+<br />
+エレコムが表面に特殊エンボス加工を施し、摩擦抵抗を抑えた「滑るっ！マウスパッド」を発売します。滑りやすくすることで手首の負担を抑えるほか、「スピーディでダイナミックなアクションが可能」になるというのがアピールポイント。同社従来品と比べ約2倍のすっごい滑るぶりを実現しています。また不規則な表面模様とアルミ蒸着によるヘアライン調の印刷により、マウスセンサの光を不規則に反射させ、認識精度を向上する効用もあるとのこと。裏面はずれにくいノンスリップ素材です。発売は3月下旬。ノーマルサイズ（147.0 x 190.0mm）のMP-118はシルバー、ブラック、ブロンズ、ブルー、レッドの5色で1890円、A4サイズ（297.0 x 210.0mm）のMP-119はシルバー、ブラック、ブルーの3色で2835円です。<h6 style="clear: both; padding: 8px 0 0 0; height: 2px; font-size: 1px; border: 0; margin: 0; padding: 0;"></h6><a href=http://www.elecom.co.jp/news/201104/mp-118/index.html>Read</a>&nbsp;|&nbsp;<a href="http://japanese.engadget.com/2011/04/19/elecom-mousepad/" rel="bookmark" title="Permanent link to this entry">Permalink</a>&nbsp;|&nbsp;<a href="http://japanese.engadget.com/forward/19917153/" title="Send this entry to a friend via email">Email this</a>&nbsp;|&nbsp;<a href="http://japanese.engadget.com/2011/04/19/elecom-mousepad/#comments" title="View reader comments on this entry">Comments</a>]]>
+<![CDATA[脱獄ツール redsn0w 更新、iPad 2 以外のiOS 4.3.2 機器に対応]]>
+
