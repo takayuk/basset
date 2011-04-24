@@ -6,7 +6,7 @@ $LOAD_PATH.push("/home/takayuk/workspace/github/basset/bin",
                 "/home/takayuk/workspace/github/basset/lib")
 
 def main(url)
-  require "bag-of-words"
+  require "swapped.bag-of-words"
   require "snapshot.rb"
   require "labellist"
 

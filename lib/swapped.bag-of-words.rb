@@ -1,4 +1,3 @@
-#!/home/kamei/local/bin/ruby -Ku
 # -*- encoding: utf-8 -*-
 # -*- coding: utf-8 -*-
 
@@ -8,7 +7,7 @@ def mecab sentence
   require "pp"
   @result=Hash.new(0)
   begin
-    @tagger=MeCab::Tagger.new("-Odump --unk-feature=未知語 -d /home/takayuk/local/lib/mecab/dic/ipadic")
+    @tagger=MeCab::Tagger.new("-Odump --unk-feature=未知語 -d /home/takayuk/local/lib/mecab/dic/ipadic-utf8")
     
     @node = @tagger.parseToNode(sentence)
     while @node do
