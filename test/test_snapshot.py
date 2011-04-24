@@ -4,36 +4,17 @@
 
 
 def test_snapshot(url):
-    
-    import bag_ofwords
+   
+    import sys
+    sys.path.append("/home/takayuk/workspace/github/basset/lib/")
 
-    corpus = {}
+    import snapshot as ss
+
+    corpus = ss.snapshot("http://japanese.engadget.com/rss.xml")
+    print(corpus.__class__)
+    for c in corpus[2:3]:
+        print(c[0])
+        print(c[1])
 
 
-"""
-def main(url)
-  require "swapped.bag-of-words"
-  require "snapshot.rb"
-  require "labellist"
-
-  @corpus = Hash.new(0)
-
-  @response = snapshot(url)
-
-  @response.each do |link, description|
-    
-    @text = description.to_s.strip.gsub(/<("[^"]*"|\'[^\']*\'|[^\'">])*>/,"")
-    @bow = bow(@text, target = ["名詞", "未知語"])
-
-    @corpus.store(link, @bow.reject{|v| v =~ /[^一-龠ぁ-んァ-ヴーa-zA-Z0-9]/})
-    @urllist = to_url(@corpus)
-
-    open(ARGV[1], "w") do |file| file.write @urllist.join("\n") end
-    break
-  end
-end
-
-if __FILE__ == $0
-  main(ARGV[0])
-end
-"""
+test_snapshot("")
