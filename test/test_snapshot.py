@@ -10,11 +10,13 @@ def test_snapshot(url):
 
     import snapshot as ss
 
+    import re
+    html_tag = re.compile(r"<.*?>")
     corpus = ss.snapshot("http://japanese.engadget.com/rss.xml")
     print(corpus.__class__)
     for c in corpus[2:3]:
         print(c[0])
-        print(c[1])
+        print(html_tag.sub("", c[1]))
 
 
 test_snapshot("")
