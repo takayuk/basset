@@ -6,8 +6,10 @@ def to_bagofwords(sentence, target_feature):
 
     import subprocess
     import re
+    import os
     
-    cmdline = "./do_mecab %s" % sentence
+    do_mecab_dir = os.path.abspath(os.path.dirname(__file__))
+    cmdline = "%s/do_mecab %s" % (do_mecab_dir, sentence)
     cwd = "."
 
     subproc = subprocess.Popen(cmdline, shell = True, cwd = cwd,
@@ -33,7 +35,14 @@ def to_bagofwords(sentence, target_feature):
                     words.append("")
             except IndexError:
                 pass
-
+    
     stopwords = re.compile("[ぁ-ん]")
     return [word for word in words if not stopwords.match(word)]
 
+if __name__ == "__main__":
+    import sys
+    args = sys.argv
+
+    b = to_bagofwords("今日も晴れました。", ["名詞"])
+    for w in b:
+        print(w)
