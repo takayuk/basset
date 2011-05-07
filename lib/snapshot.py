@@ -9,18 +9,24 @@ def snapshot(url):
     
     response = minidom.parse(urllib.urlopen(url))
 
-    titles = [title.firstChild.toxml() for title in response.getElementsByTagName("title")]
-    del(titles[0])
-    
-    descs = [desc.firstChild.toxml() for desc in response.getElementsByTagName("description")]
+    docids = []
+    descs = []
 
+    for entry in response.getElementsByTagName("item"):
+        docids.append(entry.getElementsByTagName("link").item(0).childNodes[0].data)
+        descs.append(entry.getElementsByTagName("description").item(0).childNodes[0].data)
 
-    return zip(titles, descs)
-
+    return zip(docids, descs)
 
 
 if __name__ == "__main__":
     import sys
     args = sys.argv
 
-    snapshot(args[1])
+    ss = snapshot(args[1])
+
+    for s, t in ss:
+        print(s)
+        print(t)
+
+

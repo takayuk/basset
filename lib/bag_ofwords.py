@@ -24,18 +24,24 @@ def to_bagofwords(sentence, target_feature):
         line = stdouterr.readline()
         if not line: break
 
-        node = line.decode("utf-8").split("\t")
-        for target in target_feature:
-            try:
-                (surface, feature) = (node[0], node[1])
-                if feature.find(target) >= 0:
-                    words[-1] += surface
-                    break
-                elif not len(words[-1]) is 0:
-                    words.append("")
-            except IndexError:
-                pass
-    
+        try:
+            #node = line.decode("utf-8").split("\t")
+            node = line.split("\t")
+
+            for target in target_feature:
+                try:
+                    (surface, feature) = (node[0], node[1])
+                    if feature.find(target) >= 0:
+                        words[-1] += surface
+                        break
+                    elif not len(words[-1]) is 0:
+                        words.append("")
+                except IndexError:
+                    pass
+
+        except UnicodeDecodeError:
+            break
+
     stopwords = re.compile("[ぁ-ん]")
     return [word for word in words if not stopwords.match(word)]
 
@@ -43,6 +49,6 @@ if __name__ == "__main__":
     import sys
     args = sys.argv
 
-    b = to_bagofwords("今日も晴れました。", ["名詞"])
+    b = to_bagofwords("今日も昨日も晴れました。", ["名詞"])
     for w in b:
         print(w)
