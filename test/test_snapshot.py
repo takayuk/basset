@@ -35,11 +35,24 @@ def test_snapshot(url):
 
         corpus.append(doc_words, docid)
 
-    #corpus.to_url("engadget.url")
+    cowords = {}
+    docs = corpus.docs()
 
-    for link, cowords in corpus.docs().items():
-        print(cowords.__class__)
-        print(cowords)
+    for link, words in docs.items():
+        for node in words:
+            if not cowords.has_key(node): cowords.setdefault(node, {})
+            
+            for to in words:
+                if not cowords[node].has_key(to):
+                    cowords[node].setdefault(to, 1)
+                else:
+                    cowords[node][to] += 1
+
+    for n, m in cowords.items():
+        print(n)
+        for w, f in m.items():
+            print("\t%s %s" % (w, f))
+        
         break
 
 
