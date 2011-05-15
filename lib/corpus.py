@@ -5,6 +5,7 @@
 from pymongo import Connection
 import bson
 
+
 class Corpus(object):
     
     def __init__(self):
@@ -23,10 +24,8 @@ class Corpus(object):
         """
         with file(path, "w") as url:
             for record in self.col.find():
-                #print(record)
-                #print(record[u"word"])
                 try:
-                    url.write("%s %s\n" % (record[u"word"], len(record[u"docid"])))
+                    url.write("%s\n" % record[u"word"])
                 except TypeError as e:
                     print(e.message)
     
@@ -48,7 +47,21 @@ class Corpus(object):
                     data["freq"] += 1
                     data["docid"].append(docid)
                     self.col.save(data)
-            except bson.errors.InvalidStringData:
-                pass
+            except bson.errors.InvalidStringData as e:
+                print(e.message)
 
 
+    def docs(self):
+        docs_index = {}
+        for i in self.col.find().sort("docid"):
+            for doc in i["docid"]:
+                if not docs_index.has_key(doc):
+                    docs_index.setdefault(doc, [i["word"]])
+                else:
+                    #docs_index[doc] += i["word"]
+                    docs_index[doc].append(i["word"])
+
+        return docs_index
+
+if __name__ == "__main__":
+    pass

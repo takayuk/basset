@@ -35,8 +35,13 @@ def test_snapshot(url):
 
         corpus.append(doc_words, docid)
 
-    corpus.to_url("engadget.url")
-    #corpus.to_labellist("engadget.lbl")
+    #corpus.to_url("engadget.url")
+
+    for link, cowords in corpus.docs().items():
+        print(cowords.__class__)
+        print(cowords)
+        break
+
 
 if __name__ == "__main__":
     
