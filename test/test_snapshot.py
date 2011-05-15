@@ -23,20 +23,20 @@ def test_snapshot(url):
     corpus = cs.Corpus()
     
     for docid, doc in snapshot:
-        raw_desc = html_tag.sub("", doc[1])
+        raw_desc = html_tag.sub("", doc)
         desc_bow = bow.to_bagofwords("\"%s\"" % raw_desc, ["名詞", "未知語"])
 
         try:
             del(desc_bow[desc_bow.index("Permalink"):])
-        except ValueError:
-            pass
+        except ValueError as e:
+            print(e.message)
 
         doc_words = [w for w in desc_bow if not stopwords.search(w)]
 
         corpus.append(doc_words, docid)
 
     corpus.to_url("engadget.url")
-    corpus.to_labellist("engadget.lbl")
+    #corpus.to_labellist("engadget.lbl")
 
 if __name__ == "__main__":
     

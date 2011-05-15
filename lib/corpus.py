@@ -23,11 +23,12 @@ class Corpus(object):
         """
         with file(path, "w") as url:
             for record in self.col.find():
-                #url.write("%s %s\n" % (record["word"], " ".join(record["docid"])))
+                #print(record)
+                #print(record[u"word"])
                 try:
-                    url.write("%s %s\n" % record["word"], len(record["docid"]))
-                except TypeError:
-                    print(record["docid"])
+                    url.write("%s %s\n" % (record[u"word"], len(record[u"docid"])))
+                except TypeError as e:
+                    print(e.message)
     
     def to_labellist(self, path):
         """
