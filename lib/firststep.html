@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+    <script type="text/javascript" src="backbone-min.js"></script>
+
+
+    <script type="text/javascript">
+
+      $(function() {
+          $("#tweet").click(function() {
+            var text = $("#tweetarea").val();
+            $("#timeline").append("<p>" + text + "</p>");
+
+            $("#tweetarea").val("");
+            });
+
+      });
+
+    </script>
+  </head>
+
+  <body>
+
+    <p><textarea id="tweetarea" rows="3" cols="40"></textarea></p>
+    <p><input id="tweet" type="button" value="Tweet" /></p>
+    
+    <div id="timeline"></div>
+  </body>
+</html>
